@@ -30,6 +30,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
     Route::resource('item', 'App\Http\Controllers\ItemController');
     Route::get('get_items', 'App\Http\Controllers\ItemController@ajax')->name('get_items');
 
+    // For pemeriksaan lab
+    Route::resource('pemeriksaan', 'App\Http\Controller\PemeriksaanController');
+
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);

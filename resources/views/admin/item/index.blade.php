@@ -7,26 +7,26 @@
           <div class="header-body">
             <div class="row align-items-center py-4">
               <div class="col-lg-6 col-7">
-                <h6 class="h2 text-white d-inline-block mb-0">Items</h6>
+                <h6 class="h2 text-white d-inline-block mb-0">{{__('Items')}}</h6>
                 <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                   <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                     <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                    <li class="breadcrumb-item"><a href="#">Items</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Index</li>
+                    <li class="breadcrumb-item"><a href="#">{{__('Items')}}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{__('Index')}}</li>
                   </ol>
                 </nav>
               </div>
               <div class="col-lg-6 col-5 text-right">
-                <a href="{{ route('item.create') }}" class="btn btn-sm btn-neutral">Create</a>
+                <a href="{{ route('item.create') }}" class="btn btn-sm btn-neutral">{{__('Create')}}</a>
                 {{-- <a href="#" class="btn btn-sm btn-neutral">Filters</a> --}}
                 <div class="dropdown">
                     <button class="btn btn-sm btn-neutral dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Filter
+                      {{__('Filter')}}
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
-                      <button class="dropdown-item filter_status" value="2" type="button">Semua</button>
-                      <button class="dropdown-item filter_status" value="1" type="button">Aktif</button>
-                      <button class="dropdown-item filter_status" value="0" type="button">Tidak Aktif</button>
+                      <button class="dropdown-item filter_status" value="2" type="button">{{__('Semua')}}</button>
+                      <button class="dropdown-item filter_status" value="1" type="button">{{__('Aktif')}}</button>
+                      <button class="dropdown-item filter_status" value="0" type="button">{{__('Tidak Aktif')}}</button>
                     </div>
                 </div>
               </div>
@@ -40,7 +40,7 @@
         <div class="card">
             <!-- Card header -->
             <div class="card-header border-0">
-              <h3 class="mb-0">Tabel Items</h3>
+              <h3 class="mb-0">{{__('Tabel Items')}}</h3>
             </div>
             <!-- Light table -->
             <div class="card-body">
@@ -48,12 +48,12 @@
                   <table class="table align-items-center table-flush" id="executors_table">
                     <thead class="thead-light">
                       <tr>
-                        <th style="width: 2%">Kode</th>
-                        <th>Pemeriksaan</th>
-                        <th>Group</th>
-                        <th>Klasifikasi</th>
-                        <th>Aktif</th>
-                        <th>Aksi</th>
+                        <th style="width: 2%">{{__('Kode')}}</th>
+                        <th>{{__('Pemeriksaan')}}</th>
+                        <th>{{__('Group')}}</th>
+                        <th>{{__('Klasifikasi')}}</th>
+                        <th>{{__('Aktif')}}</th>
+                        <th>{{__('Aksi')}}</th>
                       </tr>
                     </thead>
                     <tbody>
