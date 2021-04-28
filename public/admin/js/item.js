@@ -13,9 +13,6 @@
           url: "../../admin/get_items",
           data: function(data){
               data.filter_status = status;
-          },
-          success: function(result) {
-              console.log(result);
           }
         },
         // orderCellsTop: true,

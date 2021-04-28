@@ -93,11 +93,6 @@
                         <i class="ni ni-atom text-warning"></i>{{__('Items')}}
                     </a>
                 </div>
-                <div class="nav-item">
-                    <a href="{{ route('pemeriksaan.index') }}" class="nav-link" id="items">
-                        <i class="ni ni-atom text-warning"></i>{{__('Pemeriksaan Lab')}}
-                    </a>
-                </div>
                 <li class="nav-item">
                     <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
                         <i class="fab fa-laravel" style="color: #f4645f;"></i>
