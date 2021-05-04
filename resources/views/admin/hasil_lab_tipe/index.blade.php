@@ -52,7 +52,6 @@
     <script>
         $(document).on('click','.edit_tipe',function(){
             var id_tipe = $(this).data('id');
-            // console.log("/"+id_tipe);
             $.ajax({
                 url: "hasil_lab_tipe/"+id_tipe,
                 success:function(result){

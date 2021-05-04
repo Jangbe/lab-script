@@ -66,7 +66,6 @@ class HasilLabTipeController extends Controller
      */
     public function show(HasilLabTipe $hasilLabTipe)
     {
-        dd($hasilLabTipe);
         return response()->json($hasilLabTipe);
     }
 
