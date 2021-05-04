@@ -56,7 +56,7 @@
                 url: "hasil_lab_tipe/"+id_tipe,
                 success:function(result){
                     $('#keterangan').val(result.keterangan);
-                    if(result.is_number){$('#is_number').attr('checked',true)}else{$('#is_number').attr('checked',false)}
+                    $('#is_number').attr('checked',result.is_number==1);
                     $('input[name=_method]').val('patch');
                     $('#form').attr('action', "hasil_lab_tipe/"+id_tipe);
                     $('#hslLabTipeLabel').text('Edit Hasil Lab Tipe '+result.keterangan);

@@ -82,7 +82,7 @@ $(document).on('click','.detail',function(){
             $('#pemeriksaan').text(result.item.nm_item);
             $('#ket_tambahan').text(result.ket_tambahan);
             $('#edit').attr('href', 'hasil_lab/'+result.id+'/edit');
-            if(result.is_nilai_normal&&!result.is_teks&&!result.is_judul){
+            if(result.is_nilai_normal==1&&!result.is_teks==1&&!result.is_judul==1){
                 if(result.nilai_normal&&result.hasil_lab_tiper==null){
                     $('#min_p').text(result.nilai_normal.min_p);
                     $('#max_p').text(result.nilai_normal.max_p);

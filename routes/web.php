@@ -43,6 +43,10 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
     Route::resource('hasil_lab', 'App\Http\Controllers\HasilLabController');
     Route::get('get_hsllab', 'App\Http\Controllers\HasilLabController@ajax');
 
+    // For item tarif
+    Route::resource('item_tarif','App\Http\Controllers\ItemTarifController');
+    Route::get('get_item_tarif', 'App\Http\Controllers\ItemTarifController@ajax');
+
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);

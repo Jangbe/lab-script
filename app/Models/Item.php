@@ -35,4 +35,9 @@ class Item extends Model
         return $this->hasMany(HasilLab::class, 'id_item', 'id');
     }
 
+    public function itemTarif()
+    {
+        return $this->hasOne(HasilLabTarif::class, 'id_item', 'id');
+    }
+
 }

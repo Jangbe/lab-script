@@ -119,6 +119,11 @@
                         </ul>
                     </div>
                 </li>
+                <div class="nav-item">
+                    <a href="{{ route('item_tarif.index') }}" class="nav-link" id="item_tarif">
+                        <i class="ni ni-money-coins text-success"></i>{{__('Tarif Items')}}
+                    </a>
+                </div>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('icons') }}">

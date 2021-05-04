@@ -45,7 +45,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <div class="input-group-text">
-                        <input type="checkbox" value="1" name="is_nilai_normal" id="is_nilai_normal" aria-label="Checkbox for following text input">
+                        <input type="checkbox" value="1" name="is_nilai_normal" id="is_nilai_normal">
                       </div>
                     </div>
                     <label class="form-control" for="is_nilai_normal"><b>{{__('Nilai Normal')}}</b></label>
@@ -55,7 +55,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <div class="input-group-text">
-                        <input type="checkbox" value="1" name="is_teks" id="is_teks" aria-label="Checkbox for following text input">
+                        <input type="checkbox" value="1" name="is_teks" id="is_teks">
                       </div>
                     </div>
                     <label class="form-control" for="is_teks"><b>{{__('Teks')}}</b></label>
@@ -65,7 +65,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <div class="input-group-text">
-                        <input type="checkbox" value="1" name="is_judul" id="is_judul" aria-label="Checkbox for following text input">
+                        <input type="checkbox" value="1" name="is_judul" id="is_judul">
                       </div>
                     </div>
                     <label class="form-control" for="is_judul"><b>{{__('Judul')}}</b></label>
@@ -77,13 +77,13 @@
 <label for="jml_koma">Jumlah Koma</label>
 <div class="form-row">
     <div class="col-md-2">
-        <input type="number" name="jml_koma" id="jml_koma" class="form-control">
+        <input type="number" name="jml_koma" id="jml_koma" class="form-control mb-3">
     </div>
     <div class="col-md-5">
         <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" value="1" name="is_kesimpulan" id="is_kesimpulan" aria-label="Checkbox for following text input">
+                <input type="checkbox" value="1" name="is_kesimpulan" id="is_kesimpulan">
               </div>
             </div>
             <label class="form-control" for="is_kesimpulan"><b>{{__('Kesimpulan')}}</b></label>
@@ -93,7 +93,7 @@
         <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="checkbox" value="1" name="is_rumus" id="is_rumus" aria-label="Checkbox for following text input">
+                <input type="checkbox" value="1" name="is_rumus" id="is_rumus">
               </div>
             </div>
             <label class="form-control" for="is_rumus"><b>{{__('Rumus')}}</b></label>
