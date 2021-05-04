@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Clasification;
 use App\Models\Group;
 use App\Models\Item;
+use App\Models\LabGroup;
+use App\Models\LabSample;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
@@ -53,7 +55,9 @@ class ItemController extends Controller
     {
         $clasifications = Clasification::all();
         $groups = Group::all();
-        return view('admin.item.create', compact('clasifications', 'groups'));
+        $lab_groups = LabGroup::all();
+        $lab_samples = LabSample::all();
+        return view('admin.item.create', compact('clasifications', 'groups','lab_groups','lab_samples'));
     }
 
     /**
@@ -90,8 +94,10 @@ class ItemController extends Controller
     {
         $clasifications = Clasification::all();
         $groups = Group::all();
+        $lab_groups = LabGroup::all();
+        $lab_samples = LabSample::all();
         $item = $item->with('group', 'clasification')->find($item)->first();
-        return view('admin.item.edit', compact('item', 'clasifications', 'groups'));
+        return view('admin.item.edit', compact('item', 'clasifications', 'groups','lab_groups','lab_samples'));
     }
 
     /**
@@ -103,7 +109,9 @@ class ItemController extends Controller
      */
     public function update(Request $request, Item $item)
     {
-        $item->update($request->except('_token'));
+        $data=$request->except('_token');
+        $data['is_active']=$request->has('is_active')?1:0;
+        $item->update($data);
         session()->flash('success', 'Item berhasil diedit');
         return redirect()->route('item.index');
     }
@@ -116,6 +124,7 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
-        //
+        $item->delete();
+        return back()->with('success',__('Item deleted sucessfully.'));
     }
 }

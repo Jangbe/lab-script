@@ -30,4 +30,9 @@ class Item extends Model
         return $this->belongsTo(LabSample::class, 'id_lab_sample', 'id');
     }
 
+    public function hasilLab()
+    {
+        return $this->hasMany(HasilLab::class, 'id_item', 'id');
+    }
+
 }

@@ -9,6 +9,8 @@ class Group extends Model
 {
     use HasFactory;
     protected $guarded = ['created_at', 'updated_at'];
+    protected $table = 'item_groups';
+
 
     public function item()
     {

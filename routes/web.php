@@ -30,6 +30,19 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
     Route::resource('item', 'App\Http\Controllers\ItemController');
     Route::get('get_items', 'App\Http\Controllers\ItemController@ajax')->name('get_items');
 
+    // For tipe hasil
+    Route::resource('hasil_lab_tipe', 'App\Http\Controllers\HasilLabTipeController');
+    Route::get('get_hsllab_tipe', 'App\Http\Controllers\HasilLabTipeController@ajax')->name('get_hsllab_tipe');
+
+    // For hasil lab rinci
+    Route::resource('hasil_lab_tiper', 'App\Http\Controllers\HasilLabTiperController');
+    Route::get('get_hsllab_tiper', 'App\Http\Controllers\HasilLabTiperController@ajax')->name('get_hsllab_tiper');
+    Route::get('get_hsllab_tiper/{id_tipe}', 'App\Http\Controllers\HasilLabTiperController@get_tiper');
+
+    // For hasil lab
+    Route::resource('hasil_lab', 'App\Http\Controllers\HasilLabController');
+    Route::get('get_hsllab', 'App\Http\Controllers\HasilLabController@ajax');
+
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);

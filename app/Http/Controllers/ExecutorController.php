@@ -84,6 +84,10 @@ class ExecutorController extends Controller
     {
         $data = $request->except('_token');
         $data["jenis_pelaksana"] = '-';
+        $data['aktif']=$request->has('aktif')?1:0;
+        $data['pengirim']=$request->has('pengirim')?1:0;
+        $data['pjawab']=$request->has('pjawab')?1:0;
+        $data['pelaksana']=$request->has('pelaksana')?1:0;
         $executor->update($data);
 
         session()->flash('success', 'Pelaksana berhasil diupdate!');

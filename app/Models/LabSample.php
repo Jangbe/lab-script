@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class LabSample extends Model
 {
     use HasFactory;
+    protected $table = 'item_lab_samples';
 
     public function item()
     {

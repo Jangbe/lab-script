@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Clasification extends Model
 {
     use HasFactory;
+    protected $table = 'item_clasifications';
 
     public function item()
     {

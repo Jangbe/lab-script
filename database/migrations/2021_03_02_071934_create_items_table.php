@@ -18,6 +18,7 @@ class CreateItemsTable extends Migration
             $table->integer('id_group')->nullable();
             $table->integer('id_klasifikasi')->nullable();
             $table->integer('id_lab_group')->nullable();
+            $table->integer('id_lab_sample')->nullable();
             $table->string('nm_item', 200);
             $table->boolean('is_active')->default(0);
             $table->timestamps();

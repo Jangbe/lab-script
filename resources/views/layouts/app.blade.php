@@ -21,11 +21,12 @@
         <link rel="stylesheet" href="{{ asset('assets') }}/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
         <link rel="stylesheet" href="{{ asset('assets') }}/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css">
         <!-- Argon CSS -->
-        <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
+        <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.2.0" rel="stylesheet">
         <!-- Toastr -->
         <link rel="stylesheet" href="{{ asset('assets/vendor/toastr/toastr.min.css') }}">
         <!-- SweetAlert2 -->
         <link rel="stylesheet" href="{{ asset('assets/vendor/sweetalert2/dist/sweetalert2.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/vendor/select2/dist/css/select2.min.css') }}">
     </head>
     <body class="{{ $class ?? '' }}">
         @auth()
@@ -63,17 +64,17 @@
         <script src="{{ asset('assets/vendor/datatables.net-buttons/js/buttons.print.min.js')}}"></script>
         <script src="{{ asset('assets/vendor/datatables.net-buttons/js/buttons.colVis.min.js')}}"></script>
 
-        @stack('js')
         <!-- Toastr-->
         <script src="{{ asset('assets/vendor/toastr/toastr.min.js')}}"></script>
 
         <!-- SweetAlert2 -->
         <script src="{{ asset('assets/vendor/sweetalert2/dist/sweetalert2.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/select2/dist/js/select2.full.min.js') }}"></script>
 
         <!-- Argon JS -->
-        <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
         <script src="{{ asset('assets') }}/js/argon.js?v=1.2.0"></script>
 
+        @stack('js')
         <!-- Flash messages -->
         <script>
             //intialize toastr
