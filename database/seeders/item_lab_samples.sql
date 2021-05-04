@@ -1,0 +1,9 @@
+INSERT INTO `item_lab_samples` VALUES (10, 'SERUM', '1', '2019-01-08 17:31:03', '2019-01-08 17:31:03');
+INSERT INTO `item_lab_samples` VALUES (20, 'DARAH EDTA', '1', '2019-01-08 17:31:03', '2019-01-08 17:31:03');
+INSERT INTO `item_lab_samples` VALUES (30, 'URINE', '1', '2019-01-08 17:31:03', '2019-01-08 17:31:03');
+INSERT INTO `item_lab_samples` VALUES (40, 'FAECES', '1', '2019-01-08 17:31:03', '2019-01-08 17:31:03');
+INSERT INTO `item_lab_samples` VALUES (50, 'SPUTUM', '1', '2019-01-08 17:31:03', '2019-01-08 17:31:03');
+INSERT INTO `item_lab_samples` VALUES (60, 'RECTAL SWAB', '1', '2019-01-08 17:31:03', '2019-01-08 17:31:03');
+INSERT INTO `item_lab_samples` VALUES (70, 'PUS', '1', '2019-01-08 17:31:03', '2019-01-08 17:31:03');
+INSERT INTO `item_lab_samples` VALUES (80, 'WHOLE BLOOD', '1', '2019-01-08 17:31:03', '2019-01-08 17:31:03');
+INSERT INTO `item_lab_samples` VALUES (90, 'SPECIEMEN', '1', '2019-01-08 17:31:03', '2019-01-08 17:31:03');
