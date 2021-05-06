@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HasilLab;
 use App\Models\HasilLabTipe;
 use App\Models\HasilLabTiper;
+use App\Models\NilaiNormal;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
@@ -108,6 +110,11 @@ class HasilLabTiperController extends Controller
      */
     public function destroy(HasilLabTiper $hasilLabTiper)
     {
+        $hasilLab=HasilLab::where('id_tiper',$hasilLabTiper->id)->get();
+        foreach($hasilLab as $hslLab){
+            NilaiNormal::where('id_hasil_lab',$hslLab->id)->delete();
+        }
+        $hasilLab->delete();
         $hasilLabTiper->delete();
         return back()->with('success', 'Hasil Lab Rinci berhasil dihapus.');
     }

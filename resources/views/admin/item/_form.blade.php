@@ -29,7 +29,7 @@
 <div class="row">
     <div class="col-md-6 col-12">
         <div class="form-group">
-            <label for="id_lab_group" class="form-control-label">{{__("Lab Group")}}</label>
+            <label for="id_lab_group" class="form-control-label">{{__("Group Pemeriksaan")}}</label>
             <select name="id_lab_group" class="custom-select" id="id_lab_group">
                 @foreach($lab_groups as $group)
                 <option value="{{$group->id}}" {{isset($item) && $group->id == $item->id_lab_group? 'selected' : ''}}>{{$group->lab_group_name}}</option>
@@ -39,7 +39,7 @@
     </div>
     <div class="col-md-6 col-12">
         <div class="form-group">
-            <label for="id_lab_sample" class="form-control-label">{{__("Lab Sample")}}</label>
+            <label for="id_lab_sample" class="form-control-label">{{__("Jenis Sample")}}</label>
             <select name="id_lab_sample" class="custom-select" id="id_lab_sample">
                 @foreach($lab_samples as $samples)
                 <option value="{{$samples->id}}" {{isset($item) && $samples->id == $item->id_lab_sample? 'selected' : ''}}>{{$samples->lab_sample_name}}</option>

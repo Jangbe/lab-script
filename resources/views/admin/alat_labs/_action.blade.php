@@ -9,10 +9,10 @@
             <i class="fas fa-info-circle"></i>
             {{__('Detail')}}
         </button>
-        <a href="{{route('hasil_lab.edit', $item->id)}}" class="dropdown-item text-info edit_tipe" data-id="{{$item->id}}">
+        <button data-id="{{$item->id}}" type="button" class="dropdown-item text-info edit_tipe">
             <i class="fas fa-edit"></i>{{__('Edit')}}
-        </a>
-        <form action="{{ route('hasil_lab.destroy', $item->id) }}" method="post">
+        </button>
+        <form action="{{ route('alat_lab.destroy', $item->id) }}" method="post">
             @csrf
             @method('delete')
             <button class="dropdown-item text-danger delete_item" type="submit">

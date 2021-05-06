@@ -3,7 +3,16 @@
 @section('content')
     @include('admin.layouts.header', [
         'breadcrumbs'=>['Item Tarif','Index'],
-        'text_right'=>''
+        'text_right'=>'<div class="dropdown">
+                <button class="btn btn-sm btn-neutral dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  '.__('Filter').'
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item filter_status" value="2" type="button">'.__('Semua').'</button>
+                  <button class="dropdown-item filter_status" value="1" type="button">'.__('Aktif').'</button>
+                  <button class="dropdown-item filter_status" value="0" type="button">'.__('Tidak Aktif').'</button>
+                </div>
+            </div>'
     ])
 
     <!-- Page content -->
@@ -11,7 +20,7 @@
         <div class="card">
             <!-- Card header -->
             <div class="card-header border-0">
-              <h3 class="mb-0">{{__('Tabel Items')}}</h3>
+              <h3 class="mb-0">{{__('Tabel Item Tarif')}}</h3>
             </div>
             <!-- Light table -->
             <div class="card-body">
@@ -48,7 +57,6 @@
         $.ajax({
             url: "item_tarif/"+id_item,
             success: function(result){
-                console.log(result);
                 $('#form').attr('action', 'item_tarif/'+result.id_item);
                 $('#id_item').val(result.id_item);
                 $('#tarif_bayar').val(result.tarif_bayar);

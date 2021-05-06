@@ -124,21 +124,36 @@
                         <i class="ni ni-money-coins text-success"></i>{{__('Tarif Items')}}
                     </a>
                 </div>
+                <li class="nav-item">
+                    <a class="nav-link" id="alat-menu" href="#navbar-alat" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-alat">
+                        <i class="ni ni-briefcase-24" style="color: #c210f8;"></i>
+                        <span class="nav-link-text">{{ __('Alat Lab') }}</span>
+                    </a>
+
+                    <div class="collapse" id="navbar-alat">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" id="alat-lab-menu" href="{{ route('alat_lab.index') }}">
+                                    {{ __('Alat Laboratorium') }}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="param-alat-menu" href="{{ route('alat_lab_rinci.index') }}">
+                                    {{ __('Parameter Alat Lab') }}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="setting-hasil-menu" href="{{ route('hasil_lab_alat.index') }}">
+                                    {{ __('Setting Hasil Alat Lab') }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('icons') }}">
                         <i class="ni ni-planet text-blue"></i> {{ __('Icons') }}
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('map') }}">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('Maps') }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('table') }}">
-                      <i class="ni ni-bullet-list-67 text-default"></i>
-                      <span class="nav-link-text">Tables</span>
                     </a>
                 </li>
                 <li class="nav-item">

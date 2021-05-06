@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HasilLab;
 use App\Models\HasilLabTipe;
+use App\Models\HasilLabTiper;
 use App\Models\hsllab_tipe;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
@@ -103,6 +105,7 @@ class HasilLabTipeController extends Controller
      */
     public function destroy(HasilLabTipe $hasilLabTipe)
     {
+        HasilLabTiper::where('id_tipe',$hasilLabTipe->id)->delete();
         $hasilLabTipe->delete();
         return back()->with('success', 'Hasil Lab Tipe berhasil dihapus.');
     }

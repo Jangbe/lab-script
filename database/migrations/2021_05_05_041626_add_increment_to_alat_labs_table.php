@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateItemLabSamplesTable extends Migration
+class AddIncrementToAlatLabsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateItemLabSamplesTable extends Migration
      */
     public function up()
     {
-        Schema::create('item_lab_samples', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('lab_sample_name', 100);
-            $table->boolean('is_active')->default(0);
-            $table->timestamps();
+        Schema::table('alat_labs', function (Blueprint $table) {
+            $table->increments('id')->change();
         });
     }
 
@@ -28,6 +25,8 @@ class CreateItemLabSamplesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('item_lab_samples');
+        Schema::table('alat_labs', function (Blueprint $table) {
+            $table->id()->change();
+        });
     }
 }

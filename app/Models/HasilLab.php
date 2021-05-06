@@ -24,4 +24,9 @@ class HasilLab extends Model
     {
         return $this->hasOne(NilaiNormal::class, 'id_hasil_lab', 'id');
     }
+
+    public function hasilLabAlat()
+    {
+        return $this->hasMany(HasilLabAlat::class, 'id_hasil_lab','id');
+    }
 }

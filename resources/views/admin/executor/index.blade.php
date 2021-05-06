@@ -46,7 +46,7 @@
         e.preventDefault();
         var el=$(this);
         swal({
-            title: "Are you sure to delete patient ?",
+            title: "Apakah kamu yakin ingin menghapus pelaksana ini?",
             type: "warning",
             showCancelButton: true,
             confirmButtonClass: "btn-danger",

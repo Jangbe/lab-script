@@ -69,7 +69,7 @@
             e.preventDefault();
             var el=$(this);
             swal({
-                title: "Apakah kamu yakin ingin menghapus tipe ini?",
+                title: "Apakah kamu yakin ingin menghapus hasil lab tipe ini?",
                 type: "warning",
                 showCancelButton: true,
                 confirmButtonClass: "btn-danger",

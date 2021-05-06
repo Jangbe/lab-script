@@ -14,7 +14,7 @@ class CreateItemClasificationsTable extends Migration
     public function up()
     {
         Schema::create('item_clasifications', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('clasification_name', 100);
             $table->timestamps();
         });

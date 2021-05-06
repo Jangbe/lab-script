@@ -14,7 +14,7 @@ class CreateItemGroupsTable extends Migration
     public function up()
     {
         Schema::create('item_groups', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('group_name', 100);
             $table->integer('jns_hasil');
             $table->boolean('is_active')->default(0);

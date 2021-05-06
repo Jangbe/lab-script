@@ -14,7 +14,7 @@ class CreateHasilLabTipesTable extends Migration
     public function up()
     {
         Schema::create('hasil_lab_tipes', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('keterangan', 40);
             $table->boolean('is_number')->default(0);
             $table->timestamps();

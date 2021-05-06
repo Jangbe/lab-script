@@ -14,7 +14,7 @@ class CreateItemLabGroupsTable extends Migration
     public function up()
     {
         Schema::create('item_lab_groups', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('lab_group_name', 100);
             $table->integer('jns_format');
             $table->boolean('is_active')->default(0);

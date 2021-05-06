@@ -14,11 +14,11 @@ class CreateItemsTable extends Migration
     public function up()
     {
         Schema::create('items', function (Blueprint $table) {
-            $table->id();
-            $table->integer('id_group')->nullable();
-            $table->integer('id_klasifikasi')->nullable();
-            $table->integer('id_lab_group')->nullable();
-            $table->integer('id_lab_sample')->nullable();
+            $table->increments('id');
+            $table->unsignedInteger('id_group')->nullable();
+            $table->unsignedInteger('id_klasifikasi')->nullable();
+            $table->unsignedInteger('id_lab_group')->nullable();
+            $table->unsignedInteger('id_lab_sample')->nullable();
             $table->string('nm_item', 200);
             $table->boolean('is_active')->default(0);
             $table->timestamps();
