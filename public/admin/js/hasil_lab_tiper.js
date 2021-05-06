@@ -93,7 +93,7 @@ $('#create').click(function(){
     $('input[name=_method]').val('post');
     $('#id_tipe').val(0);
     $('#nm_tiper').val('');
-    $('#form').attr('action', "{{route('hasil_lab_tiper.store')}}");
+    $('#form').attr('action', "hasil_lab_tiper/");
     $('#hslLabTipeLabel').text('Buat Hasil Lab Tipe Rinci');
     $('#hslLabTipe').modal('show');
 });
