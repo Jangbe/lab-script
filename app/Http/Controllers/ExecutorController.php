@@ -114,10 +114,8 @@ class ExecutorController extends Controller
     {
         $executors = Executor::query();
         $dt = new DataTables;
-        $i = 1;
         return $dt->eloquent($executors)
         ->removeColumn(['pelaksana', 'pengirim', 'jenis_pelaksana', 'pjawab', 'created_at', 'updated_at'])
-        ->addColumn('no', $i++)
         ->addColumn('action', function($executor){
             return view('admin.executor._action', compact('executor'));
         })->toJson();

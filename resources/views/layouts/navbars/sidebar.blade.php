@@ -89,6 +89,11 @@
                     </a>
                 </div>
                 <div class="nav-item">
+                    <a href="{{ route('patient.index') }}" class="nav-link" id="pasien">
+                        <i class="ni ni-support-16" style="color: #e2de00;"></i>{{__('Pasien')}}
+                    </a>
+                </div>
+                <div class="nav-item">
                     <a href="{{ route('item.index') }}" class="nav-link" id="items">
                         <i class="ni ni-atom text-warning"></i>{{__('Items')}}
                     </a>

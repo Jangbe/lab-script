@@ -13,7 +13,6 @@
         // orderCellsTop: true,
         fixedHeader: false,
         "columns": [
-           {data:"no"},
            {data:"kode"},
            {data:"nama"},
            {data:"nip"},

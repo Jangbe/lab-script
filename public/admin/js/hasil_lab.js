@@ -83,7 +83,7 @@ $(document).on('click','.detail',function(){
             $('#ket_tambahan').text(result.ket_tambahan);
             $('#edit').attr('href', 'hasil_lab/'+result.id+'/edit');
             if(result.is_nilai_normal==1&&!result.is_teks==1&&!result.is_judul==1){
-                if(result.nilai_normal&&result.hasil_lab_tiper==null){
+                if(result.nilai_normal!==null&&result.hasil_lab_tiper==null){
                     $('#min_p').text(result.nilai_normal.min_p);
                     $('#max_p').text(result.nilai_normal.max_p);
                     $('#min_w').text(result.nilai_normal.min_w);
@@ -107,7 +107,7 @@ $(document).on('click','.detail',function(){
             }else{
                 $('#rumus').hide();
             }
-            if(result.hasil_lab_tiper){
+            if(result.hasil_lab_tiper!=null){
                 $('#tipe_hasil').text(result.hasil_lab_tiper.hasil_lab_tipe.keterangan);
             }else{
                 $('#tipe_hasil').text('Angka');

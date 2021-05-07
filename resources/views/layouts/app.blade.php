@@ -27,8 +27,33 @@
         <!-- SweetAlert2 -->
         <link rel="stylesheet" href="{{ asset('assets/vendor/sweetalert2/dist/sweetalert2.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/vendor/select2/dist/css/select2.min.css') }}">
+        <style type="text/css">
+            .preloader {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 9999;
+              background-color: #fff;
+            }
+            .preloader .loading {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%,-50%);
+              font: 14px arial;
+            }
+        </style>
     </head>
     <body class="{{ $class ?? '' }}">
+        <div class="preloader">
+            <div class="loading">
+              <img src="{{asset('assets/img/icons/loader.gif')}}" width="80">
+              <p>Harap Tunggu</p>
+            </div>
+        </div>
+
         @auth()
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
@@ -74,6 +99,10 @@
         <!-- Argon JS -->
         <script src="{{ asset('assets') }}/js/argon.js?v=1.2.0"></script>
 
+        <script>
+            var stop_loader = true;
+        </script>
+
         @stack('js')
         <!-- Flash messages -->
         <script>
@@ -90,9 +119,15 @@
             @if(session()->has('success'))
             toastr.success("{{Session::get('success')}}");
             @endif
-            @if(Session()->has('failed')||session()->has('errors'))
+            @if(Session()->has('failed'))
             toastr.error("{{Session::get('failed')}}");
             @endif
+
+            $(document).ready(function(){
+                if(stop_loader){
+                    $('.preloader').fadeOut();
+                }
+            });
         </script>
 
     </body>

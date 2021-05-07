@@ -56,6 +56,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
     // For Hasil Lab Alat
     Route::resource('hasil_lab_alat', 'HasilLabAlatController');
 
+    // For Patient
+    Route::resource('patient', 'PatientController');
+
 	Route::resource('user', 'UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
