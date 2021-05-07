@@ -21,6 +21,10 @@
             <input type="text" class="form-control" id="nama" name="nama">
         </div>
         <div class="form-group">
+            <label for="tempat_lahir">Tempat Lahir</label>
+            <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir">
+        </div>
+        <div class="form-group">
             <div class="form-row">
                 <div class="col-8">
                     <label for="tanggal_lahir">Tanggal Lahir</label>
@@ -34,12 +38,12 @@
         </div>
         <div class="form-group">
             <label for="jenis_kelamin">Jenis Kelamin</label>
-            <div class="input-group">
+            <div class="form-control">
                 <div class="form-check form-check-inline mr-6">
                     <input class="form-check-input" type="radio" name="jenis_kelamin" id="L" value="L">
                     <label class="form-check-label" for="L">Laki-laki</label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline ml-6">
                     <input class="form-check-input" type="radio" name="jenis_kelamin" id="P" value="P">
                     <label class="form-check-label" for="P">Perempuan</label>
                 </div>
@@ -70,8 +74,8 @@
         </div>
         <div class="form-group">
             <label for="alamat">Alamat</label>
-            <textarea class="form-control mb-4" name="alamat1" id="alamat1" cols="30" rows="3"></textarea>
-            <textarea class="form-control" name="alamat2" id="alamat2" cols="30" rows="2"></textarea>
+            <textarea class="form-control" name="alamat1" id="alamat1" cols="30" rows="3"></textarea>
+            <textarea class="form-control mt-2" name="alamat2" id="alamat2" cols="30" rows="2"></textarea>
         </div>
     </div>
     <div class="col-md-6">
