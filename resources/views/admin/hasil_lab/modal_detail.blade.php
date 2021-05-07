@@ -71,21 +71,23 @@
                     </tr>
                 </table>
             </div>
-            <table class="table table-striped table-bordered">
-                <tr>
-                    <th colspan="3" class="text-center">Jenis Hasil</th>
-                </tr>
-                <tr class="text-center">
-                    <td>Normal</td>
-                    <td>Teks</td>
-                    <td>Judul</td>
-                </tr>
-                <tr class="text-center">
-                    <td id="is_nilai_normal"></td>
-                    <td id="is_teks"></td>
-                    <td id="is_judul"></td>
-                </tr>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <tr>
+                        <th colspan="3" class="text-center">Jenis Hasil</th>
+                    </tr>
+                    <tr class="text-center">
+                        <td>Normal</td>
+                        <td>Teks</td>
+                        <td>Judul</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td id="is_nilai_normal"></td>
+                        <td id="is_teks"></td>
+                        <td id="is_judul"></td>
+                    </tr>
+                </table>
+            </div>
             <div class="table-responsive">
                 <table id="nilai_normal" class="table table-striped table-bordered">
                     <tr class="text-center">

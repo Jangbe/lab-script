@@ -71,6 +71,7 @@ $(document).on('click','.detail',function(){
     $.ajax({
         url: 'hasil_lab/'+id,
         success: function(result){
+            console.log(result);
             $('#detailModalLabel').text('Detail Pemeriksaan Hasil Lab '+result.nm_hasil)
             $('#nm_hasil').text(result.nm_hasil);
             $('#level_hasil').text(result.level_hasil);
@@ -82,8 +83,8 @@ $(document).on('click','.detail',function(){
             $('#pemeriksaan').text(result.item.nm_item);
             $('#ket_tambahan').text(result.ket_tambahan);
             $('#edit').attr('href', 'hasil_lab/'+result.id+'/edit');
-            if(result.is_nilai_normal==1&&!result.is_teks==1&&!result.is_judul==1){
-                if(result.nilai_normal!==null&&result.hasil_lab_tiper==null){
+            if(result.is_nilai_normal==1&&result.is_teks!=1&&!result.is_judul!=1){
+                if(result.nilai_normal!=null&&result.hasil_lab_tiper==null){
                     $('#min_p').text(result.nilai_normal.min_p);
                     $('#max_p').text(result.nilai_normal.max_p);
                     $('#min_w').text(result.nilai_normal.min_w);
