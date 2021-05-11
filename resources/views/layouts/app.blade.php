@@ -124,9 +124,12 @@
             @endif
 
             $(document).ready(function(){
-                if(stop_loader){
+                if($.active<1){
                     $('.preloader').fadeOut();
                 }
+                $(document).ajaxStop(function(){
+                    $('.preloader').fadeOut();
+                })
             });
         </script>
 

@@ -2,7 +2,7 @@
 
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Pelaksana','Tambah'],
+        'breadcrumbs'=>['Pasien','Tambah'],
         'text_right'=>'<a href="'.route('patient.index').'" class="btn btn-sm btn-neutral">'.__('Kembali').'</a>'
     ])
 

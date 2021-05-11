@@ -43,7 +43,8 @@ class PatientController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'no_telepon','min:11|max:14',
+            'jenis_kelamin'=>'required',
+            'no_telepon'=>'nullable|min:11|max:14',
             'rt'=>'min:3|max:3',
             'rw'=>'min:3|max:3',
             'kodepos'=>'min:6|max:6'
@@ -86,7 +87,8 @@ class PatientController extends Controller
     public function update(Request $request, Patient $patient)
     {
         $request->validate([
-            'no_telepon','min:11|max:14',
+            'jenis_kelamin'=>'required',
+            'no_telepon'=>'nullable|min:11|max:14',
             'rt'=>'min:3|max:3',
             'rw'=>'min:3|max:3',
             'kodepos'=>'min:6|max:6'

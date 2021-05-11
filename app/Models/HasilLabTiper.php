@@ -19,4 +19,9 @@ class HasilLabTiper extends Model
     {
         return $this->belongsTo(HasilLabTipe::class, 'id_tipe', 'id');
     }
+
+    public function patientResultTest()
+    {
+        return $this->hasMany(PatientResultTest::class, 'id_tiper','id');
+    }
 }

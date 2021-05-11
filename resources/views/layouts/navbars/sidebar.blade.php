@@ -94,6 +94,11 @@
                     </a>
                 </div>
                 <div class="nav-item">
+                    <a href="{{ route('patient_test.index') }}" class="nav-link" id="pasien_test">
+                        <i class="ni ni-ambulance" style="color: #e200b1;"></i>{{__('Pemeriksaan Pasien')}}
+                    </a>
+                </div>
+                <div class="nav-item">
                     <a href="{{ route('item.index') }}" class="nav-link" id="items">
                         <i class="ni ni-atom text-warning"></i>{{__('Items')}}
                     </a>
@@ -159,11 +164,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('icons') }}">
                         <i class="ni ni-planet text-blue"></i> {{ __('Icons') }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="ni ni-circle-08 text-pink"></i> {{ __('Register') }}
                     </a>
                 </li>
             </ul>

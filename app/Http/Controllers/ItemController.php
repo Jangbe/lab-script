@@ -25,7 +25,7 @@ class ItemController extends Controller
 
     public function ajax(Request $request)
     {
-        $items = Item::query()->with('group', 'labGroup', 'clasification');
+        $items = Item::query()->with('group', 'labGroup', 'clasification','itemTarif');
 
         $dt = new DataTables;
         if(!is_null($request->filter_status)){
@@ -37,6 +37,9 @@ class ItemController extends Controller
         })
         ->addColumn('clasification_name', function($item){
             return $item['clasification']['clasification_name'];
+        })
+        ->addColumn('harga', function($item){
+            return $item['itemTarif']['tarif_bayar'];
         })
         ->editColumn('is_active', function($item){
             return view('admin.item._status', compact('item'));

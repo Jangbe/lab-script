@@ -29,4 +29,9 @@ class HasilLab extends Model
     {
         return $this->hasMany(HasilLabAlat::class, 'id_hasil_lab','id');
     }
+
+    public function patientResultTest()
+    {
+        return $this->hasMany(PatientResultTest::class, 'id_hasil_lab','id');
+    }
 }

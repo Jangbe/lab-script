@@ -45,16 +45,15 @@
 
 $('#tanggal_lahir').change(function(e){
     let tanggal=$(this).val();
-    tanggal = new Date(tanggal);
-    let now = new Date();
-    $('#umur').val(diff_years(now,tanggal)+' Tahun');
+    tanggal=new Date(tanggal);
+    $('#umur').val(calculate_age(tanggal)+' tahun');
 })
 
-function diff_years(dt2, dt1)
-{
-    var diff =(dt2.getTime() - dt1.getTime()) / 1000;
-    diff /= (60 * 60 * 24);
-    return Math.abs(Math.round(diff/365.25));
+function calculate_age(dob) {
+    var diff_ms = Date.now() - dob.getTime();
+    var age_dt = new Date(diff_ms);
+
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
 function autotab(current,to, max,e){
@@ -92,6 +91,8 @@ async function ajax_wilayah(id, kode, api, next, loader = true){
                 results.forEach(result=>{
                     $('#'+id).append(`<option value="${result.id}">${result.name}</option>`);
                 })
+        }).catch(function(e){
+            console.log(e);
         });
         if(loader) $('.preloader').fadeOut();
     }else{

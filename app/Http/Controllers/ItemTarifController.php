@@ -33,13 +33,13 @@ class ItemTarifController extends Controller
             return $item['item']['nm_item'];
         })
         ->editColumn('tarif_bayar', function($item){
-            return "Rp. ".number_format($item['tarif_bayar'],0,',','.');
+            return formated_price($item['tarif_bayar']);
         })
         ->editColumn('tarif_bpjs', function($item){
-            return "Rp. ".number_format($item['tarif_bpjs'],0,',','.');
+            return formated_price($item['tarif_bpjs']);
         })
         ->editColumn('tarif_jaminan', function($item){
-            return "Rp. ".number_format($item['tarif_jaminan'],0,',','.');
+            return formated_price($item['tarif_jaminan']);
         })
         ->editColumn('is_active', function($item){
             return view('admin.item_tarif._status', compact('item'));

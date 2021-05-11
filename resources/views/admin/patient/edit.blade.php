@@ -2,7 +2,7 @@
 
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Pelaksana','Edit'],
+        'breadcrumbs'=>['Pasien','Edit'],
         'text_right'=>'<a href="'.route('patient.index').'" class="btn btn-sm btn-neutral">'.__('Kembali').'</a>'
     ])
 
@@ -11,7 +11,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        {{__('Edit Pelaksana')}}
+                        {{__('Edit Pasien')}}
                     </div>
                     <div class="card-body">
                         <form method="post" action="{{ route('patient.update', $patient->id) }}">

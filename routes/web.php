@@ -59,6 +59,16 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
     // For Patient
     Route::resource('patient', 'PatientController');
 
+    // For Patient Test
+    Route::resource('patient_registration', 'PatientRegistrationController');
+
+    // For Patient Test
+    Route::resource('patient_test', 'PatientTestController');
+    Route::resource('patient_test_result', 'PatientResultTestController');
+
+    // Ajax no pendaftaran
+    Route::get('get_no_pendaftaran', 'PatientTestController@getNoPendaftaran');
+
 	Route::resource('user', 'UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
