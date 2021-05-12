@@ -123,9 +123,9 @@ class PatientTestController extends Controller
      */
     public function show(PatientRegistration $patientTest, Request $request)
     {
-        $patient_tests=$patientTest['patientTest'];
+        $patient_tests=PatientTest::where('no_pendaftaran',strval($patientTest->no_pendaftaran))->get();
         if($request->ajax()){
-            $hasilLab = PatientResultTest::where('no_pendaftaran',$patientTest->no_pendaftaran)->get();
+            $hasilLab = PatientResultTest::where('no_pendaftaran',strval($patientTest->no_pendaftaran))->get();
             return response()->json($hasilLab);
         }
         return view('admin.patient_test.hasil_lab',compact('patientTest','patient_tests'));

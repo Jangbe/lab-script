@@ -91,24 +91,25 @@ class PatientRegistrationController extends Controller
 
         // Old test patient
         $patient_tests=[];
-        foreach($patientRegistration['patientTest'] as $test){
+        $patientTest=PatientTest::where('no_pendaftaran',strval($request->no_pendaftaran))->get();
+        foreach($patientTest as $test){
             array_push($patient_tests,$test['id_item']);
         }
 
         if($request->has('id_item')){
             // Delete the patient's test where not in select
-            $deleted_patient_tests=PatientTest::where('no_pendaftaran',$request->no_pendaftaran)->whereNotIn('id_item',$request->id_item)->get();
+            $deleted_patient_tests=PatientTest::where('no_pendaftaran',strval($request->no_pendaftaran))->whereNotIn('id_item',$request->id_item)->get();
             foreach ($deleted_patient_tests as $test) {
                 foreach($test['item']['hasilLab'] as $hasilLab){
                     $hasilLab->delete();
                 }
             }
-            PatientTest::where('no_pendaftaran',$request->no_pendaftaran)->whereNotIn('id_item',$request->id_item)->delete();
+            PatientTest::where('no_pendaftaran',strval($request->no_pendaftaran))->whereNotIn('id_item',$request->id_item)->delete();
 
             foreach($request->id_item as $i => $item){
                 if(!in_array($item,$patient_tests)){
                     PatientTest::create([
-                        'no_pendaftaran'=>$request->no_pendaftaran,
+                        'no_pendaftaran'=>strval($request->no_pendaftaran),
                         'id_item'=>$item,
                         'no_alat'=>$request->no_alat[$i]??0,
                         'id_pelaksana'=>$request->id_pelaksana[$i]??0,
@@ -119,7 +120,7 @@ class PatientRegistrationController extends Controller
                     foreach ($hasilLab as $hsllab) {
                         if($hsllab->is_judul==0){
                             PatientResultTest::create([
-                                'no_pendaftaran'=>$request->no_pendaftaran,
+                                'no_pendaftaran'=>strval($request->no_pendaftaran),
                                 'id_hasil_lab'=>$hsllab->id,
                                 'id_tiper'=>$hsllab->id_tiper,
                                 'nilai'=>null,
@@ -132,7 +133,7 @@ class PatientRegistrationController extends Controller
                         }
                     }
                 }else{
-                    DB::table('patient_tests')->where(['no_pendaftaran'=>$request->no_pendaftaran,'id_item'=>$item])->update([
+                    DB::table('patient_tests')->where(['no_pendaftaran'=>strval($request->no_pendaftaran),'id_item'=>$item])->update([
                         'no_alat'=>$request->no_alat[$i]??0,
                         'id_pelaksana'=>$request->id_pelaksana[$i]??0,
                         'non_jaminan'=>$request->non_jaminan[$i]??0
@@ -141,7 +142,8 @@ class PatientRegistrationController extends Controller
             }
 
         }else{
-            PatientTest::where('no_pendaftaran',$request->no_pendaftaran)->delete();
+            PatientTest::where('no_pendaftaran',strval($request->no_pendaftaran))->delete();
+            PatientResultTest::where('no_pendaftaran',strval($request->no_pendaftaran))->delete();
         }
 
         return redirect()->route('patient_test.index')->with('success','Pasien dan test nya berhasil diperbarui.');

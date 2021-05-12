@@ -28,7 +28,7 @@ class PatientRegistration extends Model
 
     public function patientTestResult()
     {
-        return $this->hasMany(patientTestResult::class, 'no_pendaftaran','no_pendaftaran');
+        return $this->hasMany(PatientResultTest::class, 'no_pendaftaran','no_pendaftaran');
     }
 
     public function penanggungJawab()
