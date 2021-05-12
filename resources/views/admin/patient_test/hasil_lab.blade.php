@@ -171,12 +171,21 @@
         $.ajax({
             url: '',
             success: function(result){
-                // console.log(result);
-                result.forEach((items,k)=>{
+                result.forEach(v=>{
+                    let id_pendaftar=v.no_pendaftaran.toString();
+                    id_pendaftar=id_pendaftar.substr(id_pendaftar.length-3,3);
+                    let id_lab=v.id_hasil_lab.toString();
+                })
+                result.forEach((items)=>{
+                    let id_pendaftar=items.no_pendaftaran.toString();
+                    id_pendaftar=id_pendaftar.substr(id_pendaftar.length-3,3);
+                    let id_lab=items.id_hasil_lab.toString();
+                    let no_urut=id_pendaftar+id_lab;
+                    console.log(no_urut+' => '+items.hasil_teks);
                     for(i in items){
-                        $('#'+i+'_'+k).val(items[i]);
+                        $('#'+i+'_'+no_urut).val(items[i]);
                     }
-                    $('#is_duplo_'+k).attr('checked',items.is_duplo==1);
+                    $('#is_duplo_'+no_urut).attr('checked',items.is_duplo==1);
                 })
             }
         })

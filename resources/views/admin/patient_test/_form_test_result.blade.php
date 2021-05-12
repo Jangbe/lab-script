@@ -1,8 +1,5 @@
 @if (!$patient_tests->isEmpty())
     <input type="hidden" name="no_pendaftaran" value="{{$patientTest->no_pendaftaran}}">
-    @php
-        $i=0;
-    @endphp
     @foreach ($patient_tests as $index => $test)
         <div class="card mt-2">
         @if ($test['item']['hasilLab']->isNotEmpty())
@@ -16,8 +13,12 @@
             </div>
             <div class="card-body collapse show" id="test_{{$index}}">
                 @foreach ($test['item']['hasilLab']->sortBy('no_urut') as $no => $hasilLab)
+                    @php
+                        $id_pendaftar=substr(strval($patientTest['no_pendaftaran']),-3,3);
+                        $no_urut=$id_pendaftar.$hasilLab->id;
+                    @endphp
                     @if ($hasilLab->is_judul!=1)
-                    <input type="hidden" name="id_hasil_lab[{{$i}}]" value="{{$hasilLab->id}}" readonly>
+                    <input type="hidden" name="id_hasil_lab[{{$no_urut}}]" value="{{$hasilLab->id}}" readonly>
                     @endif
                     {{-- Jika jenis hasil lab nya judul --}}
                     @if ($hasilLab->is_judul==1)
@@ -27,8 +28,8 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col-5">
-                                <label for="id_tiper_{{$i}}">{{$hasilLab->nm_hasil}}</label>
-                                <select name="id_tiper[{{$i}}]" id="id_tiper_{{$i}}" class="custom-select">
+                                <label for="id_tiper_{{$no_urut}}">{{$hasilLab->nm_hasil}}</label>
+                                <select name="id_tiper[{{$no_urut}}]" id="id_tiper_{{$no_urut}}" class="custom-select">
                                     @foreach ($hasilLab['hasilLabTiper']['hasilLabTipe']['hasilLabTiper'] as $opt)
                                     <option value="{{$opt['id']}}">{{$opt['nm_tiper']}}</option>
                                     @endforeach
@@ -38,21 +39,21 @@
                                 </small>
                             </div>
                             <div class="col-1">
-                                <label for="is_duplo_{{$i}}">Duplo</label>
+                                <label for="is_duplo_{{$no_urut}}">Duplo</label>
                                 <div class="form-control">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" value="1" id="is_duplo_{{$i}}" name="is_duplo[{{$i}}]">
-                                        <label class="custom-control-label" for="is_duplo_{{$i}}">Ya</label>
+                                        <input type="checkbox" class="custom-control-input" value="1" id="is_duplo_{{$no_urut}}" name="is_duplo[{{$no_urut}}]">
+                                        <label class="custom-control-label" for="is_duplo_{{$no_urut}}">Ya</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3">
-                                <label for="keterangan_{{$i}}">Keterangan</label>
-                                <input type="text" class="form-control" id="keterangan_{{$i}}" name="keterangan[{{$i}}]">
+                                <label for="keterangan_{{$no_urut}}">Keterangan</label>
+                                <input type="text" class="form-control" id="keterangan_{{$no_urut}}" name="keterangan[{{$no_urut}}]">
                             </div>
                             <div class="col-3">
-                                <label for="kesimpulan_{{$i}}">Kesimpulan</label>
-                                <input type="text" {{$hasilLab->is_kesimpulan==1?'':'disabled'}} name="kesimpulan[{{$i}}]" class="form-control">
+                                <label for="kesimpulan_{{$no_urut}}">Kesimpulan</label>
+                                <input type="text" {{$hasilLab->is_kesimpulan==1?'':'disabled'}} name="kesimpulan[{{$no_urut}}]" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -61,28 +62,28 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col-5">
-                                <label for="hasil_teks_{{$i}}">{{$hasilLab->nm_hasil}}</label>
-                                <input type="text" id="hasil_teks_{{$i}}" name="hasil_teks[{{$i}}]" class="form-control">
+                                <label for="hasil_teks_{{$no_urut}}">{{$hasilLab->nm_hasil}}</label>
+                                <input type="text" id="hasil_teks_{{$no_urut}}" name="hasil_teks[{{$no_urut}}]" class="form-control">
                                 <small class="form-text text-muted">
                                     Nilai Normal: Teks
                                 </small>
                             </div>
                             <div class="col-1">
-                                <label for="is_duplo_{{$i}}">Duplo</label>
+                                <label for="is_duplo_{{$no_urut}}">Duplo</label>
                                 <div class="form-control">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" value="1" id="is_duplo_{{$i}}" name="is_duplo[{{$i}}]">
-                                        <label class="custom-control-label" for="is_duplo_{{$i}}">Ya</label>
+                                        <input type="checkbox" class="custom-control-input" value="1" id="is_duplo_{{$no_urut}}" name="is_duplo[{{$no_urut}}]">
+                                        <label class="custom-control-label" for="is_duplo_{{$no_urut}}">Ya</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3">
-                                <label for="keterangan_{{$i}}">Keterangan</label>
-                                <input type="text" id="keterangan_{{$i}}" name="keterangan[{{$i}}]" class="form-control">
+                                <label for="keterangan_{{$no_urut}}">Keterangan</label>
+                                <input type="text" id="keterangan_{{$no_urut}}" name="keterangan[{{$no_urut}}]" class="form-control">
                             </div>
                             <div class="col-3">
-                                <label for="kesimpulan_{{$i}}">Kesimpulan</label>
-                                <input type="text" {{$hasilLab->is_kesimpulan==1?'':'disabled'}} id="kesimpulan_{{$i}}" name="kesimpulan[{{$i}}]" class="form-control">
+                                <label for="kesimpulan_{{$no_urut}}">Kesimpulan</label>
+                                <input type="text" {{$hasilLab->is_kesimpulan==1?'':'disabled'}} id="kesimpulan_{{$no_urut}}" name="kesimpulan[{{$no_urut}}]" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -91,39 +92,36 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col-3">
-                                <label for="nilai_{{$i}}">{{$hasilLab->nm_hasil}}</label>
-                                <input type="number" value="0" id="nilai_{{$i}}" name="nilai[{{$i}}]" class="form-control">
+                                <label for="nilai_{{$no_urut}}">{{$hasilLab->nm_hasil}}</label>
+                                <input type="number" value="0" id="nilai_{{$no_urut}}" name="nilai[{{$no_urut}}]" class="form-control">
                                 <small class="form-text text-muted">
                                     Nilai Normal: {{nilai_normal($patientTest,$hasilLab['nilaiNormal'])}}
                                 </small>
                             </div>
                             <div class="col-2">
-                                <label for="satuan_{{$i}}">Satuan</label>
-                                <input type="text" class="form-control" id="satuan_{{$i}}" disabled value="{{$hasilLab['nilaiNormal']['satuan']}}">
+                                <label for="satuan_{{$no_urut}}">Satuan</label>
+                                <input type="text" class="form-control" id="satuan_{{$no_urut}}" disabled value="{{$hasilLab['nilaiNormal']['satuan']}}">
                             </div>
                             <div class="col-1">
-                                <label for="is_duplo_{{$i}}">Duplo</label>
+                                <label for="is_duplo_{{$no_urut}}">Duplo</label>
                                 <div class="form-control">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" id="is_duplo_{{$i}}" class="custom-control-input" value="1" name="is_duplo[{{$i}}]">
-                                        <label class="custom-control-label" for="is_duplo_{{$i}}">Ya</label>
+                                        <input type="checkbox" id="is_duplo_{{$no_urut}}" class="custom-control-input" value="1" name="is_duplo[{{$no_urut}}]">
+                                        <label class="custom-control-label" for="is_duplo_{{$no_urut}}">Ya</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3">
-                                <label for="keterangan_{{$i}}">Keterangan</label>
-                                <input type="text" id="keterangan_{{$i}}" name="keterangan[{{$i}}]" class="form-control">
+                                <label for="keterangan_{{$no_urut}}">Keterangan</label>
+                                <input type="text" id="keterangan_{{$no_urut}}" name="keterangan[{{$no_urut}}]" class="form-control">
                             </div>
                             <div class="col-3">
-                                <label for="kesimpulan_{{$i}}">Kesimpulan</label>
-                                <input type="text" {{$hasilLab->is_kesimpulan==1?'':'disabled'}} id="kesimpulan_{{$i}}" name="kesimpulan[{{$i}}]" class="form-control">
+                                <label for="kesimpulan_{{$no_urut}}">Kesimpulan</label>
+                                <input type="text" {{$hasilLab->is_kesimpulan==1?'':'disabled'}} id="kesimpulan_{{$no_urut}}" name="kesimpulan[{{$no_urut}}]" class="form-control">
                             </div>
                         </div>
                     </div>
                     @endif
-                    @php
-                        $i++;
-                    @endphp
                 @endforeach
             </div>
         @endif
