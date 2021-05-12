@@ -167,6 +167,7 @@ function set_form_patient(id){
 var no_id=1;
 
 function set_form_test(id,url='../'){
+    $('.preloader').fadeIn();
     $('.list-pemeriksaan').append(`<div class="form-group">
         <div class="form-row mt--4">
             <div class="col-6 col-md-3">
@@ -212,7 +213,6 @@ function set_form_test(id,url='../'){
         url: url+'get_items',
         async: false,
         success: function({data}){
-            // $('#id_item_'+id).empty().append('<option></option>');
             data.forEach(v=>{
                 $('#id_item_'+no_id).append(`<option value="${v.id}">${v.nm_item}</option>`)
             })
@@ -224,13 +224,13 @@ function set_form_test(id,url='../'){
         url: url+'get_executors',
         async: false,
         success: function({data}){
-            // $('.pelaksana').empty().append('<option></option>');
             data.forEach(v=>{
                 if(v.pelaksana==1){$('#id_pelaksana_'+no_id).append(`<option value="${v.id}">${v.nama}</option>`)};
             })
         }
     })
     no_id++;
+    $('.preloader').fadeOut();
 }
 
 function set_executors(url){
@@ -241,8 +241,8 @@ function set_executors(url){
             $('#id_penanggung_jawab').append('<option></option>');
             $('#id_pengirim').append('<option></option>');
             data.forEach(v=>{
-                if(v.pengirim==1){$('#id_penanggung_jawab').append(`<option value="${v.id}">${v.nama}</option>`)};
-                if(v.pjawab==1){$('#id_pengirim').append(`<option value="${v.id}">${v.nama}</option>`)};
+                if(v.pjawab==1){$('#id_penanggung_jawab').append(`<option value="${v.id}">${v.nama}</option>`)};
+                if(v.pengirim==1){$('#id_pengirim').append(`<option value="${v.id}">${v.nama}</option>`)};
             })
         }
     })

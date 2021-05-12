@@ -63,8 +63,8 @@ class PatientTestController extends Controller
             'rw'=>'nullable|min:3|max:3',
             'kodepos'=>'nullable|min:6|max:6'
         ]);
-        $no_urut=PatientRegistration::select('no_urut')->orderBy('no_urut','desc')->first()['no_urut']+1??1;
-        // dd($request);
+        $no_urut=PatientRegistration::select('no_urut')->orderBy('no_urut','desc')->first();
+        $no_urut=$no_urut?$no_urut->no_urut+1:1;
         $no_rm = Patient::find($request->s_no_rm)->noreg??0;
         if($request->sts_pengunjung=='B'){
             $patient=collect($request->toArray())->put('rt_rw_kodepos',$request->rt.'-'.$request->rw.'-'.$request->kodepos)->toArray();
