@@ -108,7 +108,8 @@ class PatientTestController extends Controller
 
     public function getNoPendaftaran(Request $request)
     {
-        $no_urut=PatientRegistration::select('no_urut')->orderBy('no_urut','desc')->first()['no_urut']+1??1;
+        $patientRegistration=PatientRegistration::select('no_urut')->orderBy('no_urut','desc')->first();
+        $no_urut=$patientRegistration?$patientRegistration->no_urut+1:1;
         $no_urut="000".$no_urut;
         $no_urut=substr($no_urut,-3,3);
         return $request->ajax()?date('Ymd').$no_urut:abort(403, 'Request harus ajax');

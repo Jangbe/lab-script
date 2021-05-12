@@ -37,7 +37,7 @@ class Item extends Model
 
     public function itemTarif()
     {
-        return $this->hasOne(itemTarif::class, 'id_item', 'id');
+        return $this->hasOne(ItemTarif::class, 'id_item', 'id');
     }
 
     public function patientTest()

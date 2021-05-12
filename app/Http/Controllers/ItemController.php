@@ -39,7 +39,7 @@ class ItemController extends Controller
             return $item['clasification']['clasification_name'];
         })
         ->addColumn('harga', function($item){
-            return $item['itemTarif']['tarif_bayar'];
+            return $item['itemTarif']['tarif_bayar']??0;
         })
         ->editColumn('is_active', function($item){
             return view('admin.item._status', compact('item'));
