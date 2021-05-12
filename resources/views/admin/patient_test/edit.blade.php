@@ -14,7 +14,7 @@
                         {{__('Edit Pendaftaran Pasien')}}
                     </div>
                     <div class="card-body">
-                        <form method="post" action="{{ route('patient_registration.update', $patientRegistration->no_pendaftaran) }}">
+                        <form method="post" action="{{ route('patient_registration.update', $patientRegistration['no_pendaftaran']) }}">
                             @method('put')
                             @include('admin.patient_test._form')
                             <div class="form-row d-flex justify-content-between">

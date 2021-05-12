@@ -167,7 +167,6 @@ function set_form_patient(id){
 var no_id=1;
 
 function set_form_test(id,url='../'){
-    $('.preloader').fadeIn();
     $('.list-pemeriksaan').append(`<div class="form-group">
         <div class="form-row mt--4">
             <div class="col-6 col-md-3">
@@ -230,7 +229,6 @@ function set_form_test(id,url='../'){
         }
     })
     no_id++;
-    $('.preloader').fadeOut();
 }
 
 function set_executors(url){
