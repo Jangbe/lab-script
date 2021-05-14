@@ -71,11 +71,11 @@
                                 <div class="form-row">
                                     <div class="col-6">
                                         <label for="tagihan">Tagihan</label>
-                                        <input class="number form-control" disabled type="text" id="tagihan" value="{{$patientRegistration['subtotal']}}">
+                                        <input class="number form-control" disabled type="text" id="tagihan" value="{{intval($patientRegistration['subtotal'])}}">
                                     </div>
                                     <div class="col-6">
                                         <label for="nilai_cito">Cito</label>
-                                        <input class="number form-control bayar" type="text" id="nilai_cito" name="nilai_cito" {{$patientRegistration['is_cito']==1?'':'disabled'}} value="{{$patientRegistration['nilai_cito']}}">
+                                        <input class="number form-control bayar" type="text" id="nilai_cito" name="nilai_cito" {{$patientRegistration['is_cito']==1?'':'disabled'}} value="{{intval($patientRegistration['nilai_cito'])}}">
                                     </div>
                                 </div>
                             </div>
@@ -83,13 +83,13 @@
                                 <div class="form-row">
                                     <div class="col-5">
                                         <label for="nilai_admin">Admin</label>
-                                        <input class="number form-control bayar" type="text" id="nilai_admin" name="nilai_admin" value="{{$patientRegistration['nilai_admin']}}">
+                                        <input class="number form-control bayar" type="text" id="nilai_admin" name="nilai_admin" value="{{intval($patientRegistration['nilai_admin'])}}">
                                     </div>
                                     <div class="col-7">
                                         <div class="form-row">
                                             <div class="col-7">
                                                 <label for="discount">Discount</label>
-                                                <input class="number form-control bayar" type="text" id="nilai_discount" name="nilai_discount" value="{{$patientRegistration['nilai_discount']}}">
+                                                <input class="number form-control bayar" type="text" id="nilai_discount" name="nilai_discount" value="{{intval($patientRegistration['nilai_discount'])}}">
                                             </div>
                                             <div class="col-5">
                                                 <label for="discount">Persen (%)</label>
@@ -145,9 +145,9 @@
         var discount = 0;
         var total_keseluruhan = 0;
         function set_total(id_name=''){
-            let nilai_admin=formated_price($('#nilai_admin').val().trim()==''?0:parseInt($('#nilai_admin').val()), '');
-            let nilai_cito=formated_price($('#nilai_cito').val().trim()==''?0:parseInt($('#nilai_cito').val()), '');
-            let nilai_discount=formated_price($('#nilai_discount').val().trim()==''?0:parseInt($('#nilai_discount').val()), '');
+            let nilai_admin=formated_price($('#nilai_admin').val().trim()==''?0:$('#nilai_admin').val(), '');
+            let nilai_cito=formated_price($('#nilai_cito').val().trim()==''?0:$('#nilai_cito').val(), '');
+            let nilai_discount=formated_price($('#nilai_discount').val().trim()==''?0:$('#nilai_discount').val(), '');
             let discount_persen=$('#discount_persen').val().trim()==''?0:parseFloat($('#discount_persen').val());
 
             // Untuk total
@@ -188,7 +188,7 @@
                 node.value = formated_price(node.value);
             }
         })
-        $('.bayar').keyup(function(e){
+        $('.bayar').on('keyup change',function(e){
             let id_name=$(this)[0].id;
             set_total(id_name);
             if(id_name!='discount_persen'){
@@ -196,20 +196,7 @@
                 this.value=formated_price(temp);
             }
         })
-        $('#nilai_uangmuka').keyup(function(){
-            set_total('bayar');
-            let temp = formated_price($(this).val(),'');
-            this.value=formated_price(temp);
-        })
-        $('.bayar').change(function(e){
-            let id_name=$(this)[0].id;
-            set_total(id_name);
-            if(id_name!='discount_persen'){
-                let temp = formated_price($(this).val(),'');
-                this.value=formated_price(temp);
-            }
-        })
-        $('#nilai_uangmuka').change(function(){
+        $('#nilai_uangmuka').on('keyup change',function(){
             set_total('bayar');
             let temp = formated_price($(this).val(),'');
             this.value=formated_price(temp);
