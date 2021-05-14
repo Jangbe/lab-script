@@ -108,7 +108,7 @@
                                 <div class="form-row">
                                     <div class="col-5">
                                         <label for="nilai_uangmuka">Uang Muka</label>
-                                        <input class="number form-control" type="text" id="nilai_uangmuka" name="nilai_uangmuka" value="{{$patientRegistration['nilai_uangmuka']}}">
+                                        <input class="number form-control" type="text" id="nilai_uangmuka" name="nilai_uangmuka" value="{{intval($patientRegistration['nilai_uangmuka'])}}">
                                     </div>
                                     <div class="col-7">
                                         <label for="pembayar">Pembayar</label>
