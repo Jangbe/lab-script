@@ -75,8 +75,8 @@
                                     </div>
                                     <div class="col-6">
                                         <label for="nilai_cito">Cito</label>
-                                        {{-- <input class="number form-control bayar" type="text" id="nilai_cito" name="nilai_cito" {{$patientRegistration['is_cito']==1?'':'disabled'}} value="{{$patientRegistration['nilai_cito']}}"> --}}
-                                        <input class="number form-control bayar" type="text" id="nilai_cito" name="nilai_cito" value="{{$patientRegistration['nilai_cito']}}">
+                                        <input class="number form-control bayar" type="text" id="nilai_cito" name="nilai_cito" {{$patientRegistration['is_cito']==1?'':'disabled'}} value="{{$patientRegistration['nilai_cito']}}">
+                                        {{-- <input class="number form-control bayar" type="text" id="nilai_cito" name="nilai_cito" value="{{$patientRegistration['nilai_cito']}}"> --}}
                                     </div>
                                 </div>
                             </div>
