@@ -100,7 +100,18 @@
         <script src="{{ asset('assets') }}/js/argon.js?v=1.2.0"></script>
 
         <script>
-            var stop_loader = true;
+            function formated_price(x, separator='.',abs=true) {
+                if(separator==''){
+                    return x.toString().replaceAll('.', '');
+                }else{
+                    if(abs){
+                        x=Math.abs(x);
+                    }
+                    var parts = x.toString().split(",");
+                    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, separator);
+                    return parts.join(".");
+                }
+            }
         </script>
 
         @stack('js')

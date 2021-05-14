@@ -149,6 +149,26 @@ class PatientRegistrationController extends Controller
         return redirect()->route('patient_test.index')->with('success','Pasien dan test nya berhasil diperbarui.');
     }
 
+    public function bayar(PatientRegistration $patientRegistration)
+    {
+        $patientRegistration['patient'];
+        $patientRegistration['patientTest']=PatientTest::with('item')->where('no_pendaftaran',strval($patientRegistration->no_pendaftaran))->get();
+        // dd($patientRegistration);
+        return view('admin.patient_test.pembayaran',compact('patientRegistration'));
+    }
+
+    public function bayar_setor(Request $request, PatientRegistration $patientRegistration)
+    {
+        $acceptable = ['nilai_cito','nilai_admin','nilai_discount','nilai_uangmuka'];
+        $data=collect($request)->map(function($v,$k)use($acceptable){
+            if(in_array($k,$acceptable)){
+                return intval(str_replace('.','',$v));
+            }
+            return $v;
+        });
+        $patientRegistration->update($data->toArray());
+        return back()->with('success','Pembayaran berhasil dilakukan.');
+    }
     /**
      * Remove the specified resource from storage.
      *

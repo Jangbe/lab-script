@@ -20,4 +20,9 @@ class AdminController extends Controller
         $menus = DB::table('menus')->get();
         return view('admin.setting', compact('active', 'menus'));
     }
+
+    public function pdf()
+    {
+        return generate_pdf('',2);
+    }
 }

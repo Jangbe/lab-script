@@ -92,7 +92,7 @@ class PatientTestController extends Controller
                             'no_pendaftaran'=>$request->no_pendaftaran,
                             'id_hasil_lab'=>$hsllab->id,
                             'id_tiper'=>$hsllab->id_tiper,
-                            'nilai'=>null,
+                            'nilai'=>0,
                             'hasil_teks'=>null,
                             'is_duplo'=>0,
                             'keterangan'=>null,
@@ -111,7 +111,7 @@ class PatientTestController extends Controller
         $patientRegistration=PatientRegistration::select('no_urut')->orderBy('no_urut','desc')->first();
         $no_urut=$patientRegistration?$patientRegistration->no_urut+1:1;
         $no_urut="000".$no_urut;
-        $no_urut=substr($no_urut,-3,3);
+        $no_urut=substr($no_urut,-4,4);
         return $request->ajax()?date('Ymd').$no_urut:abort(403, 'Request harus ajax');
     }
 

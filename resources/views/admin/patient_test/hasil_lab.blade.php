@@ -3,7 +3,9 @@
 @section('content')
     @include('admin.layouts.header', [
         'breadcrumbs'=>['Pasien Test','Tambah'],
-        'text_right'=>'<a href="'.route('patient_test.index').'" class="btn btn-sm btn-neutral">'.__('Kembali').'</a>'
+        'text_right'=>
+            '<a href="'.route('patient_test.index').'" class="btn btn-sm btn-neutral">'.__('Kembali').'</a>
+            <a href="'.route('patient_test.index').'" class="btn btn-sm btn-neutral">'.__('Cetak').'</a>'
     ])
 
     <div class="container-fluid mt--6">

@@ -93,7 +93,7 @@
                         <div class="form-row">
                             <div class="col-3">
                                 <label for="nilai_{{$no_urut}}">{{$hasilLab->nm_hasil}}</label>
-                                <input type="number" value="0" id="nilai_{{$no_urut}}" name="nilai[{{$no_urut}}]" class="form-control">
+                                <input type="number" value="0" step="any" id="nilai_{{$no_urut}}" name="nilai[{{$no_urut}}]" class="form-control">
                                 <small class="form-text text-muted">
                                     Nilai Normal: {{nilai_normal($patientTest,$hasilLab['nilaiNormal'])}}
                                 </small>

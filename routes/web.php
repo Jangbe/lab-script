@@ -61,6 +61,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
 
     // For Patient Test
     Route::resource('patient_registration', 'PatientRegistrationController');
+    Route::get('patient_registration/{patient_registration}/bayar', 'PatientRegistrationController@bayar')->name('patient_registration.bayar');
+    Route::put('patient_registration/{patient_registration}/bayar-setor', 'PatientRegistrationController@bayar_setor')->name('patient_registration.bayar_stor');
 
     // For Patient Test
     Route::resource('patient_test', 'PatientTestController');
@@ -68,6 +70,11 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
 
     // Ajax no pendaftaran
     Route::get('get_no_pendaftaran', 'PatientTestController@getNoPendaftaran');
+
+    // For Print Report Patient
+    Route::get('report/{patient_registration}/nota', 'ReportController@nota')->name('pdf.nota');
+    Route::get('report/{patient_registration}/kwitansi', 'ReportController@kwitansi')->name('pdf.kwitansi');
+    Route::get('generate_pdf','AdminController@pdf');
 
 	Route::resource('user', 'UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);

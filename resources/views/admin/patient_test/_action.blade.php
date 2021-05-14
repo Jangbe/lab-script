@@ -9,6 +9,10 @@
             <i class="fas fa-info-circle"></i>
             {{__('Hasil Pemeriksaan')}}
         </a>
+        <a class="dropdown-item text-primary detail" href="{{route('patient_registration.bayar',$patient->no_pendaftaran)}}">
+            <i class="fas fa-hand-holding-usd"></i>
+            {{__('Pembayaran')}}
+        </a>
         <a href="{{route('patient_registration.edit', $patient->no_pendaftaran)}}" class="dropdown-item text-info">
             <i class="fas fa-edit"></i>{{__('Edit')}}
         </a>

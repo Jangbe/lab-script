@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\PatientTest;
 use Carbon\Carbon;
 use Faker\Generator;
 use Faker\Provider\DateTime;
@@ -95,7 +96,7 @@ if(!function_exists('nilai_normal')){
         $age = explode(' ',diff_years($patient['patient']['tanggal_lahir']))[0];
         if($age<=1){
             return 'bayi '.$nilaiNormal['min_b'].' - '.$nilaiNormal['max_b'];
-        }elseif($age<=5){
+        }elseif($age<=16){
             return 'anak '.$nilaiNormal['min_a'].' - '.$nilaiNormal['max_a'];
         }elseif($patient['patient']['jenis_kelamin']=='L'){
             return 'pria '.$nilaiNormal['min_p'].' - '.$nilaiNormal['max_p'];
@@ -104,3 +105,62 @@ if(!function_exists('nilai_normal')){
         }
     }
 }
+
+if(!function_exists('tanggal')){
+    function tanggal($tanggal)
+    {
+        $bulan=[1=>'Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+        $tanggal = date('d-m-Y', strtotime($tanggal));
+        $tanggal = explode('-',$tanggal);
+        return $tanggal[0].' '.$bulan[intval($tanggal[1])].' '.$tanggal[2];
+    }
+}
+
+if(!function_exists('penyebut')){
+    function penyebut($nilai){
+        $nilai = abs($nilai);
+		$huruf = array("", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas");
+		$temp = "";
+        if ($nilai < 12) {
+			$temp = " ". $huruf[$nilai];
+		} else if ($nilai <20) {
+			$temp = penyebut($nilai - 10). " belas";
+		} else if ($nilai < 100) {
+			$temp = penyebut($nilai/10)." puluh". penyebut($nilai % 10);
+		} else if ($nilai < 200) {
+			$temp = " seratus" . penyebut($nilai - 100);
+		} else if ($nilai < 1000) {
+			$temp = penyebut($nilai/100) . " ratus" . penyebut($nilai % 100);
+		} else if ($nilai < 2000) {
+			$temp = " seribu" . penyebut($nilai - 1000);
+		} else if ($nilai < 1000000) {
+			$temp = penyebut($nilai/1000) . " ribu" . penyebut($nilai % 1000);
+		} else if ($nilai < 1000000000) {
+			$temp = penyebut($nilai/1000000) . " juta" . penyebut($nilai % 1000000);
+		} else if ($nilai < 1000000000000) {
+			$temp = penyebut($nilai/1000000000) . " milyar" . penyebut(fmod($nilai,1000000000));
+		} else if ($nilai < 1000000000000000) {
+			$temp = penyebut($nilai/1000000000000) . " trilyun" . penyebut(fmod($nilai,1000000000000));
+		}
+		return ucfirst($temp);
+    }
+}
+
+if(!function_exists('generate_pdf')){
+    function generate_pdf($patientRegistration,$type=1)
+    {
+        // type 1 => nota
+        // type 2 => kwitansi
+        // type 3 => test result
+        $patientRegistration['patientTest']=PatientTest::where('no_pendaftaran',strval($patientRegistration->no_pendaftaran))->get();
+        if($type==1){
+            $name='Nota - '.$patientRegistration['patient']['nama'];
+            $pdf = PDF::loadView('pdf.nota',compact('patientRegistration'));
+        }else if($type==2){
+            $name='Kwitansi - '.$patientRegistration['patient']['nama'];
+            $pdf = PDF::loadView('pdf.kwitansi',compact('patientRegistration'));
+        }
+        return $pdf->stream($name.'.pdf');
+    }
+}
+
