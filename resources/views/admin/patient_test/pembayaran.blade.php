@@ -76,7 +76,6 @@
                                     <div class="col-6">
                                         <label for="nilai_cito">Cito</label>
                                         <input class="number form-control bayar" type="text" id="nilai_cito" name="nilai_cito" {{$patientRegistration['is_cito']==1?'':'disabled'}} value="{{$patientRegistration['nilai_cito']}}">
-                                        {{-- <input class="number form-control bayar" type="text" id="nilai_cito" name="nilai_cito" value="{{$patientRegistration['nilai_cito']}}"> --}}
                                     </div>
                                 </div>
                             </div>
@@ -146,9 +145,9 @@
         var discount = 0;
         var total_keseluruhan = 0;
         function set_total(id_name=''){
-            let nilai_admin=formated_price($('#nilai_admin').val().trim()==''?0:$('#nilai_admin').val(), '');
-            let nilai_cito=formated_price($('#nilai_cito').val().trim()==''?0:$('#nilai_cito').val(), '');
-            let nilai_discount=formated_price($('#nilai_discount').val().trim()==''?0:$('#nilai_discount').val(), '');
+            let nilai_admin=formated_price($('#nilai_admin').val().trim()==''?0:parseInt($('#nilai_admin').val()), '');
+            let nilai_cito=formated_price($('#nilai_cito').val().trim()==''?0:parseInt($('#nilai_cito').val()), '');
+            let nilai_discount=formated_price($('#nilai_discount').val().trim()==''?0:parseInt($('#nilai_discount').val()), '');
             let discount_persen=$('#discount_persen').val().trim()==''?0:parseFloat($('#discount_persen').val());
 
             // Untuk total
