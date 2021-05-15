@@ -83,7 +83,7 @@
                     <tr>
                         <td class="pl-{{$hasilLab['level_hasil']=='1'?2:4}}">{{$hasilLab['nm_hasil']}}</td>
                         <td class="pl-2 text-center">{{collect($patientRegistration['patientTestResult'])->where('id_hasil_lab',$hasilLab['id'])->first()['nilai']??0}}</td>
-                        <td class="pl-2 text-center">{{$hasilLab['nilaiNormal']['satuan']}}</td>
+                        <td class="pl-2 text-center">{{$hasilLab['nilaiNormal']['satuan']??'-'}}</td>
                         <td class="pl-2 text-center">{{nilai_normal($patientRegistration,$hasilLab['nilaiNormal'],false)}}</td>
                         <td class="pl-2"></td>
                     </tr>
@@ -94,30 +94,3 @@
     </tbody>
 </table>
 @endsection
-
-@push('js')
-    <script>
-        // $.ajax({
-        //     url: '{{url("admin/patient_test/").$patientRegistration["no_pendaftaran"]}}',
-        //     success: function(result){
-        //         console.log(result);
-        //         result.forEach(v=>{
-        //             let id_pendaftar=v.no_pendaftaran.toString();
-        //             id_pendaftar=id_pendaftar.substr(id_pendaftar.length-3,3);
-        //             let id_lab=v.id_hasil_lab.toString();
-        //         })
-        //         result.forEach((items)=>{
-        //             let id_pendaftar=items.no_pendaftaran.toString();
-        //             id_pendaftar=id_pendaftar.substr(id_pendaftar.length-3,3);
-        //             let id_lab=items.id_hasil_lab.toString();
-        //             let no_urut=id_pendaftar+id_lab;
-        //             console.log(no_urut+' => '+items.hasil_teks);
-        //             for(i in items){
-        //                 $('#'+i+'_'+no_urut).val(items[i]);
-        //             }
-        //             $('#is_duplo_'+no_urut).attr('checked',items.is_duplo==1);
-        //         })
-        //     }
-        // })
-    </script>
-@endpush
