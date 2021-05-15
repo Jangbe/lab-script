@@ -17,7 +17,7 @@
         </td>
         <td style="vertical-align: top">
             <h1>K U I T A N S I</h1>
-            <h3 class="font-weight-normal">NOMOR LAB : 2105130001</h3>
+            <h3 class="font-weight-normal">NOMOR LAB : {{substr($patientRegistration['no_pendaftaran'],-10,10)}}</h3>
         </td>
     </tr>
 </table>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\HasilLabTiper;
 use App\Models\PatientTest;
 use Carbon\Carbon;
 use Faker\Generator;
@@ -91,17 +92,17 @@ if(!function_exists('set_wilayah')){
 }
 
 if(!function_exists('nilai_normal')){
-    function nilai_normal($patient,$nilaiNormal)
+    function nilai_normal($patient,$nilaiNormal,$withDetail=true)
     {
         $age = explode(' ',diff_years($patient['patient']['tanggal_lahir']))[0];
         if($age<=1){
-            return 'bayi '.$nilaiNormal['min_b'].' - '.$nilaiNormal['max_b'];
+            return ($withDetail?'bayi ':'').$nilaiNormal['min_b'].' - '.$nilaiNormal['max_b'];
         }elseif($age<=16){
-            return 'anak '.$nilaiNormal['min_a'].' - '.$nilaiNormal['max_a'];
+            return ($withDetail?'anak ':'').$nilaiNormal['min_a'].' - '.$nilaiNormal['max_a'];
         }elseif($patient['patient']['jenis_kelamin']=='L'){
-            return 'pria '.$nilaiNormal['min_p'].' - '.$nilaiNormal['max_p'];
+            return ($withDetail?'pria ':'').$nilaiNormal['min_p'].' - '.$nilaiNormal['max_p'];
         }else{
-            return 'wanita '.$nilaiNormal['min_w'].' - '.$nilaiNormal['max_w'];
+            return ($withDetail?'wanita ':'').$nilaiNormal['min_w'].' - '.$nilaiNormal['max_w'];
         }
     }
 }
@@ -146,6 +147,32 @@ if(!function_exists('penyebut')){
     }
 }
 
+if(!function_exists('hasil_test')){
+    function hasil_test($patientTestResult)
+    {
+        if(!is_null($patientTestResult['id_tiper'])){
+            return $patientTestResult['hasilLabTiper']['nm_tiper'];
+        }else if(!is_null($patientTestResult['nilai'])){
+            return $patientTestResult['nilai'];
+        }else{
+            return $patientTestResult['hasil_teks'];
+        }
+    }
+}
+
+if(!function_exists('hasil_test_normal')){
+    function hasil_test_normal($patientRegistration,$testResult)
+    {
+        if(!is_null($testResult['id_tiper'])){
+            return $testResult['hasilLab']['hasilLabTiper']['nm_tiper'];
+        }else if(!is_null($testResult['nilai'])){
+            return nilai_normal($patientRegistration,$testResult['hasilLab']['nilaiNormal'],false);
+        }else{
+            return $testResult['hasil_teks'];
+        }
+    }
+}
+
 if(!function_exists('generate_pdf')){
     function generate_pdf($patientRegistration,$type=1)
     {
@@ -159,6 +186,10 @@ if(!function_exists('generate_pdf')){
         }else if($type==2){
             $name='Kwitansi - '.$patientRegistration['patient']['nama'];
             $pdf = PDF::loadView('pdf.kwitansi',compact('patientRegistration'));
+        }else{
+            $settings=['dpi' => 300,'fontHeightRatio'=>1,'defaultFont'=>'sans-serif'];
+            $name='Hasil Lab - '.$patientRegistration['patient']['nama'];
+            $pdf = PDF::setOptions($settings)->loadView('pdf.hasil_lab',compact('patientRegistration'))->setPaper('a4', 'portrait')->setWarnings(false);
         }
         return $pdf->stream($name.'.pdf');
     }

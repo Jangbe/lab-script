@@ -4,8 +4,8 @@
     @include('admin.layouts.header', [
         'breadcrumbs'=>['Pasien Test','Tambah'],
         'text_right'=>
-            '<a href="'.route('patient_test.index').'" class="btn btn-sm btn-neutral">'.__('Kembali').'</a>
-            <a href="'.route('patient_test.index').'" class="btn btn-sm btn-neutral">'.__('Cetak').'</a>'
+            '<a href="'.route('pdf.hasil_lab',$patientTest['no_pendaftaran']).'" target="_blank" class="btn btn-sm btn-neutral">'.__('Cetak').'</a>
+            <a href="'.route('patient_test.index').'" class="btn btn-sm btn-neutral">'.__('Kembali').'</a>'
     ])
 
     <div class="container-fluid mt--6">

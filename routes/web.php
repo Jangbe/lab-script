@@ -74,6 +74,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
     // For Print Report Patient
     Route::get('report/{patient_registration}/nota', 'ReportController@nota')->name('pdf.nota');
     Route::get('report/{patient_registration}/kwitansi', 'ReportController@kwitansi')->name('pdf.kwitansi');
+    Route::get('report/{patient_registration}/hasil_lab', 'ReportController@hasil_lab')->name('pdf.hasil_lab');
     Route::get('generate_pdf','AdminController@pdf');
 
 	Route::resource('user', 'UserController', ['except' => ['show']]);

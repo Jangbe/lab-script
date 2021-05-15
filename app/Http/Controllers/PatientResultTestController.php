@@ -47,7 +47,7 @@ class PatientResultTestController extends Controller
                 'is_input'=>1
             ]);
         }
-        return redirect()->route('patient_test.index')->with('success','Hasil pemeriksaan pasien berhasil diperbarui.');
+        return back()->with('success','Hasil pemeriksaan pasien berhasil diperbarui.');
     }
 
     /**

@@ -15,6 +15,10 @@ class ReportController extends Controller
     public function kwitansi(PatientRegistration $patientRegistration)
     {
         return generate_pdf($patientRegistration,2);
-        dd($patientRegistration);
+    }
+
+    public function hasil_lab(PatientRegistration $patientRegistration)
+    {
+        return generate_pdf($patientRegistration,3);
     }
 }
