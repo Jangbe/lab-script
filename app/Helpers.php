@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\HasilLabTiper;
+use App\Models\PatientResultTest;
 use App\Models\PatientTest;
 use Carbon\Carbon;
 use Faker\Generator;
@@ -189,6 +190,7 @@ if(!function_exists('generate_pdf')){
         }else{
             $settings=['dpi' => 300,'fontHeightRatio'=>1,'defaultFont'=>'sans-serif'];
             $name='Hasil Lab - '.$patientRegistration['patient']['nama'];
+            $patientRegistration['patientTestResult']=PatientResultTest::where('no_pendaftaran',strval($patientRegistration['no_pendaftaran']))->get();
             $pdf = PDF::setOptions($settings)->loadView('pdf.hasil_lab',compact('patientRegistration'))->setPaper('a4', 'portrait')->setWarnings(false);
         }
         return $pdf->stream($name.'.pdf');
