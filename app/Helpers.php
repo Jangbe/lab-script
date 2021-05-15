@@ -97,13 +97,13 @@ if(!function_exists('nilai_normal')){
     {
         $age = explode(' ',diff_years($patient['patient']['tanggal_lahir']))[0];
         if($age<=1){
-            return ($withDetail?'bayi ':'').$nilaiNormal['min_b'].' - '.$nilaiNormal['max_b'];
+            return ($withDetail?'bayi ':'').($nilaiNormal['min_b']??0).' - '.($nilaiNormal['max_b']??0);
         }elseif($age<=16){
-            return ($withDetail?'anak ':'').$nilaiNormal['min_a'].' - '.$nilaiNormal['max_a'];
+            return ($withDetail?'anak ':'').($nilaiNormal['min_a']??0).' - '.($nilaiNormal['max_a']??0);
         }elseif($patient['patient']['jenis_kelamin']=='L'){
-            return ($withDetail?'pria ':'').$nilaiNormal['min_p'].' - '.$nilaiNormal['max_p'];
+            return ($withDetail?'pria ':'').($nilaiNormal['min_p']??0).' - '.($nilaiNormal['max_p']??0);
         }else{
-            return ($withDetail?'wanita ':'').$nilaiNormal['min_w'].' - '.$nilaiNormal['max_w'];
+            return ($withDetail?'wanita ':'').($nilaiNormal['min_w']??0).' - '.($nilaiNormal['max_w']??0);
         }
     }
 }

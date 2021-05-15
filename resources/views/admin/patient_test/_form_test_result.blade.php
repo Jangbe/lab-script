@@ -100,7 +100,7 @@
                             </div>
                             <div class="col-2">
                                 <label for="satuan_{{$no_urut}}">Satuan</label>
-                                <input type="text" class="form-control" id="satuan_{{$no_urut}}" disabled value="{{$hasilLab['nilaiNormal']['satuan']}}">
+                                <input type="text" class="form-control" id="satuan_{{$no_urut}}" disabled value="{{$hasilLab['nilaiNormal']['satuan']??'-'}}">
                             </div>
                             <div class="col-1">
                                 <label for="is_duplo_{{$no_urut}}">Duplo</label>
