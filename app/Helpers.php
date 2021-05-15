@@ -118,6 +118,16 @@ if(!function_exists('tanggal')){
     }
 }
 
+if(!function_exists('get_jam')){
+    function get_jam($time)
+    {
+        $jam = explode(' ',$time)[1];
+        $jam = explode(':', $jam);
+        unset($jam[2]);
+        return implode(':',$jam);
+    }
+}
+
 if(!function_exists('penyebut')){
     function penyebut($nilai){
         $nilai = abs($nilai);
@@ -145,32 +155,6 @@ if(!function_exists('penyebut')){
 			$temp = penyebut($nilai/1000000000000) . " trilyun" . penyebut(fmod($nilai,1000000000000));
 		}
 		return ucfirst($temp);
-    }
-}
-
-if(!function_exists('hasil_test')){
-    function hasil_test($patientTestResult)
-    {
-        if(!is_null($patientTestResult['id_tiper'])){
-            return $patientTestResult['hasilLabTiper']['nm_tiper'];
-        }else if(!is_null($patientTestResult['nilai'])){
-            return $patientTestResult['nilai'];
-        }else{
-            return $patientTestResult['hasil_teks'];
-        }
-    }
-}
-
-if(!function_exists('hasil_test_normal')){
-    function hasil_test_normal($patientRegistration,$testResult)
-    {
-        if(!is_null($testResult['id_tiper'])){
-            return $testResult['hasilLab']['hasilLabTiper']['nm_tiper'];
-        }else if(!is_null($testResult['nilai'])){
-            return nilai_normal($patientRegistration,$testResult['hasilLab']['nilaiNormal'],false);
-        }else{
-            return $testResult['hasil_teks'];
-        }
     }
 }
 

@@ -98,10 +98,10 @@ class PatientRegistrationController extends Controller
 
         if($request->has('id_item')){
             // Delete the patient's test where not in select
-            $deleted_patient_tests=PatientTest::where('no_pendaftaran',strval($request->no_pendaftaran))->whereNotIn('id_item',$request->id_item)->get();
-            foreach ($deleted_patient_tests as $test) {
-                foreach($test['item']['hasilLab'] as $hasilLab){
-                    $hasilLab->delete();
+            $deleted_patient_test_results=PatientTest::where('no_pendaftaran',strval($request->no_pendaftaran))->whereNotIn('id_item',$request->id_item)->get();
+            foreach ($deleted_patient_test_results as $test) {
+                foreach ($test['item']['hasilLab'] as $hasilLab) {
+                    PatientResultTest::where(['no_pendaftaran'=>strval($request->no_pendaftaran),'id_hasil_lab'=>$hasilLab['id']])->delete();
                 }
             }
             PatientTest::where('no_pendaftaran',strval($request->no_pendaftaran))->whereNotIn('id_item',$request->id_item)->delete();

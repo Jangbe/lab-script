@@ -11,7 +11,7 @@
         <td style="width: 33%">{{substr($patientRegistration['no_pendaftaran'],-10,10)}}</td>
         <th style="width: 37%">No. Rek. Med</th>
         <td style="width: 30px">:</td>
-        <td>{{$patientRegistration['no_pendaftaran']}}</td>
+        <td>{{$patientRegistration['no_rm']}}</td>
     </tr>
     <tr>
         <th>Nama</th>
@@ -35,7 +35,7 @@
         <td rowspan="4" style="vertical-align: top;">{{$patientRegistration['patient']['alamat1'].' '.$patientRegistration['patient']['alamat2']}}</td>
         <th>Jam Pemeriksaan</th>
         <td>:</td>
-        <td>{{explode(' ',$patientRegistration['created_at'])[1]}}</td>
+        <td>{{get_jam($patientRegistration['created_at'])}}</td>
     </tr>
 </table>
 <table style="width: 100%" class="table-bordered">
@@ -54,17 +54,70 @@
                 <tr>
                     <td colspan="5" class="text-center font-weight-bold">{{$test['item']['labGroup']['lab_group_name']}}</td>
                 </tr>
-                @foreach ($patientRegistration['patientTestResult'] as $testResult)
+                @foreach ($test['item']['hasilLab']->sortBy('no_urut') as $no => $hasilLab)
+                    {{-- Jika jenis hasil lab nya judul --}}
+                    @if ($hasilLab->is_judul==1)
                     <tr>
-                        <td class="pl-{{$testResult['hasilLab']['level_hasil']=='1'?2:4}}">{{$testResult['hasilLab']['nm_hasil']}}</td>
-                        <td class="pl-2 text-center">{{hasil_test($testResult)}}</td>
-                        <td class="pl-2 text-center">{{$testResult['hasilLab']['nilaiNormal']['satuan']}}</td>
-                        <td class="pl-2 text-center">{{hasil_test_normal($patientRegistration,$testResult)}}</td>
-                        <td class="pl-2">{{$testResult['keterangan']}}</td>
+                        <td class="pl-2" colspan="5">{{$hasilLab['nm_hasil']}}</td>
                     </tr>
+                    {{-- Jika jenis hasil lab nya berupa select options --}}
+                    @elseif (!is_null($hasilLab['id_tiper']))
+                    <tr>
+                        <td class="pl-{{$hasilLab['level_hasil']=='1'?2:4}}">{{$hasilLab['nm_hasil']}}</td>
+                        <td class="pl-2 text-center">{{collect($patientRegistration['patientTestResult'])->where('id_hasil_lab',$hasilLab['id'])->first()['hasilLabTiper']['nm_tiper']}}</td>
+                        <td class="pl-2 text-center"></td>
+                        <td class="pl-2 text-center">{{$hasilLab['hasilLabTiper']['nm_tiper']}}</td>
+                        <td class="pl-2"></td>
+                    </tr>
+                    {{-- Jika jenis hasil lab nya teks --}}
+                    @elseif($hasilLab->is_teks==1)
+                    <tr>
+                        <td class="pl-{{$hasilLab['level_hasil']=='1'?2:4}}">{{$hasilLab['nm_hasil']}}</td>
+                        <td class="pl-2 text-center">{{collect($patientRegistration['patientTestResult'])->where('id_hasil_lab',$hasilLab['id'])->first()['hasil_teks']??''}}</td>
+                        <td class="pl-2 text-center"></td>
+                        <td class="pl-2 text-center"></td>
+                        <td class="pl-2"></td>
+                    </tr>
+                    {{-- Jika jenis hasil lab nya angka dan mempunyai nilai normal --}}
+                    @elseif($hasilLab->is_nilai_normal==1)
+                    <tr>
+                        <td class="pl-{{$hasilLab['level_hasil']=='1'?2:4}}">{{$hasilLab['nm_hasil']}}</td>
+                        <td class="pl-2 text-center">{{collect($patientRegistration['patientTestResult'])->where('id_hasil_lab',$hasilLab['id'])->first()['nilai']??0}}</td>
+                        <td class="pl-2 text-center">{{$hasilLab['nilaiNormal']['satuan']}}</td>
+                        <td class="pl-2 text-center">{{nilai_normal($patientRegistration,$hasilLab['nilaiNormal'],false)}}</td>
+                        <td class="pl-2"></td>
+                    </tr>
+                    @endif
                 @endforeach
             @endif
         @endforeach
     </tbody>
 </table>
 @endsection
+
+@push('js')
+    <script>
+        // $.ajax({
+        //     url: '{{url("admin/patient_test/").$patientRegistration["no_pendaftaran"]}}',
+        //     success: function(result){
+        //         console.log(result);
+        //         result.forEach(v=>{
+        //             let id_pendaftar=v.no_pendaftaran.toString();
+        //             id_pendaftar=id_pendaftar.substr(id_pendaftar.length-3,3);
+        //             let id_lab=v.id_hasil_lab.toString();
+        //         })
+        //         result.forEach((items)=>{
+        //             let id_pendaftar=items.no_pendaftaran.toString();
+        //             id_pendaftar=id_pendaftar.substr(id_pendaftar.length-3,3);
+        //             let id_lab=items.id_hasil_lab.toString();
+        //             let no_urut=id_pendaftar+id_lab;
+        //             console.log(no_urut+' => '+items.hasil_teks);
+        //             for(i in items){
+        //                 $('#'+i+'_'+no_urut).val(items[i]);
+        //             }
+        //             $('#is_duplo_'+no_urut).attr('checked',items.is_duplo==1);
+        //         })
+        //     }
+        // })
+    </script>
+@endpush
