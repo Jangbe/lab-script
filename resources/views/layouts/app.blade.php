@@ -102,7 +102,7 @@
         <script>
             function formated_price(x, separator='.',abs=true) {
                 if(separator==''){
-                    return x.toString().replaceAll('.', '');
+                    return x.toString().replace(/\./g, '');
                 }else{
                     if(abs){
                         x=Math.abs(x);
