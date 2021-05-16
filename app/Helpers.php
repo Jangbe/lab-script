@@ -3,6 +3,7 @@
 use App\Models\HasilLabTiper;
 use App\Models\PatientResultTest;
 use App\Models\PatientTest;
+use App\Models\Setting;
 use Carbon\Carbon;
 use Faker\Generator;
 use Faker\Provider\DateTime;
@@ -181,3 +182,11 @@ if(!function_exists('generate_pdf')){
     }
 }
 
+if(!function_exists('setting')){
+    function setting($key, $index)
+    {
+        $setting = Setting::where('key',$key)->first();
+        $value = collect(json_decode($setting->value))->toArray();
+        return $value[$index];
+    }
+}

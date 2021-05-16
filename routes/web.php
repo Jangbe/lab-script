@@ -77,6 +77,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
     Route::get('report/{patient_registration}/hasil_lab', 'ReportController@hasil_lab')->name('pdf.hasil_lab');
     Route::get('generate_pdf','AdminController@pdf');
 
+    // For setting the web
+    Route::resource('setting', 'SettingController');
+
 	Route::resource('user', 'UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);

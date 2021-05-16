@@ -9,11 +9,11 @@
 <table style="width: 100%">
     <tr>
         <td>
-            <h3 class="mb--2">Labolatorium Klinik Pratama</h3>
-            <h1 class="my--1">Sinergi Lisna Medika</h1>
-            <small class="text-sm">JL. Sunan Kalijaga No. 63 Blok M, Jakarta Selatan</small><br>
-            <small class="text-sm">E-Mail: sinergilisnamedika@gmail.com</small><br>
-            <small class="text-sm">No. Telp. (021) 726-2453 No Fax. (021) 726-2453</small>
+            <h3 class="mb--2">{{setting('identitas','uraian')}}</h3>
+            <h1 class="my--1">{{setting('identitas','nama')}}</h1>
+            <small class="text-sm">{{setting('identitas','alamat')}}</small><br>
+            <small class="text-sm">E-Mail: {{setting('identitas','email')}}</small><br>
+            <small class="text-sm">No. Telp. {{setting('identitas','no_telp')}} No Fax. {{setting('identitas','no_fax')}}</small>
         </td>
         <td style="vertical-align: top">
             <h1>K U I T A N S I</h1>
