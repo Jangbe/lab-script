@@ -183,7 +183,6 @@
                     id_pendaftar=id_pendaftar.substr(id_pendaftar.length-3,3);
                     let id_lab=items.id_hasil_lab.toString();
                     let no_urut=id_pendaftar+id_lab;
-                    console.log(no_urut+' => '+items.hasil_teks);
                     for(i in items){
                         $('#'+i+'_'+no_urut).val(items[i]);
                     }
