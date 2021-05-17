@@ -151,6 +151,8 @@
             @endif
         </tbody>
     </table>
-    <div class="page-break"></div>
+    @if (!$loop->last)
+        <div class="page-break"></div>
+    @endif
 @endforeach
 @endsection
