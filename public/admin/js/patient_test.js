@@ -55,7 +55,7 @@ function calculate_age(dob) {
     return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
-function autotab(current,to, max,e){
+function autotab(current,to, max){
     if (current[0].value.length>=max) {
         current[0].value = current[0].value.slice(0,max);
         to.focus();
@@ -64,14 +64,28 @@ function autotab(current,to, max,e){
 
 
 // Input rt rw kodepos
-$("#rt").keyup(function (e) {
-    autotab($(this), $('#rw'),3,e);
+$("#rt").keyup(function () {
+    autotab($(this), $('#rw'),3);
 });
-$("#rw").keyup(function (e) {
-    autotab($(this), $('#kodepos'),3,e);
+$("#rw").keyup(function () {
+    autotab($(this), $('#kodepos'),3);
 });
-$("#kodepos").keyup(function (e) {
-    autotab($(this), $('#kd_provinsi'),6,e);
+$("#kodepos").keyup(function () {
+    autotab($(this), $('#kd_provinsi'),5);
+});
+function focusout(node,max){
+    let value = '00000'+node.val();
+    value = value.substr(value.length-max,max)
+    node.val(value);
+}
+$("#rt").focusout(function () {
+    focusout($(this),3)
+});
+$("#rw").focusout(function () {
+    focusout($(this),3)
+});
+$("#kodepos").focusout(function () {
+    focusout($(this),5)
 });
 
 $('.kota').hide();
