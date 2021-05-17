@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-4">
                     <label for="kodepos">Kodepos</label>
-                    <input type="number" value="{{old('kodepos')}}" id="kodepos" placeholder="000000" name="kodepos" class="form-control inputs" maxlength="6">
+                    <input type="number" value="{{old('kodepos')}}" id="kodepos" placeholder="00000" name="kodepos" class="form-control inputs" maxlength="5">
                     @error('kodepos')
                         <i class="text-danger text-sm italic">{{$message}}</i>
                     @enderror

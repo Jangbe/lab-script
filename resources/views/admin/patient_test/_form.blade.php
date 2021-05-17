@@ -160,7 +160,7 @@
                 </div>
                 <div class="col-4">
                     <label for="kodepos">Kodepos</label>
-                    <input type="number" id="kodepos" value="{{old('kodepos')}}" placeholder="000000" name="kodepos" class="form-control inputs" maxlength="6">
+                    <input type="number" id="kodepos" value="{{old('kodepos')}}" placeholder="00000" name="kodepos" class="form-control inputs" maxlength="6">
                     @error('kodepos')
                         <i class="text-sm text-danger">{{$message}}</i>
                     @enderror
