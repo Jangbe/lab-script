@@ -70,6 +70,14 @@ class SettingController extends Controller
      */
     public function update(Request $request, Setting $setting)
     {
+        if($setting->id==2){
+            $request->validate([
+                'header'=>'nullable|mimes:png,jpg'
+            ]);
+        }
+        if($request->hasFile('header')){
+            $request->file('header')->move(public_path('img/'),'header.png');
+        }
         $setting->update(['value'=>json_encode($request->except('_token','_method'))]);
         return back()->with('success', "Pengaturan $setting->name berhasil diubah.");
     }

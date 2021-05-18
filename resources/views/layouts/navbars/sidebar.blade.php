@@ -162,7 +162,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('setting.index') }}">
+                    <a class="nav-link" id="settings" href="{{ route('setting.index') }}">
                         <i class="ni ni-settings-gear-65 text-dark"></i> {{ __('Pengaturan') }}
                     </a>
                 </li>
