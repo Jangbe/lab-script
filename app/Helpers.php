@@ -178,7 +178,7 @@ if(!function_exists('generate_pdf')){
             $patientRegistration['patientTestResult']=PatientResultTest::where('no_pendaftaran',strval($patientRegistration['no_pendaftaran']))->get();
             $show_header=setting('pdf','show_header')==1?3.9:0.0;
             $show_penanggung_jawab=setting('pdf','show_penanggung_jawab')==1?0.8:0.0;
-            $margin_top=(4.2+$show_header+$show_penanggung_jawab).'cm';
+            $margin_top=(3.2+$show_header+$show_penanggung_jawab).'cm';
             $pdf = PDF::setOptions($settings)->loadView('pdf.hasil_lab',compact('patientRegistration','margin_top'))->setPaper('a4', 'portrait')->setWarnings(false);
         }
         return $pdf->stream($name.'.pdf');

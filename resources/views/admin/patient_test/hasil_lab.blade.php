@@ -53,7 +53,7 @@
                                 <div class="form-row mb-2">
                                     <label for="id_penanggung_jawab" class="col-5 col-form-label col-form-label-sm">Penanggung Jawab</label>
                                     <div class="col-7">
-                                        <input type="text" disabled class="form-control form-control-sm" id="id_penanggung_jawab" value="{{$patientTest['penanggungJawab']['nama']}}">
+                                        <input type="text" disabled class="form-control form-control-sm" id="id_penanggung_jawab" value="{{$patientTest['penanggungJawab']['nama']??''}}">
                                     </div>
                                 </div>
                             </div>

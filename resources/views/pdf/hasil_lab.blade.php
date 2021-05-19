@@ -18,6 +18,7 @@
         margin-left: 1cm;
         margin-right: 1cm;
         margin-bottom: 1cm;
+        font-size: 36px;
     }
 
     /** Define the header rules **/
@@ -49,7 +50,7 @@
 </style>
 @endsection
 @section('content')
-<div id="header">
+<div id="header" class="text-dark">
     @if (setting('pdf','show_header')==1)
     <img src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('img/header.png'))) }}"
         alt="" srcset=""
@@ -63,36 +64,31 @@
     <h3 class="text-center" style="font-family: sans-serif">HASIL PEMERIKSAAN LABORATORIUM</h3>
     <table style="width: 100%">
         <tr>
-            <th style="width: 17%">No. Lab</th>
+            <th style="width: 17%">Nomor</th>
             <td style="width: 30px">:</td>
-            <td style="width: 33%">{{substr($patientRegistration['no_pendaftaran'],-10,10)}}</td>
-            <th style="width: 37%">No. Rek. Med</th>
+            <td style="width: 53%">{{substr($patientRegistration['no_pendaftaran'],-10,10).' / '.$patientRegistration['no_rm']}}</td>
+            <th style="width: 12%">Dokter</th>
             <td style="width: 30px">:</td>
-            <td>{{$patientRegistration['no_rm']}}</td>
+            <td>{{$patientRegistration['Pengirim']['nama']}}</td>
         </tr>
         <tr>
-            <th>Nama</th>
+            <th>Nama / jns kelamin</th>
             <td>:</td>
-            <td>{{$patientRegistration['patient']['nama']}}</td>
-            <th>Doktor Pengirim</th>
-            <td>:</td>
-            <td>{{$patientRegistration['pengirim']['nama']}}</td>
-        </tr>
-        <tr>
-            <th>Umur / Kel.</th>
-            <td>:</td>
-            <td>{{diff_years($patientRegistration['patient']['tanggal_lahir'])}} / {{$patientRegistration['patient']['jenis_kelamin']=='L'?'Laki-laki':'Perempuan'}}</td>
-            <th>Tanggal Pemeriksaan</th>
+            <td>{{$patientRegistration['patient']['nama'].' / '.$patientRegistration['patient']['jenis_kelamin']=='L'?'Laki-laki':'Perempuan'}}</td>
+            <th>Tanggal</th>
             <td>:</td>
             <td>{{tanggal($patientRegistration['created_at'])}}</td>
+        </tr>
+        <tr>
+            <th>Tgl Lahir / Umur</th>
+            <td>:</td>
+            <td>{{tanggal($patientRegistration['patient']['tanggal_lahir']).diff_years($patientRegistration['patient']['tanggal_lahir'])}}</td>
+            
         </tr>
         <tr>
             <th>Alamat</th>
             <td>:</td>
             <td rowspan="4" style="vertical-align: top;">{{$patientRegistration['patient']['alamat1'].' '.$patientRegistration['patient']['alamat2']}}</td>
-            <th>Jam Pemeriksaan</th>
-            <td>:</td>
-            <td>{{get_jam($patientRegistration['created_at'])}}</td>
         </tr>
     </table>
 </div>
@@ -154,7 +150,7 @@
     @if (!$loop->last)
         <div class="page-break"></div>
     @else
-        <table style="width: 100%">
+        <table style="width: 100%" class="text-dark">
             <tr>
                 <td style="width: 60%"></td>
                 <td class="text-center text-dark mt-3">
