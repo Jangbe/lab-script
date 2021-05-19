@@ -7,7 +7,8 @@
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Argon Dashboard') }}</title>
+        {{-- <title>{{ config('app.name', 'Argon Dashboard') }}</title> --}}
+        <title>{{setting('identitas','nama')}}</title>
         <!-- Favicon -->
         <link href="{{ asset('argon') }}/img/brand/favicon.png" rel="icon" type="image/png">
         <!-- Fonts -->
@@ -17,6 +18,7 @@
         <!-- Icons -->
         <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
         <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="{{ asset('assets') }}/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
         <link rel="stylesheet" href="{{ asset('assets') }}/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
         <link rel="stylesheet" href="{{ asset('assets') }}/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css">
@@ -95,6 +97,10 @@
         <!-- SweetAlert2 -->
         <script src="{{ asset('assets/vendor/sweetalert2/dist/sweetalert2.min.js') }}"></script>
         <script src="{{ asset('assets/vendor/select2/dist/js/select2.full.min.js') }}"></script>
+
+        {{-- Chart JS --}}
+        <script src="{{ asset('argon') }}/vendor/chart.js/dist/Chart.min.js"></script>
+        <script src="{{ asset('argon') }}/vendor/chart.js/dist/Chart.extension.js"></script>
 
         <!-- Argon JS -->
         <script src="{{ asset('assets') }}/js/argon.js?v=1.2.0"></script>

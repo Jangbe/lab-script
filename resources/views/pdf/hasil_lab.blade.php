@@ -153,6 +153,16 @@
     </table>
     @if (!$loop->last)
         <div class="page-break"></div>
+    @else
+        <table style="width: 100%">
+            <tr>
+                <td style="width: 60%"></td>
+                <td class="text-center text-dark mt-3">
+                    <span>Pemeriksa</span><br><br><br>
+                    <span>{{$test['executors']['nama']??''}}</span>
+                </td>
+            </tr>
+        </table>
     @endif
 @endforeach
 @endsection

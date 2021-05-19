@@ -3,86 +3,82 @@
         <div class="header-body">
             <!-- Card stats -->
             <div class="row">
-                <div class="col-xl-3 col-lg-6">
+                <div class="col-xl-3 col-lg-6 col-6">
                     <div class="card card-stats mb-4 mb-xl-0">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Traffic</h5>
-                                    <span class="h2 font-weight-bold mb-0">350,897</span>
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Pasien</h5>
+                                    <span class="h2 font-weight-bold mb-0">{{$patients}}</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
-                                        <i class="fas fa-chart-bar"></i>
+                                        <i class="fas fa-user-injured"></i>
                                     </div>
                                 </div>
                             </div>
                             <p class="mt-3 mb-0 text-muted text-sm">
-                                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                                <span class="text-nowrap">Since last month</span>
+                                <a href="{{route('patient.index')}}">Lihat lebih lanjut..</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6">
+                <div class="col-xl-3 col-lg-6 col-6">
                     <div class="card card-stats mb-4 mb-xl-0">
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">New users</h5>
-                                    <span class="h2 font-weight-bold mb-0">2,356</span>
+                            <div class="row no-gutters">
+                                <div class="col-8">
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Pemeriksaan</h5>
+                                    <span class="h2 font-weight-bold mb-0">{{$patient_tests}}</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
-                                        <i class="fas fa-chart-pie"></i>
+                                        <i class="fas fa-notes-medical"></i>
                                     </div>
                                 </div>
                             </div>
                             <p class="mt-3 mb-0 text-muted text-sm">
-                                <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 3.48%</span>
-                                <span class="text-nowrap">Since last week</span>
+                                <a href="{{route('patient_test.index')}}">Lihat lebih lanjut...</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6">
+                <div class="col-xl-3 col-lg-6 col-6">
                     <div class="card card-stats mb-4 mb-xl-0">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Sales</h5>
-                                    <span class="h2 font-weight-bold mb-0">924</span>
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Pelaksana</h5>
+                                    <span class="h2 font-weight-bold mb-0">{{$executors}}</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                                        <i class="fas fa-users"></i>
+                                        <i class="fas fa-user-nurse"></i>
                                     </div>
                                 </div>
                             </div>
                             <p class="mt-3 mb-0 text-muted text-sm">
-                                <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
-                                <span class="text-nowrap">Since yesterday</span>
+                                <a href="{{route('executor.index')}}">Lihat lebih lanjut...</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6">
+                <div class="col-xl-3 col-lg-6 col-6">
                     <div class="card card-stats mb-4 mb-xl-0">
                         <div class="card-body">
-                            <div class="row">
+                            <div class="row no-gutters">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Performance</h5>
-                                    <span class="h2 font-weight-bold mb-0">49,65%</span>
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Pendapatan</h5>
+                                    <span class="h2 font-weight-bold mb-0">{{formated_price($pendapatan)}}</span>
                                 </div>
-                                <div class="col-auto">
+                                {{-- <div class="col-auto">
                                     <div class="icon icon-shape bg-info text-white rounded-circle shadow">
                                         <i class="fas fa-percent"></i>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                             <p class="mt-3 mb-0 text-muted text-sm">
-                                <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
-                                <span class="text-nowrap">Since last month</span>
+                                <span class="text-nowrap">Total keseluruhan</span>
                             </p>
                         </div>
                     </div>

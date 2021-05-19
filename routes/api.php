@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
@@ -18,5 +19,8 @@ use App\Http\Controllers\MenuController;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('dashboard-pasien',[AdminController::class,'dashboard_patient'])->name('admin.dashboard-pasien');
+Route::post('dashboard-pemeriksaan',[AdminController::class,'dashboard_pemeriksaan'])->name('admin.dashboard-pemeriksaan');
 
 Route::get('get_menu', [MenuController::class, 'getMenu']);

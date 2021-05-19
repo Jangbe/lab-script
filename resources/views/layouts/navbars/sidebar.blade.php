@@ -79,18 +79,18 @@
             <!-- Navigation -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}">
+                    <a class="nav-link" id="dashboard" href="{{ route('home') }}">
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
                 <div class="nav-item">
                     <a href="{{ route('executor.index') }}" class="nav-link" id="pelaksana">
-                        <i class="ni ni-single-02 text-info"></i>{{__('Pelaksana')}}
+                        <i class="fas fa-user-nurse text-info"></i>{{__('Pelaksana')}}
                     </a>
                 </div>
                 <div class="nav-item">
                     <a href="{{ route('patient.index') }}" class="nav-link" id="pasien">
-                        <i class="ni ni-support-16" style="color: #e2de00;"></i>{{__('Pasien')}}
+                        <i class="fas fa-user-injured" style="color: #e2de00;"></i>{{__('Pasien')}}
                     </a>
                 </div>
                 <div class="nav-item">
