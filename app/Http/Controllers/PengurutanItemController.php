@@ -21,7 +21,7 @@ class PengurutanItemController extends Controller
 
         return $request->ajax()?$dt->eloquent($items)
         ->addColumn('group_name', function($group){
-            return $group['labGroup']['lab_group_name'];
+            return $group['labGroup']['lab_group_name']??'';
         })
         ->addColumn('jml_pemeriksaan',function($item){
             return count($item['hasilLab']);
