@@ -25,7 +25,7 @@
                         <h4 class="mb-4">{{$hasilLab->nm_hasil}}</h4>
                     {{-- Jika jenis hasil lab nya berupa select options --}}
                     @elseif (!is_null($hasilLab['id_tiper']))
-                    <div class="form-group">
+                    <div class="form-group {{$hasilLab->level_hasil==1?'':'ml-3'}}">
                         <div class="form-row">
                             <div class="col-md-5 col-9">
                                 <label for="id_tiper_{{$no_urut}}">{{$hasilLab->nm_hasil}}</label>
@@ -59,7 +59,7 @@
                     </div>
                     {{-- Jika jenis hasil lab nya teks --}}
                     @elseif($hasilLab->is_teks==1)
-                    <div class="form-group">
+                    <div class="form-group {{$hasilLab->level_hasil==1?'':'ml-3'}}">
                         <div class="form-row">
                             <div class="col-md-5 col-9">
                                 <label for="hasil_teks_{{$no_urut}}">{{$hasilLab->nm_hasil}}</label>
@@ -89,7 +89,7 @@
                     </div>
                     {{-- Jika jenis hasil lab nya angka dan mempunyai nilai normal --}}
                     @elseif($hasilLab->is_nilai_normal==1)
-                    <div class="form-group">
+                    <div class="form-group {{$hasilLab->level_hasil==1?'':'ml-3'}}">
                         <div class="form-row">
                             <div class="col-md-3 col-5">
                                 <label for="nilai_{{$no_urut}}">{{$hasilLab->nm_hasil}}</label>
@@ -123,7 +123,7 @@
                     </div>
                     @endif
                     @if (!$loop->last)
-                        <hr class="my-1 mt--3 border-primary">
+                        <hr class="my-1 mt--3 border-primary {{$hasilLab->level_hasil==1?'':'ml-2'}}">
                     @endif
                 @endforeach
             </div>

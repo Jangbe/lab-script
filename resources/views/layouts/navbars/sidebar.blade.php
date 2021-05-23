@@ -126,6 +126,11 @@
                                     {{ __('Pemeriksaan') }}
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pengurutan-menu" href="{{ route('pengurutan.index') }}">
+                                    {{ __('Pengurutan Pemeriksaan') }}
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>

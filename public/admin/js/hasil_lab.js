@@ -1,7 +1,7 @@
 (function($){
     var status = null;
 
-    $('#hasil-menu').addClass('active');
+    $('#hasil-menu').addClass('active').removeClass('collapsed').next().addClass('show');
     $('#pemeriksaan-menu').addClass('active');
 
     "use_strict";

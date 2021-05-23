@@ -1,7 +1,7 @@
 (function($){
     var status = null;
 
-    $('#alat-menu').addClass('active');
+    $('#alat-menu').addClass('active').removeClass('collapsed').next().addClass('show');
     $('#alat-lab-menu').addClass('active');
 
     "use_strict";

@@ -34,6 +34,9 @@ class HasilLabController extends Controller
         ->addColumn('pemeriksaan', function($item){
             return $item['item']['nm_item'];
         })
+        ->editColumn('level_hasil',function($level){
+            return $level['level_hasil']==1?'Pemeriksaan':'Sub Pemeriksaan';
+        })
         ->addColumn('action', function($item){
             return view('admin.hasil_lab._action', compact('item'));
         })->toJson();

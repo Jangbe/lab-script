@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::view('example', 'example');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -42,6 +44,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
     // For hasil lab
     Route::resource('hasil_lab', 'HasilLabController');
     Route::get('get_hsllab', 'HasilLabController@ajax');
+
+    // For pengurutan hasil lab
+    Route::resource('pengurutan', 'PengurutanItemController');
 
     // For item tarif
     Route::resource('item_tarif','ItemTarifController');
