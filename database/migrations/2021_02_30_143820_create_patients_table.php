@@ -17,6 +17,7 @@ class CreatePatientsTable extends Migration
             $table->id();
             $table->string('noreg', 40)->unique();
             $table->string('nama', 100);
+            $table->string('tempat_lahir', 45)->nullable();
             $table->smallInteger('hub')->nullable();
             $table->text('alamat1')->nullable();
             $table->text('alamat2')->nullable();

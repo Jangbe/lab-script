@@ -14,9 +14,11 @@ class CreateHasilLabsTable extends Migration
     public function up()
     {
         Schema::create('hasil_labs', function (Blueprint $table) {
-            $table->id();
-            $table->integer('id_item')->index();
-            $table->integer('id_tiper')->index()->nullable();
+            $table->increments('id');
+            $table->unsignedInteger('id_tipe')->nullable();
+            $table->unsignedInteger('id_item')->nullable();
+            $table->unsignedInteger('id_tiper')->nullable();
+            $table->integer('no_urut')->nullable();
             $table->string('nm_hasil',45);
             $table->integer('level_hasil')->nullable();
             $table->boolean('is_judul')->default(0);
@@ -28,6 +30,12 @@ class CreateHasilLabsTable extends Migration
             $table->boolean('is_rumus')->default(0)->nullable();
             $table->text('ket_rumus')->nullable();
             $table->timestamps();
+            $table->foreign('id_tipe')
+                  ->on('hasil_lab_tipes')->references('id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_tiper')
+                  ->on('hasil_lab_tipers')->references('id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_item')
+                  ->on('items')->references('id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

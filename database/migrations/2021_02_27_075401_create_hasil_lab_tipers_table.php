@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddForeignToHasilLabTipersTable extends Migration
+class CreateHasilLabTipersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class AddForeignToHasilLabTipersTable extends Migration
      */
     public function up()
     {
-        Schema::table('hasil_lab_tipers', function (Blueprint $table) {
-            $table->increments('id')->change();
-            $table->unsignedInteger('id_tipe')->change();
+        Schema::create('hasil_lab_tipers', function (Blueprint $table) {
+            $table->increments('id');
+            $table->unsignedInteger('id_tipe');
+            $table->string('nm_tiper',45);
+            $table->timestamps();
             $table->foreign('id_tipe')
                 ->on('hasil_lab_tipes')->references('id')->onDelete('cascade')->onUpdate('cascade');
         });
@@ -28,8 +30,6 @@ class AddForeignToHasilLabTipersTable extends Migration
      */
     public function down()
     {
-        Schema::table('hasil_lab_tipers', function (Blueprint $table) {
-            $table->dropForeign(['id_tipe']);
-        });
+        Schema::dropIfExists('hasil_lab_tipers');
     }
 }

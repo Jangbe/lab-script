@@ -14,13 +14,16 @@ class CreateItemTarifsTable extends Migration
     public function up()
     {
         Schema::create('item_tarifs', function (Blueprint $table) {
-            $table->integer('id_item')->index();
+            $table->increments('id');
+            $table->unsignedInteger('id_item')->index();
             $table->integer('tarif_bayar')->default(0);
             $table->integer('tarif_bpjs')->default(0);
             $table->integer('tarif_jaminan')->default(0);
             $table->date('tanggal_berlaku')->default(date('Y-m-d'));
             $table->boolean('is_active');
             $table->timestamps();
+            $table->foreign('id_item')
+                ->on('items')->references('id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

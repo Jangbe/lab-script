@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePatientTestsTable extends Migration
+class CreatePatientTestResultsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,8 @@ class CreatePatientTestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('patient_tests', function (Blueprint $table) {
+        Schema::create('patient_test_results', function (Blueprint $table) {
+            $table->id();
             $table->bigInteger('no_pendaftaran',false,true);
             $table->unsignedInteger('id_hasil_lab');
             $table->unsignedInteger('id_tiper')->nullable();
@@ -40,6 +41,6 @@ class CreatePatientTestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('patient_tests');
+        Schema::dropIfExists('patient_test_results');
     }
 }

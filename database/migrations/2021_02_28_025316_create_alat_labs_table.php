@@ -14,7 +14,7 @@ class CreateAlatLabsTable extends Migration
     public function up()
     {
         Schema::create('alat_labs', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('nm_alat',40);
             $table->string('uraian');
             $table->integer('com')->nullable();

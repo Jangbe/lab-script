@@ -1,228 +1,186 @@
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (14, 12, 16, 13, 18, 'g/dL', '2019-01-09 00:59:21', '2020-03-11 16:34:15.142', 11, 16, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (16, 150, 440, 150, 440, 'ribu/uL', '2019-01-09 00:59:21', '2020-03-05 16:57:24.924', 150, 450, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (15, 37, 47, 39, 50, '%', '2019-01-09 00:59:21', '2020-03-08 09:26:19.091', 36, 45, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (17, 5, 11, 5, 11, 'ribu/uL', '2019-01-09 00:59:21', '2020-03-05 16:57:56.513', 5, 11, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (2, 5, 11, 5, 11, 'ribu/uL', '2019-01-09 00:59:21', '2020-03-05 16:50:49.690', 5, 11, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (5, 150, 440, 150, 440, 'ribu/uL', '2019-01-09 00:59:21', '2020-03-05 16:50:49.690', 150, 440, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (9, 1, 4, 1, 4, '%', '2019-01-09 00:59:21', '2020-03-05 17:01:00.156', 1, 4, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (7, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-12-19 17:44:57.037', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (12, 20, 40, 20, 40, '%', '2019-01-09 00:59:21', '2020-03-05 17:01:00.156', 20, 40, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (11, 35, 70, 35, 70, '%', '2019-01-09 00:59:21', '2020-03-05 17:01:00.156', 35, 70, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (3, 4.2, 5.4, 4.6, 6.5, 'juta/uL', '2019-01-09 00:59:21', '2020-03-05 16:57:24.924', 4.2, 5.4, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (1, 12, 16, 13, 18, 'g/dL', '2019-01-09 00:59:21', '2020-03-11 16:34:15.142', 11, 16, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (13, 2, 10, 2, 10, '%', '2019-01-09 00:59:21', '2020-03-05 17:01:00.156', 2, 10, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (10, 3, 5, 3, 5, '%', '2019-01-09 00:59:21', '2020-03-05 17:01:00.156', 3, 5, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (8, 0, 1, 0, 1, '%', '2019-01-09 00:59:21', '2019-12-19 17:44:57.037', 0, 1, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (6, 37, 47, 40, 54, '%', '2019-01-09 00:59:21', '2020-03-05 16:50:49.690', 33, 45, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (4, 0, 20, 0, 15, 'mm/jam', '2019-01-09 00:59:21', '2020-03-05 17:07:29.029', 0, 20, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (18, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (109, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (110, 80, 100, 80, 100, '-', '2019-01-09 00:59:21', '2019-07-16 08:40:59.875', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (19, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (22, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-06 16:47:10.861', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (113, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (20, 1, 6, 1, 6, 'menit', '2019-01-09 00:59:21', '2019-07-12 08:09:58.609', 1, 6, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (21, 5, 18, 5, 18, 'menit', '2019-01-09 00:59:21', '2019-07-15 07:43:48.265', 5, 18, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (179, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-18 13:35:21.437', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (161, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-18 13:34:08.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (170, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-18 13:34:08.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (166, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 11:15:07.140', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (167, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-18 13:34:08.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (168, 0.1, 1.0, 0.1 , 1, 'EU', '2019-01-09 00:59:21', '2019-07-18 13:34:08.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (65, 12, 16, 14, 18, 'gr/dl', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (69, 8.1, 10.4, 9, 11, 'mg/dl', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (55, 70, 110, 70, 110, 'mg/dl', '2019-01-09 00:59:21', '2020-03-05 18:06:15.022', 70, 110, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (56, 70, 140, 70, 140, 'mg/dl', '2019-01-09 00:59:21', '2019-07-25 11:34:56.937', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (57, 60, 180, 60, 180, 'mg/dl', '2019-01-09 00:59:21', '2020-03-05 18:06:15.022', 0, 180, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (58, 95, 180, 95, 180, 'mg/dl', '2019-01-09 00:59:21', '2020-03-05 18:06:15.022', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (59, 4.5, 6.5, 4.5, 6.3, '%', '2019-01-09 00:59:21', '2020-08-07 08:19:14.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (46, 6.6, 8.8, 6.6, 8.7, 'g/dL', '2019-01-09 00:59:21', '2020-08-07 08:22:39.407', 6.0, 8.0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (44, 3.8, 5.5, 3.5, 5.2, 'g/dL', '2019-01-09 00:59:21', '2020-08-07 08:22:39.407', 3.5, 5.2, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (45, 1.5, 3.5, 1.5, 3.5, 'g/dL', '2019-01-09 00:59:21', '2020-08-07 08:22:39.407', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (38, 0, 31, 0, 37, 'U/L', '2019-01-09 00:59:21', '2019-07-12 08:09:58.609', 0, 33, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (39, 0, 31, 0, 42, 'U/L', '2019-01-09 00:59:21', '2020-03-19 11:19:16.516', 0, 23, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (41, 35, 104, 35, 104, 'U/L', '2019-01-09 00:59:21', '2019-12-27 11:29:20.033', 0, 720, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (40, 0, 55, 0, 55, 'U/L', '2019-01-09 00:59:21', '2019-07-12 08:09:58.609', 0, 17, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (63, 3990, 10800, 4620, 11500, 'u/l', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (115, 1, 3, 1, 3, 'Macl Unit', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (47, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (62, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (54, 0, 5.7, 0, 7, 'mg/dl', '2019-01-09 00:59:21', '2019-07-18 13:35:21.437', 0, 6.1, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (52, 13, 43, 13, 43, 'mg/dl', '2019-01-09 00:59:21', '2019-07-22 09:42:40.656', 13, 43, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (53, 0.5, 1.0, 0.7, 1.2, 'mg/dl', '2019-01-09 00:59:21', '2020-08-07 11:20:29.122', 0, 6.1, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (116, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (117, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (48, 0, 200, 0, 200, 'mg/dl', '2019-01-09 00:59:21', '2020-03-13 09:03:03.696', 15, 200, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (49, 35, 135, 35, 135, 'mg/dl', '2019-01-09 00:59:21', '2020-03-13 08:59:31.887', 35, 135, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (50, 35, 55, 35, 55, 'mg/dl', '2019-01-09 00:59:21', '2020-03-07 09:19:10.806', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (51, 0, 150, 0, 150, 'mg/dl', '2019-01-09 00:59:21', '2020-03-13 08:57:32.657', 0, 150, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (171, 5.0, 8.0, 5.0, 8.0, '-', '2019-01-09 00:59:21', '2019-07-18 13:34:08.859', 5.0, 8.0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (118, 365, 640, 365, 640, 'gr%', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (64, 450, 1000, 450, 1000, 'mg/dl', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (119, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (120, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (121, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (122, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (123, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (66, 135, 150, 135, 147, 'mEq/L', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (67, 3.3, 5.4, 3.3, 5.4, 'mEq/L', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (68, 94, 111, 94, 111, 'mEq/L', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (124, 2.5, 4.5, 2.5, 4.5, 'mEq/l', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (70, 1.5, 2.5, 1.5, 2.5, 'mEq/l', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (104, 0.6, 1.81, 0.6, 1.81, 'ng/dl', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (125, 25, 35, 25, 35, '%', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (126, 1.75, 4.95, 1.3, 4.2, 'ng/dl', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (105, 0.89, 1.76, 0.89, 1.76, 'ng/dl', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (106, 1, 7, 0, 0, 'mlU/ml', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (108, 0, 0, 3, 42, 'ng/dl', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (72, 0, 1, 0, 0, 'Iu/l', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (73, 0, 0.8, 0, 0, 'Iu/l', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (74, 0, 5, 0, 0, 'Iu/l', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (75, 0, 0.8, 0, 0, 'COI', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (76, 0, 0.5, 0, 0, 'Iu/l', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (77, 0, 0.7, 0, 0, 'COI', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (127, 0, 0.9, 0, 0, 'index', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (128, 0, 0.9, 0, 0, 'index', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (129, 0, 0.9, 0, 0, 'index', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (130, 0, 0.9, 0, 0, 'index', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (131, 0, 0.95, 0, 0, 'index', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (60, 10, 150, 10, 150, 'units/L', '2019-01-09 00:59:21', '2019-07-11 12:11:47.296', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (61, 17, 115, 17, 115, 'U/L', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (102, 0, 15, 0, 15, 'ng/ml', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (132, 0, 52, 0, 52, 'ng/ml', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (98, 0, 37, 0, 37, 'U/ml', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (100, 0, 35, 0, 35, 'U/ml', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (101, 0, 31.3, 0, 31.3, 'U/ml', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (133, 0, 4, 0, 4, 'U/ml', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (99, 0, 16, 0, 16, 'ng/mL', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (88, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 12:09:17.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (85, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 12:09:17.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (87, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 12:09:17.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (86, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 12:09:17.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (83, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 12:09:17.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (84, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 13:12:16.500', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (91, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 12:09:17.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (89, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 12:09:17.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (90, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-25 12:09:17.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (134, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (92, 0, 2, 0, 2, '-', '2019-01-09 00:59:21', '2019-07-25 13:12:16.500', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (79, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (78, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (135, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-12-23 15:11:33.569', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (136, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (137, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (94, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (96, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (71, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (95, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (93, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (97, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-04-15 09:05:29.804', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (82, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (139, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (80, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (140, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (141, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (81, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (142, 76, 120, 80, 180, 'mg/dl', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (143, 15, 45, 15, 45, 'mg/dl', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (144, 0, 52, 0, 52, 'IU/mL', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (145, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (103, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (146, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (147, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (148, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (149, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-15 13:06:10.557', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (150, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (151, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (152, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (138, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (154, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-12-24 17:43:16.873', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (155, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-12-24 17:43:16.873', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (156, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-12-24 17:43:16.873', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (157, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-12-24 17:43:16.873', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (158, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-12-24 17:43:16.873', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (159, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-12-24 17:43:16.873', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (160, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (107, 3, 20, 3, 20, 'mlU/ml', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (111, 26, 34, 26, 34, '-', '2019-01-09 00:59:21', '2019-07-16 08:40:59.875', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (112, 32, 36, 32, 36, '-', '2019-01-09 00:59:21', '2019-07-16 08:40:59.875', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (153, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-12-24 17:43:16.873', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (164, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (162, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (32, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (25, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (23, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-19 12:31:56.093', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (29, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-07-19 12:31:56.093', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (26, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (24, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (27, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (30, 1, 3, 1, 3, 'Lpb', '2019-01-09 00:59:21', '2019-07-15 07:43:48.265', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (31, 0, 1, 0, 1, 'Lpb', '2019-01-09 00:59:21', '2019-07-15 07:43:48.265', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (37, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (36, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (35, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (34, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (33, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (28, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-14 14:52:38.577', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (42, 0.2, 1.2, 0.2, 1.2, 'mg/dl', '2019-02-03 13:40:21.842', '2019-07-16 08:40:59.875', 0, 1.0, 0, 12.0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (43, 0, 0.3, 0, 0.3, 'mg/dl', '2019-02-03 13:40:21.842', '2019-07-16 08:40:59.875', 0, 0.2, 0, 0.2);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (181, 12, 16, 14, 18, 'gr/dL', '2019-03-14 23:18:30.152', '2020-03-05 16:57:24.924', 11, 16, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (182, 5, 11, 5, 11, 'ribu/uL', '2019-03-14 23:21:27.600', '2020-03-05 16:57:24.924', 5, 11, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (183, 4.2, 5.4, 4.6, 6.5, 'juta/µl', '2019-03-14 23:26:36.606', '2020-03-05 16:54:07.194', 3.8, 5.8, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (187, 0, 20, 0, 15, 'mm/jam', '2019-07-11 11:53:37.859', '2020-03-05 17:07:29.029', 0, 20, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (186, 36, 50, 38, 55, '%', '2019-07-11 11:53:37.859', '2019-07-19 12:31:56.093', 33, 45, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (185, 5, 11, 5, 11, 'ribu/uL', '2019-07-11 11:53:37.859', '2020-03-05 16:57:56.513', 5, 11, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (184, 12, 16, 13, 18, 'g/dL', '2019-07-11 11:53:37.859', '2020-03-11 16:32:11.807', 11, 16, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (188, 2.0, 6.0, 3.4, 7.0, 'mg/dl', '2019-07-18 11:47:55.375', '2020-08-07 11:14:43.308', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (191, 0, 0, 0, 0, '-', '2019-07-18 13:34:08.859', '2019-07-18 13:34:08.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (190, 0, 0, 0, 0, '-', '2019-07-18 13:34:08.859', '2019-07-18 13:34:08.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (189, 0, 0, 0, 0, '-', '2019-07-18 13:34:08.859', '2019-07-18 13:34:08.859', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (195, 0, 0, 0, 0, '-', '2019-07-18 13:48:56.000', '2019-07-18 13:48:56.000', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (194, 0, 0, 0, 0, '-', '2019-07-18 13:48:56.000', '2019-07-18 13:48:56.000', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (193, 0, 0, 0, 0, '-', '2019-07-18 13:48:56.000', '2019-07-18 13:48:56.000', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (192, 0, 0, 0, 0, '-', '2019-07-18 13:48:56.000', '2019-07-18 13:48:56.000', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (196, 0, 0, 0, 0, '-', '2019-07-15 13:19:05.901', '2019-07-15 15:44:07.004', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (197, 0, 0, 15, 60, 'menit', '2019-07-15 13:24:31.390', '2019-07-15 13:24:31.390', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (198, 0, 0, 0, 0, '-', '2019-07-15 13:24:31.390', '2019-07-15 13:24:31.390', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (199, 0, 0, 1.5, 0, 'mL', '2019-07-15 13:24:31.390', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (200, 0, 0, 7.2, 0, '-', '2019-07-15 13:24:31.390', '2019-07-15 13:24:31.390', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (201, 0, 0, 0, 0, '-', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (202, 0, 0, 15, 0, '10^6/mL', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (203, 0, 0, 39, 0, '/lp', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (204, 0, 0, 0, 0, '-', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (205, 0, 0, 0, 0, '-', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (206, 0, 0, 0, 0, '-', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (207, 0, 0, 0, 0, '-', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (208, 0, 0, 32, 0, '%', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (209, 0, 0, 0, 0, '%', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (210, 0, 0, 0, 0, '%', '2019-07-15 15:22:59.143', '2019-07-15 15:22:59.143', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (211, 0, 0, 0, 1, '10^6/mL', '2019-07-15 15:26:36.096', '2019-07-15 15:26:36.096', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (212, 0, 0, 0, 0, '10^6/mL', '2019-07-15 15:26:36.096', '2019-07-15 15:26:36.096', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (213, 0, 0, 58, 0, '%', '2019-07-15 15:26:36.096', '2019-07-15 15:26:36.096', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (214, 0, 0, 0, 0, '-', '2019-07-15 15:26:36.096', '2019-07-15 15:26:36.096', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (215, 0, 0, 4, 0, '%', '2019-07-15 15:26:36.096', '2019-07-15 15:26:36.096', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (216, 0, 6, 0, 6, '-', '2019-07-19 07:47:02.453', '2019-07-19 07:47:02.453', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (217, 0, 0, 0, 0, '-', '2019-07-19 08:55:10.562', '2019-07-23 07:56:56.015', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (218, 0, 20, 0, 15, 'mm/jam', '2019-07-19 10:16:52.921', '2019-12-24 17:42:43.629', 0, 20, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (223, 35, 70, 35, 70, '%', '2019-07-19 10:23:31.281', '2020-03-05 18:14:31.489', 35, 70, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (222, 3, 5, 3, 5, '%', '2019-07-19 10:23:31.281', '2020-03-05 18:14:31.489', 3, 5, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (225, 2, 10, 2, 10, '%', '2019-07-19 10:23:31.281', '2020-03-05 18:14:31.489', 2, 10, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (224, 20, 40, 20, 40, '%', '2019-07-19 10:23:31.281', '2020-03-05 18:14:31.489', 20, 40, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (221, 1, 4, 1, 4, '%', '2019-07-19 10:23:31.281', '2020-03-05 18:14:31.489', 1, 4, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (220, 0, 1, 0, 1, '%', '2019-07-19 10:23:31.281', '2019-07-25 13:55:54.395', 0, 1, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (219, 0, 0, 0, 0, '-', '2019-07-19 10:23:31.281', '2019-07-25 13:55:54.395', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (229, 35, 70, 35, 70, '%', '2019-07-19 11:27:33.390', '2020-03-05 18:14:31.489', 35, 70, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (231, 2, 10, 2, 10, '%', '2019-07-19 11:27:33.390', '2020-03-05 18:14:31.489', 2, 10, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (230, 20, 40, 20, 40, '%', '2019-07-19 11:27:33.390', '2020-03-05 18:14:31.489', 20, 40, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (228, 3, 53, 3, 5, '%', '2019-07-19 11:27:33.390', '2020-03-05 18:10:54.118', 3, 5, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (227, 14, 3, 1, 4, '%', '2019-07-19 11:27:33.390', '2020-03-05 18:10:54.118', 1, 4, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (226, 0, 1, 0, 1, '%', '2019-07-19 11:27:33.390', '2020-03-05 18:10:54.118', 0, 1, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (232, 0, 160, 0, 160, 'mg/dl', '2019-07-19 12:22:28.453', '2019-07-19 12:22:28.453', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (236, 0, 0, 0, 0, '-', '2019-07-23 07:40:46.937', '2020-09-24 20:55:31.459', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (235, 0, 0, 0, 0, '-', '2019-07-23 07:40:46.937', '2020-09-24 20:55:31.459', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (234, 0, 0, 0, 0, '-', '2019-07-23 07:40:46.937', '2020-09-24 20:56:50.781', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (233, 0, 0, 0, 0, '-', '2019-07-23 07:40:46.937', '2020-10-26 14:27:00.499', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (237, 0, 0, 0, 0, '-', '2020-01-03 16:29:34.568', '2020-03-05 18:17:25.545', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (238, 0, 0, 0, 0, '-', '2020-01-03 16:31:47.496', '2020-03-05 17:07:29.029', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (239, 0, 0, 0, 0, '-', '2020-01-03 18:20:31.495', '2020-01-03 18:33:04.312', 0, 0, 0, 0);
-INSERT INTO `nilai_normal`(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`) VALUES (240, 0, 0, 0, 0, '-', '2020-01-13 17:05:09.544', '2020-03-05 18:19:20.986', 0, 0, 0, 0);
+INSERT INTO `nilai_normal`
+(`id_hasil_lab`, `min_w`, `max_w`, `min_p`, `max_p`, `satuan`, `created_at`, `updated_at`, `min_a`, `max_a`, `min_b`, `max_b`)
+ VALUES
+(10001, 12, 16, 13, 18, 'gr/dL', '2019-01-09 00:59:21', '2020-03-03 09:06:54.840', 11, 16, NULL, NULL),
+(10004, 150000, 450000, 150000, 450000, '/uL', '2019-01-09 00:59:21', '2020-02-23 11:47:30.932', 150000, 450000, NULL, NULL),
+(10002, 36, 50, 38, 55, '%', '2019-01-09 00:59:21', '2020-02-01 16:48:01.209', 33, 48, NULL, NULL),
+(10003, 5000, 10000, 5000, 10000, '/uL', '2019-01-09 00:59:21', '2020-02-23 11:47:30.932', 5000, 10000, NULL, NULL),
+(2, 5000, 10000, 5000, 10000, '/uL', '2019-01-09 00:59:21', '2020-02-23 11:47:30.932', 5000, 10000, NULL, NULL),
+(15, 150000, 450000, 150000, 450000, '/uL', '2019-01-09 00:59:21', '2020-02-23 11:47:30.932', 150000, 450000, NULL, NULL),
+(9, 0, 3, 0, 3, '%', '2019-01-09 00:59:21', '2020-02-01 16:48:01.209', 0, 3, NULL, NULL),
+(4, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(6, 20, 40, 20, 40, '%', '2019-01-09 00:59:21', '2020-02-01 16:48:01.209', 20, 40, NULL, NULL),
+(5, 50, 70, 50, 70, '%', '2019-01-09 00:59:21', '2020-02-01 16:48:01.209', 50, 70, NULL, NULL),
+(3, 4, 5, 4, 6.2, 'juta/uL', '2019-01-09 00:59:21', '2020-05-27 09:06:35.806', 3.6, 5.3, NULL, NULL),
+(1, 12, 16, 13, 18, 'g/dL', '2019-01-09 00:59:21', '2020-03-03 14:07:53.081', 11, 16, NULL, NULL),
+(7, 2, 8, 2, 8, '%', '2019-01-09 00:59:21', '2020-02-01 16:48:01.209', 2, 8, NULL, NULL),
+(8, 0, 6, 0, 6, '%', '2019-01-09 00:59:21', '2020-02-01 16:48:01.209', 0, 6, NULL, NULL),
+(10, 0, 1, 0, 1, '%', '2019-01-09 00:59:21', '2020-02-01 16:48:01.209', 0, 1, NULL, NULL),
+(11, 36, 50, 38, 55, '%', '2019-01-09 00:59:21', '2020-02-01 18:27:23.786', 33, 48, NULL, NULL),
+(16, 0, 15, 0, 10, 'mm/jam', '2019-01-09 00:59:21', '2020-02-01 16:48:01.209', 0, 15, NULL, NULL),
+(10201, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(10301, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(10501, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(10601, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(10701, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(10801, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(10901, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-09 21:05:19.217', NULL, NULL, NULL, NULL),
+(11001, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-03-09 21:05:19.217', NULL, NULL, NULL, NULL),
+(11217, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-04-16 19:10:01.948', NULL, NULL, NULL, NULL),
+(11201, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11207, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-04-16 19:15:21.045', NULL, NULL, NULL, NULL),
+(11213, 0, 3, 0, 3, 'Lpb', '2019-01-09 00:59:21', '2020-04-16 19:10:01.948', 0, 3, '0', '3'),
+(11214, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-04-16 19:10:01.948', NULL, NULL, NULL, NULL),
+(11210, 1.010, 1.030, 1.010, 1.030, '-', '2019-01-09 00:59:21', '2020-04-16 19:10:01.948', 1.010, 1.030, NULL, NULL),
+(11209, 4.5, 7.5, 4.5, 7.5, '-', '2019-01-09 00:59:21', '2020-04-16 19:10:01.948', 4.5, 7.5, NULL, NULL),
+(11215, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-04-16 19:10:01.948', NULL, NULL, NULL, NULL),
+(11216, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-04-16 19:10:01.948', NULL, NULL, NULL, NULL),
+(11202, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11212, 0, 4, 0, 4, 'Lpb', '2019-01-09 00:59:21', '2020-05-04 09:57:20.357', 0, 4, '0', '4'),
+(11218, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-04-16 19:10:01.948', NULL, NULL, NULL, NULL),
+(11101, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11211, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-04-16 19:10:01.948', NULL, NULL, NULL, NULL),
+(11203, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-05-25 13:48:57.782', NULL, NULL, NULL, NULL),
+(11208, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-04-16 19:15:21.045', NULL, NULL, NULL, NULL),
+(11204, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-18 13:33:33.422', NULL, NULL, NULL, NULL),
+(11205, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11206, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11301, 12, 16, 14, 18, 'gr/dl', '2019-01-09 00:59:21', '2020-02-01 18:37:43.838', NULL, NULL, NULL, NULL),
+(22101, 8.1, 10.4, 9, 11, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11401, 70, 110, 70, 110, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11501, 70, 140, 70, 140, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11601, 60, 180, 60, 180, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11701, 95, 180, 95, 180, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11801, 10, 65, 10, 65, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(11901, 6, 8, 6, 8, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(12001, 3.8, 5.4, 3.8, 5.4, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(12101, 1.5, 3.5, 1.5, 3.5, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(12201, 5, 37, 5, 37, 'u/l', '2019-01-09 00:59:21', '2020-04-17 20:21:08.093', 5, 37, NULL, NULL),
+(12301, 5, 37, 5, 37, 'u/l', '2019-01-09 00:59:21', '2020-04-17 20:21:08.093', 5, 37, NULL, NULL),
+(12401, 60, 170, 0, 128, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(12501, 5, 50, 5, 50, 'u/l', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(12601, 3990, 10800, 4620, 11500, 'u/l', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(12701, 1, 3, 1, 3, 'Macl Unit', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(12801, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(12901, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(13001, 20, 40, 20, 40, 'mg/dl', '2019-01-09 00:59:21', '2020-02-23 11:12:42.064', NULL, NULL, NULL, NULL),
+(13101, 0.5, 1, 0.7, 1.2, 'mg/dl', '2019-01-09 00:59:21', '2020-02-25 11:31:09.622', NULL, NULL, NULL, NULL),
+(13201, 2, 7, 2, 7, 'mg/dl', '2019-01-09 00:59:21', '2020-02-23 11:12:42.064', NULL, NULL, NULL, NULL),
+(13301, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(13401, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(13501, 120, 200, 120, 200, 'mg/dl', '2019-01-09 00:59:21', '2020-02-25 14:45:56.272', NULL, NULL, NULL, NULL),
+(13601, 40, 150, 40, 150, 'mg/dl', '2019-01-09 00:59:21', '2020-02-25 14:45:56.272', NULL, NULL, NULL, NULL),
+(13701, 45, 65, 35, 55, 'mg/dl', '2019-01-09 00:59:21', '2020-03-02 10:36:05.539', NULL, NULL, NULL, NULL),
+(13801, 10, 150, 10, 150, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(13901, 365, 640, 365, 640, 'gr%', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(14001, 450, 1000, 450, 1000, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(14101, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(14201, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(14301, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(14501, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(14601, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(14701, 135, 150, 135, 147, 'mEq/L', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(14801, 3.3, 5.4, 3.3, 5.4, 'mEq/L', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(14901, 94, 111, 94, 111, 'mEq/L', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(15001, 2.5, 4.5, 2.5, 4.5, 'mEq/l', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(15101, 1.5, 2.5, 1.5, 2.5, 'mEq/l', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(15201, 0.6, 1.81, 0.6, 1.81, 'ng/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(15301, 25, 35, 25, 35, '%', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(15401, 1.75, 4.95, 1.3, 4.2, 'ng/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(15601, 0.89, 1.76, 0.89, 1.76, 'ng/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(15701, 1, 7, 0, 0, 'mlU/ml', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(15801, 0, 0, 3, 42, 'ng/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(15901, 0, 1, 0, 0, 'Iu/l', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16001, 0, 0.8, 0, 0, 'Iu/l', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16101, 0, 5, 0, 0, 'Iu/l', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16201, 0, 0.8, 0, 0, 'COI', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16301, 0, 0.5, 0, 0, 'Iu/l', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16401, 0, 0.7, 0, 0, 'COI', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16501, 0, 0.9, 0, 0, 'index', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16601, 0, 0.9, 0, 0, 'index', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16701, 0, 0.9, 0, 0, 'index', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16801, 0, 0.9, 0, 0, 'index', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(16901, 0, 0.95, 0, 0, 'index', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(17001, 10, 150, 10, 150, 'units/L', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(17101, 17, 115, 17, 115, 'U/L', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(17201, 0, 15, 0, 15, 'ng/ml', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(17301, 0, 52, 0, 52, 'ng/ml', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(17401, 0, 37, 0, 37, 'U/ml', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(17501, 0, 35, 0, 35, 'U/ml', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(17601, 0, 31.3, 0, 31.3, 'U/ml', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(17801, 0, 4, 0, 4, 'U/ml', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(17901, 0, 16, 0, 16, 'ng/mL', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18007, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18003, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18005, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18004, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18001, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18002, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18010, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18008, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18009, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18101, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18201, 0, 2, 0, 2, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18301, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18401, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18501, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18601, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18701, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18801, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18901, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(19001, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(19101, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(19201, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(19301, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-05-02 14:20:34.651', NULL, NULL, NULL, NULL),
+(19401, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(19501, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(19601, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(19701, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(19801, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(19901, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20001, 76, 120, 80, 180, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20101, 15, 45, 15, 45, 'mg/dl', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20201, 0, 52, 0, 52, 'IU/mL', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20301, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20401, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20501, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20601, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20701, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20801, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(20901, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21001, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21101, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18702, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-01 20:08:31.992', NULL, NULL, NULL, NULL),
+(21401, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-01 20:08:31.992', NULL, NULL, NULL, NULL),
+(21501, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-01 20:08:31.992', NULL, NULL, NULL, NULL),
+(21601, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-01 20:08:31.992', NULL, NULL, NULL, NULL),
+(21701, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-08 14:31:06.666', NULL, NULL, NULL, NULL),
+(21801, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-01 20:08:31.992', NULL, NULL, NULL, NULL),
+(21901, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-01 20:08:31.992', NULL, NULL, NULL, NULL),
+(22001, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2020-02-01 20:08:31.992', NULL, NULL, NULL, NULL),
+(15501, 3, 20, 3, 20, 'mlU/ml', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(10502, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(10503, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21301, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21303, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21302, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21211, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21203, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21201, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21208, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21205, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21202, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21206, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21209, 2, 8, 2, 8, 'Lpb', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21210, 1, 4, 1, 4, 'Lpb', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21216, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21215, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21214, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21213, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21212, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(21207, 0, 0, 0, 0, '-', '2019-01-09 00:59:21', '2019-01-09 00:59:21', NULL, NULL, NULL, NULL),
+(18703, 0.2, 1.1, 0.2, 1.1, 'mg/dL', '2019-02-03 13:40:21.842', '2020-02-21 17:30:43.411', NULL, NULL, NULL, NULL),
+(18704, 0.2, 1.1, 0.2, 1.1, 'mg/dL', '2019-02-03 13:40:21.842', '2020-02-21 17:30:43.411', NULL, NULL, NULL, NULL),
+(22102, 0, 0, 0, 0, '-', '2020-02-01 18:33:43.268', '2020-03-03 10:05:51.308', NULL, NULL, NULL, NULL),
+(18075, 0, 0.9, 0, 0.9, 'mg/dL', '2020-02-08 14:35:27.108', '2020-02-21 17:30:43.411', NULL, NULL, NULL, NULL),
+(11219, 0, 0, 0, 0, '-', '2020-04-16 19:07:35.474', '2020-04-16 19:14:39.404', NULL, NULL, NULL, NULL);

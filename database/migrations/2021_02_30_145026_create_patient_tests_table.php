@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePatientTests2Table extends Migration
+class CreatePatientTestsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +14,13 @@ class CreatePatientTests2Table extends Migration
     public function up()
     {
         Schema::create('patient_tests', function (Blueprint $table) {
+            $table->id();
             $table->bigInteger('no_pendaftaran',false,true);
             $table->unsignedInteger('id_item');
             $table->string('no_alat',15);
             $table->unsignedInteger('id_pelaksana');
             $table->float('harga');
+            $table->boolean('non_jaminan');
             $table->timestamps();
             $table->foreign('no_pendaftaran')
                   ->on('patient_registrations')->references('no_pendaftaran')->onDelete('cascade')->onUpdate('cascade');

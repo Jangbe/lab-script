@@ -25,7 +25,7 @@ class ItemController extends Controller
 
     public function ajax(Request $request)
     {
-        $items = Item::query()->with('group', 'labGroup', 'clasification','itemTarif');
+        $items = Item::query()->with('group', 'labGroup', 'clasification','itemTarif')->orderBy('nm_item');
 
         $dt = new DataTables;
         if(!is_null($request->filter_status)){

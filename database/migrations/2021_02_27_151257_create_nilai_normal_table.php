@@ -14,8 +14,8 @@ class CreateNilaiNormalTable extends Migration
     public function up()
     {
         Schema::create('nilai_normal', function (Blueprint $table) {
-            $table->id();
-            $table->integer('id_hasil_lab')->index();
+            $table->increments('id');
+            $table->unsignedInteger('id_hasil_lab')->index();
             $table->string('satuan', 20);
             $table->string('min_p', 10);
             $table->string('max_p', 10);
@@ -26,6 +26,8 @@ class CreateNilaiNormalTable extends Migration
             $table->string('min_b', 10);
             $table->string('max_b', 10);
             $table->timestamps();
+            $table->foreign('id_hasil_lab')
+                ->on('hasil_labs')->references('id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

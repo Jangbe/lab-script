@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddToItemsTable extends Migration
+class CreateItemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,15 @@ class AddToItemsTable extends Migration
      */
     public function up()
     {
-        Schema::table('items', function (Blueprint $table) {
+        Schema::create('items', function (Blueprint $table) {
+            $table->increments('id');
+            $table->unsignedInteger('id_group')->nullable();
+            $table->unsignedInteger('id_klasifikasi')->nullable();
+            $table->unsignedInteger('id_lab_group')->nullable();
+            $table->unsignedInteger('id_lab_sample')->nullable();
+            $table->string('nm_item', 200);
+            $table->boolean('is_active')->default(0);
+            $table->timestamps();
             $table->foreign('id_group')
                   ->on('item_groups')->references('id')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('id_klasifikasi')
@@ -32,8 +40,6 @@ class AddToItemsTable extends Migration
      */
     public function down()
     {
-        Schema::table('items', function (Blueprint $table) {
-            $table->dropForeign(['id_group','id_klasifikasi','id_lab_group','id_lab_sample']);
-        });
+        Schema::dropIfExists('items');
     }
 }

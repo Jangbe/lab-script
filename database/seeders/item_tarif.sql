@@ -1,210 +1,152 @@
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1001, '2019-01-01', '1', 100000, '2019-03-14 10:49:35', '2019-12-23 15:03:28.417', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1002, '2019-01-01', '1', 60000, '2019-03-14 10:49:35', '2019-12-23 15:03:28.417', 65000, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4001, '2019-01-01', '1', 18000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4002, '2019-01-01', '1', 14000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4003, '2019-01-01', '1', 14000, '2019-03-14 10:49:35', '2019-07-19 10:11:48.625', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4004, '2019-01-01', '1', 20000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4005, '2019-01-01', '1', 21000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4006, '2019-01-01', '1', 14000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4007, '2019-01-01', '1', 14000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1003, '2019-01-01', '1', 14000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4008, '2019-01-01', '1', 21000, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1008, '2019-01-01', '1', 35000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1011, '2019-01-01', '1', 14000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1012, '2019-01-01', '1', 14000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1013, '2019-01-01', '1', 200000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1014, '2019-01-01', '1', 200000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4009, '2019-01-01', '1', 200000, '2019-03-14 10:49:35', '2019-07-08 08:29:48.234', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1016, '2019-01-01', '1', 275000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 275000, 275000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4010, '2019-01-01', '0', 238300, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 238300, 238300);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4011, '2019-01-01', '0', 165000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 165000, 165000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1020, '2019-01-01', '1', 160000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 160000, 160000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1021, '2019-01-01', '1', 165000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 165000, 165000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1024, '2019-01-01', '1', 275000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 275000, 275000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4012, '2019-01-01', '1', 370000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 370000, 370000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4013, '2019-01-01', '1', 75000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 75000, 75000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1017, '2019-01-01', '0', 109400, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 109400, 109400);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4014, '2019-01-01', '1', 39900, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 39900, 39900);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1015, '2019-01-01', '0', 540000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 540000, 540000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1009, '2019-01-01', '1', 400000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 400000, 400000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4015, '2019-01-01', '0', 415800, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 415800, 415800);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4016, '2019-01-01', '0', 375000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 375000, 375000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4017, '2019-01-01', '0', 952000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 952000, 952000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4018, '2019-01-01', '1', 500000, '2019-03-14 10:49:35', '2020-08-07 08:06:08.924', 500000, 500000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4019, '2019-01-01', '0', 210000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 210000, 210000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4020, '2019-01-01', '0', 938000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 938000, 938000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4021, '2019-01-01', '0', 320000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 320000, 320000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4022, '2019-01-01', '0', 148500, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 148500, 148500);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4023, '2019-01-01', '1', 375000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 375000, 375000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4024, '2019-01-01', '1', 190000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 190000, 190000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4025, '2019-01-01', '0', 80000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 80000, 80000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4026, '2019-01-01', '0', 100000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 100000, 100000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1040, '2019-01-01', '0', 50000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 101600, 101600);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4027, '2019-01-01', '0', 363000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 363000, 363000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4028, '2019-01-01', '1', 120000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 120000, 120000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4029, '2019-01-01', '1', 20000, '2019-03-14 10:49:35', '2020-01-13 17:06:55.359', 47500, 47500);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4030, '2019-01-01', '0', 145000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 145000, 145000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1255, '2019-01-01', '1', 35000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1084, '2019-01-01', '1', 35000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1085, '2019-01-01', '1', 35000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1087, '2019-01-01', '1', 69000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1086, '2019-01-01', '1', 60000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (3003, '2019-01-01', '1', 85000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (3004, '2019-01-01', '1', 0, '2019-03-14 10:49:35', '2019-07-19 10:11:48.625', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1081, '2019-01-01', '1', 75800, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 75800, 75800);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1082, '2019-01-01', '1', 151100, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 151100, 151100);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1080, '2019-01-01', '1', 82000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1091, '2019-01-01', '0', 230000, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 230000, 230000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1110, '2019-01-01', '1', 40000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1111, '2019-01-01', '1', 40000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1112, '2019-01-01', '1', 35000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1113, '2019-01-01', '1', 35000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4031, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-19 10:11:48.625', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4032, '2019-01-01', '1', 0, '2019-03-14 10:49:35', '2019-07-19 10:11:48.625', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1060, '2019-01-01', '1', 200000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 200000, 200000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1061, '2019-01-01', '1', 400000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 400000, 400000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4033, '2019-01-01', '0', 117200, '2019-03-14 10:49:35', '2019-07-12 07:35:01.140', 117200, 117200);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1101, '2019-01-01', '1', 35000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1102, '2019-01-01', '1', 30000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1100, '2019-01-01', '1', 35000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4034, '2019-01-01', '1', 99200, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 99200, 99200);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4035, '2019-01-01', '1', 130000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 130000, 130000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4036, '2019-01-01', '1', 130000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 130000, 130000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1070, '2019-01-01', '1', 30000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 24000, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1071, '2019-01-01', '1', 30000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 24000, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1072, '2019-01-01', '1', 30000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 24000, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4037, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4038, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4039, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1073, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1074, '2019-01-01', '1', 255000, '2019-03-14 10:49:35', '2020-08-07 08:12:35.233', 255000, 255000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4040, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1180, '2019-01-01', '1', 240000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 240000, 240000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1181, '2019-01-01', '1', 275000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 275000, 275000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1092, '2019-01-01', '1', 351500, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 351500, 351500);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1089, '2019-01-01', '1', 180000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1115, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1116, '2019-01-01', '1', 400000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 400000, 400000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4042, '2019-01-01', '1', 300000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 300000, 300000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4041, '2019-01-01', '1', 210000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 210000, 210000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1062, '2019-01-01', '1', 96000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4043, '2019-01-01', '1', 642000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 642000, 642000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1066, '2019-01-01', '1', 380000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 380000, 380000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1065, '2019-01-01', '1', 693000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 693000, 693000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4044, '2019-01-01', '1', 630000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 630000, 630000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4045, '2019-01-01', '1', 328100, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 328100, 328100);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4046, '2019-01-01', '1', 330000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 330000, 330000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4047, '2019-01-01', '1', 1171700, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 1171700, 1171700);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4048, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4049, '2019-01-01', '1', 110000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 110000, 110000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4050, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4051, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4052, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4053, '2019-01-01', '0', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4054, '2019-01-01', '1', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4055, '2019-01-01', '1', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1130, '2019-01-01', '1', 105000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1131, '2019-01-01', '1', 105000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1132, '2019-01-01', '1', 105000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1133, '2019-01-01', '1', 105000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4056, '2019-01-01', '1', 0, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1135, '2019-01-01', '1', 105000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1210, '2019-01-01', '1', 450000, '2019-03-14 10:49:35', '2019-07-08 10:11:49.781', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4057, '2019-01-01', '1', 200000, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1160, '2019-01-01', '1', 300000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1161, '2019-01-01', '1', 300000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 300000, 300000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1162, '2019-01-01', '1', 330000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 330000, 330000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1163, '2019-01-01', '1', 330000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 330000, 330000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1164, '2019-01-01', '1', 300000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1165, '2019-01-01', '1', 400000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1204, '2019-01-01', '1', 280000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1203, '2019-01-01', '1', 100000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 100000, 100000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1216, '2019-01-01', '1', 300000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1219, '2019-01-01', '1', 130000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 130000, 130000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1214, '2019-01-01', '1', 200000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1200, '2019-01-01', '1', 60000, '2019-03-14 10:49:35', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1202, '2019-01-01', '1', 275000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4058, '2019-01-01', '1', 289100, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 289100, 289100);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4059, '2019-01-01', '1', 414000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 414000, 414000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4060, '2019-01-01', '1', 395000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 395000, 395000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4061, '2019-01-01', '1', 490000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 490000, 490000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4062, '2019-01-01', '1', 490000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 490000, 490000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4063, '2019-01-01', '1', 315000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 315000, 315000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4064, '2019-01-01', '1', 600000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1212, '2019-01-01', '1', 500000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1208, '2019-01-01', '1', 400000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4065, '2019-01-01', '1', 450000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4066, '2019-01-01', '1', 500000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1211, '2019-01-01', '1', 600000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1209, '2019-01-01', '1', 600000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4067, '2019-01-01', '1', 480000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 480000, 480000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4068, '2019-01-01', '1', 265000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4069, '2019-01-01', '1', 265000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4070, '2019-01-01', '1', 265000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4071, '2019-01-01', '1', 265000, '2019-03-14 10:49:35', '2019-07-08 13:20:47.953', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4072, '2019-01-01', '1', 600000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4073, '2019-01-01', '1', 600000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 600000, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4074, '2019-01-01', '1', 550000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4075, '2019-01-01', '1', 400000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4076, '2019-01-01', '1', 750000, '2019-03-14 10:49:35', '2019-07-16 10:59:05.265', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4077, '2019-01-01', '1', 750000, '2019-03-14 10:49:35', '2019-07-16 10:59:05.265', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1213, '2019-01-01', '1', 450000, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 450000, 450000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4078, '2019-01-01', '1', 480000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 480000, 480000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4079, '2019-01-01', '1', 664000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 664000, 664000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4081, '2019-01-01', '1', 750000, '2019-03-14 10:49:35', '2019-07-16 10:59:05.265', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4080, '2019-01-01', '1', 750000, '2019-03-14 10:49:35', '2019-07-16 10:59:05.265', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1064, '2019-01-01', '1', 453100, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 453100, 453100);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4083, '2019-01-01', '0', 546800, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 546800, 546800);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4084, '2019-01-01', '0', 650000, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 650000, 650000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4085, '2019-01-01', '0', 450000, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 450000, 450000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4086, '2019-01-01', '1', 660000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 660000, 660000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4087, '2019-01-01', '1', 699000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 699000, 699000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4088, '2019-01-01', '1', 699000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 699000, 699000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4089, '2019-01-01', '1', 207900, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 207900, 207900);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4090, '2019-01-01', '1', 703000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 703000, 703000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4091, '2019-01-01', '1', 392200, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 392200, 392200);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4092, '2019-01-01', '0', 828000, '2019-03-14 10:49:35', '2019-07-11 13:40:21.015', 828000, 828000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4093, '2019-01-01', '1', 300000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4094, '2019-01-01', '1', 363000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4095, '2019-01-01', '1', 968600, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 968600, 968600);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1184, '2019-01-01', '1', 700000, '2019-03-14 10:49:35', '2019-07-16 10:59:05.265', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1188, '2019-01-01', '1', 852900, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 852900, 852900);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4096, '2019-01-01', '1', 687400, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 687400, 687400);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1185, '2019-01-01', '1', 700000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1186, '2019-01-01', '1', 700000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1182, '2019-01-01', '1', 379400, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 379400, 379400);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1224, '2019-01-01', '1', 412500, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 412500, 412500);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1141, '2019-01-01', '1', 300000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1142, '2019-01-01', '1', 300000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1140, '2019-01-01', '1', 300000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4097, '2019-01-01', '1', 420000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 420000, 420000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1146, '2019-01-01', '1', 500000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4082, '2019-01-01', '1', 948000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 948000, 948000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1147, '2019-01-01', '1', 330000, '2019-03-14 10:49:35', '2019-07-16 08:16:32.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1145, '2019-01-01', '1', 437500, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 437500, 437500);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1148, '2019-01-01', '1', 319000, '2019-03-14 10:49:35', '2019-07-16 10:59:05.265', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1151, '2019-01-01', '1', 363000, '2019-03-14 10:49:35', '2019-07-16 10:59:05.265', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1149, '2019-01-01', '1', 500000, '2019-03-14 10:49:35', '2019-07-16 10:59:05.265', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1150, '2019-01-01', '1', 533500, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 533500, 533500);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4098, '2019-01-01', '1', 550000, '2019-03-14 10:49:35', '2019-07-16 10:59:05.265', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4099, '2019-01-01', '1', 400000, '2019-03-14 10:49:35', '2019-03-14 10:49:35', 400000, 400000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4100, '2019-01-01', '0', 703000, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 703000, 703000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1152, '2019-01-01', '0', 773300, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 773300, 773300);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4101, '2019-01-01', '0', 2968200, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 2968200, 2968200);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4102, '2019-01-01', '0', 3136000, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 3136000, 3136000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4103, '2019-01-01', '0', 4704000, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 4704000, 4704000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4104, '2019-01-01', '0', 375000, '2019-03-14 10:49:35', '2019-07-12 07:41:19.187', 375000, 375000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1900, '2019-01-01', '1', 50000, '2019-07-06 13:37:32.468', '2019-12-23 15:07:50.039', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1905, '2019-01-01', '1', 0, '2019-07-06 13:38:19.468', '2019-07-06 13:38:19.468', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1904, '2019-01-01', '1', 0, '2019-07-06 13:38:50.437', '2019-07-06 13:38:50.437', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1903, '2019-01-01', '1', 0, '2019-07-06 13:39:14.140', '2019-07-06 13:39:14.140', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1901, '2019-01-01', '1', 0, '2019-07-06 13:39:41.375', '2019-07-06 13:39:41.375', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4105, '2019-01-01', '1', 60000, '2019-07-11 11:55:10.546', '2019-12-23 15:02:09.915', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4107, '2019-01-01', '1', 180000, '2019-07-11 12:23:24.109', '2019-07-11 13:41:24.156', 180000, 180000);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1041, '2019-01-01', '1', 50000, '2019-07-13 11:49:04.218', '2019-12-23 15:02:09.915', 35000, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1241, '2019-01-01', '1', 200000, '2019-07-15 12:58:45.214', '2019-07-15 12:58:45.214', 200000, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1124, '2019-01-01', '1', 55000, '2019-07-19 10:11:48.625', '2019-07-19 10:11:48.625', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (4108, '2019-01-01', '1', 165000, '2019-07-23 08:57:51.421', '2019-07-23 08:57:51.421', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1902, '2019-12-23', '1', 50000, '2019-12-23 15:03:28.417', '2019-12-23 15:03:28.417', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1205, '2019-12-23', '1', 90000, '2019-12-23 15:04:49.352', '2019-12-23 15:04:49.352', 0, 0);
-INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`) VALUES (1043, '2019-12-23', '1', 30000, '2019-12-23 15:05:38.145', '2019-12-23 15:05:38.145', 0, 0);
+INSERT INTO `item_tarifs`(`id_item`, `tanggal_berlaku`, `is_active`, `tarif_bayar`, `created_at`, `updated_at`, `tarif_bpjs`, `tarif_jaminan`)
+VALUES
+(1002, '2017-12-01', '1', 60000, '2019-01-11 06:23:09', '2019-02-27 14:02:05.066', 60000, 60000),
+(1001, '2017-12-01', '1', 100000, '2019-01-11 06:23:09', '2019-02-27 14:02:05.066', 100000, 100000),
+(1003, '2017-12-01', '1', 70000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 70000, 70000),
+(1004, '2017-12-01', '1', 125000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 125000, 125000),
+(1005, '2017-12-01', '1', 30000, '2019-01-11 06:23:09', '2019-02-28 14:21:19.279', 30000, 30000),
+(1008, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2019-02-27 14:02:05.066', 35000, 35000),
+(1007, '2017-12-01', '1', 30000, '2019-01-11 06:23:09', '2019-02-28 14:21:19.279', 30000, 30000),
+(1010, '2017-12-01', '1', 30000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 30000, 30000),
+(1011, '2017-12-01', '1', 25000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 25000, 25000),
+(1012, '2017-12-01', '1', 25000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 25000, 25000),
+(1013, '2017-12-01', '1', 160000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 160000, 160000),
+(1014, '2017-12-01', '1', 160000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 160000, 160000),
+(1015, '2017-12-01', '1', 340000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 340000, 340000),
+(1016, '2017-12-01', '1', 155000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 155000, 155000),
+(1017, '2017-12-01', '1', 70000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 70000, 70000),
+(1018, '2017-12-01', '1', 70000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 70000, 70000),
+(1019, '2017-12-01', '1', 335000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 335000, 335000),
+(1021, '2017-12-01', '1', 250000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 250000, 250000),
+(1022, '2017-12-01', '1', 150000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 150000, 150000),
+(1023, '2017-12-01', '1', 230000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 230000, 230000),
+(1024, '2017-12-01', '1', 250000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 250000, 250000),
+(1025, '2017-12-01', '1', 445000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 445000, 445000),
+(1040, '2017-12-01', '1', 30000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 30000, 30000),
+(1041, '2017-12-01', '1', 50000, '2019-01-11 06:23:09', '2020-02-01 18:47:51.521', 50000, 50000),
+(1042, '2017-12-01', '1', 20000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 20000, 20000),
+(1043, '2017-12-01', '1', 30000, '2019-01-11 06:23:09', '2020-02-01 18:45:45.897', 30000, 30000),
+(1050, '2017-12-01', '1', 50000, '2019-01-11 06:23:09', '2019-02-27 14:02:05.066', 50000, 50000),
+(1052, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1053, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1054, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1055, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1060, '2017-12-01', '1', 198000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 198000, 198000),
+(1061, '2017-12-01', '1', 198000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 198000, 198000),
+(1062, '2017-12-01', '1', 90000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 90000, 90000),
+(1133, '2017-12-01', '1', 80000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 80000, 80000),
+(1063, '2017-12-01', '1', 120000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 120000, 120000),
+(1064, '2017-12-01', '1', 270000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 270000, 270000),
+(1065, '2017-12-01', '1', 474000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 474000, 474000),
+(1066, '2017-12-01', '1', 324000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 324000, 324000),
+(1070, '2017-12-01', '1', 30000, '2019-01-11 06:23:09', '2020-02-01 13:41:28.285', 30000, 30000),
+(1071, '2017-12-01', '1', 30000, '2019-01-11 06:23:09', '2020-02-01 18:43:44.657', 30000, 30000),
+(1072, '2017-12-01', '1', 30000, '2019-01-11 06:23:09', '2020-02-01 18:44:27.126', 30000, 30000),
+(1073, '2017-12-01', '1', 135000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 135000, 135000),
+(1074, '2017-12-01', '1', 265000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 265000, 265000),
+(1080, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 35000, 35000),
+(1081, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 35000, 35000),
+(1082, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 35000, 35000),
+(1083, '2017-12-01', '1', 165000, '2019-01-11 06:23:09', '2020-02-21 17:29:26.880', 165000, 165000),
+(1084, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 35000, 35000),
+(1085, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 35000, 35000),
+(1086, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1087, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1089, '2017-12-01', '1', 145000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 145000, 145000),
+(1090, '2017-12-01', '1', 78000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 78000, 78000),
+(1091, '2017-12-01', '1', 150000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 150000, 150000),
+(1092, '2017-12-01', '1', 385000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 385000, 385000),
+(1100, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 35000, 35000),
+(1101, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 35000, 35000),
+(1102, '2017-12-01', '1', 30000, '2019-01-11 06:23:09', '2020-02-01 18:43:15.561', 30000, 30000),
+(1103, '2017-12-01', '1', 150000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 150000, 150000),
+(1104, '2017-12-01', '1', 150000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 150000, 150000),
+(1110, '2017-12-01', '1', 40000, '2019-01-11 06:23:09', '2019-02-27 14:02:05.066', 40000, 40000),
+(1111, '2017-12-01', '1', 40000, '2019-01-11 06:23:09', '2019-02-27 14:02:05.066', 40000, 40000),
+(1112, '2017-12-01', '1', 60000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 60000, 60000),
+(1113, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2020-02-01 18:46:17.753', 35000, 35000),
+(1114, '2017-12-01', '1', 100000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 100000, 100000),
+(1115, '2017-12-01', '1', 75000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 75000, 75000),
+(1116, '2017-12-01', '1', 250000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 250000, 250000),
+(1120, '2017-12-01', '1', 80000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 80000, 80000),
+(1121, '2017-12-01', '1', 80000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 80000, 80000),
+(1122, '2017-12-01', '1', 80000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 80000, 80000),
+(1123, '2017-12-01', '1', 80000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 80000, 80000),
+(1124, '2017-12-01', '1', 40000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 40000, 40000),
+(1130, '2017-12-01', '1', 80000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 80000, 80000),
+(1131, '2017-12-01', '1', 80000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 80000, 80000),
+(1132, '2017-12-01', '1', 80000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 80000, 80000),
+(1134, '2017-12-01', '1', 60000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 60000, 60000),
+(1135, '2017-12-01', '1', 60000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 60000, 60000),
+(1140, '2017-12-01', '1', 270000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 270000, 270000),
+(1141, '2017-12-01', '1', 258000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 258000, 258000),
+(1142, '2017-12-01', '1', 258000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 258000, 258000),
+(1143, '2017-12-01', '1', 295000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 295000, 295000),
+(1144, '2017-12-01', '1', 1296000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 1296000, 1296000),
+(1146, '2017-12-01', '1', 345000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 345000, 345000),
+(1147, '2017-12-01', '1', 350000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 350000, 350000),
+(1148, '2017-12-01', '1', 325000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 325000, 325000),
+(1149, '2017-12-01', '1', 450000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 450000, 450000),
+(1150, '2017-12-01', '1', 465000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 465000, 465000),
+(1151, '2017-12-01', '1', 415000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 415000, 415000),
+(1152, '2017-12-01', '1', 615000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 615000, 615000),
+(1160, '2017-12-01', '1', 285000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 285000, 285000),
+(1161, '2017-12-01', '1', 285000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 285000, 285000),
+(1162, '2017-12-01', '1', 305000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 305000, 305000),
+(1163, '2017-12-01', '1', 380000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 380000, 380000),
+(1164, '2017-12-01', '1', 288000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 288000, 288000),
+(1165, '2017-12-01', '1', 395000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 395000, 395000),
+(1166, '2017-12-01', '1', 315000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 315000, 315000),
+(1167, '2017-12-01', '1', 315000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 315000, 315000),
+(1168, '2017-12-01', '1', 294000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 294000, 294000),
+(1169, '2017-12-01', '1', 294000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 294000, 294000),
+(1170, '2017-12-01', '1', 438000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 438000, 438000),
+(1180, '2017-12-01', '1', 250000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 250000, 250000),
+(1181, '2017-12-01', '1', 250000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 250000, 250000),
+(1182, '2017-12-01', '1', 295000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 295000, 295000),
+(1183, '2017-12-01', '1', 295000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 295000, 295000),
+(1184, '2017-12-01', '1', 560000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 560000, 560000),
+(1185, '2017-12-01', '1', 544000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 544000, 544000),
+(1186, '2017-12-01', '1', 509000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 509000, 509000),
+(1187, '2017-12-01', '1', 363000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 363000, 363000),
+(1188, '2017-12-01', '1', 609000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 609000, 609000),
+(1200, '2017-12-01', '1', 60000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 60000, 60000),
+(1201, '2017-12-01', '1', 295000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 295000, 295000),
+(1202, '2017-12-01', '1', 350000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 350000, 350000),
+(1203, '2017-12-01', '1', 75000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 75000, 75000),
+(1204, '2017-12-01', '1', 75000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 75000, 75000),
+(1205, '2017-12-01', '1', 90000, '2019-01-11 06:23:09', '2019-02-27 14:02:05.066', 90000, 90000),
+(1206, '2017-12-01', '1', 250000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 250000, 250000),
+(1207, '2017-12-01', '1', 90000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 90000, 90000),
+(1208, '2017-12-01', '1', 255000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 255000, 255000),
+(1210, '2017-12-01', '1', 295000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 295000, 295000),
+(1211, '2017-12-01', '1', 335000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 335000, 335000),
+(1212, '2017-12-01', '1', 190000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 190000, 190000),
+(1213, '2017-12-01', '1', 150000, '2019-01-11 06:23:09', '2019-02-27 14:02:05.066', 150000, 150000),
+(1214, '2017-12-01', '1', 95000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 95000, 95000),
+(1215, '2017-12-01', '1', 165000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 165000, 165000),
+(1216, '2017-12-01', '1', 120000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 120000, 120000),
+(1217, '2017-12-01', '1', 225000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 225000, 225000),
+(1218, '2017-12-01', '1', 110000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 110000, 110000),
+(1219, '2017-12-01', '1', 155000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 155000, 155000),
+(1220, '2017-12-01', '1', 415000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 415000, 415000),
+(1221, '2017-12-01', '1', 415000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 415000, 415000),
+(1222, '2017-12-01', '1', 288000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 288000, 288000),
+(1223, '2017-12-01', '1', 175000, '2019-01-11 06:23:09', '2019-02-27 14:02:05.066', 175000, 175000),
+(1224, '2017-12-01', '1', 165000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 165000, 165000),
+(1225, '2017-12-01', '1', 285000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 285000, 285000),
+(1226, '2017-12-01', '1', 310000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 310000, 310000),
+(1240, '2017-12-01', '1', 285000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 285000, 285000),
+(1241, '2017-12-01', '1', 250000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 250000, 250000),
+(1242, '2017-12-01', '1', 300000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 300000, 300000),
+(1243, '2017-12-01', '1', 80000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 80000, 80000),
+(1244, '2017-12-01', '1', 340000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 340000, 340000),
+(1900, '2017-12-01', '1', 50000, '2019-01-11 06:23:09', '2020-02-01 18:46:57.097', 50000, 50000),
+(1901, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1902, '2017-12-01', '1', 50000, '2019-01-11 06:23:09', '2020-02-01 18:47:13.269', 50000, 50000),
+(1903, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1904, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1905, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1906, '2017-12-01', '1', 45000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 45000, 45000),
+(1125, '2017-12-01', '1', 100000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 100000, 100000),
+(1255, '2017-12-01', '1', 35000, '2019-01-11 06:23:09', '2019-02-27 09:21:30.702', 35000, 35000);

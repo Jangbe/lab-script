@@ -20,7 +20,10 @@ class CreateHasilLabAlatsTable extends Migration
                 ->constrained('alat_lab_rincis')->onUpdate('cascade')->onDelete('cascade');
             $table->smallInteger('nilai_pembagi');
             $table->smallInteger('nilai_pengali');
+            $table->integer('jumlah_koma');
             $table->timestamps();
+            $table->foreign('id_hasil_lab')
+                ->on('hasil_labs')->references('id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
