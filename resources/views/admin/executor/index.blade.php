@@ -40,7 +40,7 @@
 @push('js')
 <script src="{{ asset('admin') }}/js/execute.js"></script>
 <script>
-    //delete patient
+    //delete executor
     $(document).on('click','.delete_executor',function(e){
         e.preventDefault();
         var el=$(this);

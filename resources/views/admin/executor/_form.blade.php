@@ -10,7 +10,7 @@
 </div>
 <div class="form-group">
     <label for="example-url-input" class="form-control-label">{{__("Alamat")}}</label>
-    <input class="form-control" name="alamat" type="text" value="{{isset($executor) ? $executor->alamat : old('alamaat')}}" id="example-url-input">
+    <input class="form-control" name="alamat" type="text" value="{{isset($executor) ? $executor->alamat : old('alamat')}}" id="example-url-input">
 </div>
 <div class="form-group">
     <label for="example-tel-input" class="form-control-label">{{__('Telepon')}}</label>

@@ -89,6 +89,11 @@
                     </a>
                 </div>
                 <div class="nav-item">
+                    <a href="{{ route('perusahaan.index') }}" class="nav-link" id="perusahaan">
+                        <i class="far fa-building" style="color: #00fff2"></i>{{__('Perusahaan')}}
+                    </a>
+                </div>
+                <div class="nav-item">
                     <a href="{{ route('patient.index') }}" class="nav-link" id="pasien">
                         <i class="fas fa-user-injured" style="color: #e2de00;"></i>{{__('Pasien')}}
                     </a>

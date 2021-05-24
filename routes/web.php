@@ -26,6 +26,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
     Route::resource('executor', 'ExecutorController');
     Route::get('get_executors', 'ExecutorController@ajax')->name('get_executors');
 
+    // For company
+    Route::resource('perusahaan', 'CompanyController');
+
     //For item
     Route::resource('item', 'ItemController');
     Route::get('get_items', 'ItemController@ajax')->name('get_items');
