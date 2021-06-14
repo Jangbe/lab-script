@@ -8,6 +8,14 @@ use Yajra\DataTables\DataTables;
 
 class PatientController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_pasien',   ['only'=>['index','show']]);
+        $this->middleware('can:create_pasien', ['only'=>['create','store']]);
+        $this->middleware('can:edit_pasien',   ['only'=>['edit','update']]);
+        $this->middleware('can:delete_pasien', ['only'=>['destroy']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -47,7 +55,7 @@ class PatientController extends Controller
             'no_telepon'=>'nullable|min:11|max:14',
             'rt'=>'min:3|max:3',
             'rw'=>'min:3|max:3',
-            'kodepos'=>'min:6|max:6'
+            'kodepos'=>'min:5|max:5'
         ]);
         $rt_rw_kodepos=($request->rt??'000').'-'.($request->rw??'000').'-'.($request->kodepos??'000');
         $request = collect($request)->put('rt_rw_kodepos', $rt_rw_kodepos);

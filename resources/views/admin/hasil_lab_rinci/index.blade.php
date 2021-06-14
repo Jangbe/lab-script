@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
+@section('text_right')
+    @can('create_hasil_lab_rincian')
+        <button id="create" class="btn btn-sm btn-neutral">{{__('Create')}}</button>
+    @endcan
+@endsection
+
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Hasil Lab Rinci','index'],
-        'text_right'=>'<button id="create" class="btn btn-sm btn-neutral">'.__('Create').'</button>'
+        'breadcrumbs'=>['Hasil Lab Rinci','index']
     ])
 
     <!-- Page content -->
@@ -33,7 +38,9 @@
             </div>
         </div>
         @include('layouts.footers.auth')
-        @include('admin.hasil_lab_rinci.modal')
+        @can('create_hasil_lab_rincian')
+            @include('admin.hasil_lab_rinci.modal')
+        @endcan
     </div>
 @endsection
 @push('js')

@@ -2,8 +2,7 @@
 
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Pengurutan Pemeriksaan','Index'],
-        'text_right'=>''
+        'breadcrumbs'=>['Pengurutan Pemeriksaan','Index']
     ])
 
     <!-- Page content -->

@@ -11,6 +11,14 @@ use Yajra\DataTables\DataTables;
 
 class HasilLabTipeController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_hasil_lab_tipe',   ['only'=>['index','show']]);
+        $this->middleware('can:create_hasil_lab_tipe', ['only'=>['create','store']]);
+        $this->middleware('can:edit_hasil_lab_tipe',   ['only'=>['edit','update']]);
+        $this->middleware('can:delete_hasil_lab_tipe', ['only'=>['destroy']]);
+    }
+
     /**
      * Display a listing of the resource.
      *

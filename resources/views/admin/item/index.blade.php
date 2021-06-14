@@ -1,19 +1,24 @@
 @extends('layouts.app')
 
+@section('text_right')
+@can('create_item')
+<a href="{{route('item.create')}}" class="btn btn-sm btn-neutral">{{__('Create')}}</a>
+@endcan
+<div class="dropdown">
+    <button class="btn btn-sm btn-neutral dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{__('Filter')}}
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+      <button class="dropdown-item filter_status" value="2" type="button">{{__('Semua')}}</button>
+      <button class="dropdown-item filter_status" value="1" type="button">{{__('Aktif')}}</button>
+      <button class="dropdown-item filter_status" value="0" type="button">{{__('Tidak Aktif')}}</button>
+    </div>
+</div>
+@endsection
+
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Items','Index'],
-        'text_right'=>'<a href="'.route('item.create').'" class="btn btn-sm btn-neutral">'.__('Create').'</a>
-            <div class="dropdown">
-                <button class="btn btn-sm btn-neutral dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  '.__('Filter').'
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item filter_status" value="2" type="button">'.__('Semua').'</button>
-                  <button class="dropdown-item filter_status" value="1" type="button">'.__('Aktif').'</button>
-                  <button class="dropdown-item filter_status" value="0" type="button">'.__('Tidak Aktif').'</button>
-                </div>
-            </div>'
+        'breadcrumbs'=>['Items','Index']
     ])
 
     <!-- Page content -->

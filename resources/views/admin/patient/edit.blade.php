@@ -49,7 +49,7 @@
 
                 $('#'+result.jenis_kelamin).attr('checked', true);
 
-                $('#umur').val(diff_years(new Date, new Date(result.tanggal_lahir))+' tahun');
+                $('#umur').val(calculate_age(new Date(result.tanggal_lahir))+' tahun');
 
                 for(i in result){
                     $('#'+i).val(result[i]);

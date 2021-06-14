@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
+@section('text_right')
+    @can('create_parameter_alat_lab')
+        <button id="create" class="btn btn-sm btn-neutral">{{__('Create')}}</button>
+    @endcan
+@endsection
+
 @section('content')
     @include('admin.layouts.header', [
         'breadcrumbs'=>['Hasil Lab Tipe','index'],
-        'text_right'=>'<button id="create" class="btn btn-sm btn-neutral">'.__('Create').'</button>'
     ])
 
     <!-- Page content -->
@@ -38,7 +43,9 @@
         @include('layouts.footers.auth')
     </div>
 
-    @include('admin.alat_lab_rinci._modal')
+    @can('create_parameter_alat_lab')
+        @include('admin.alat_lab_rinci._modal')
+    @endcan
 @endsection
 @push('js')
     <script src="{{asset('admin/js/alat_lab_rinci.js')}}"></script>
@@ -67,7 +74,7 @@
                     $('#satuan').val(result.satuan);
                     $('input[name=_method]').val('patch');
                     $('#form').attr('action', "alat_lab_rinci/"+id_alat);
-                    $('#alatLabLabel').text('Edit Parameter Alat Lab '+result.nm_alat);
+                    $('#alatLabLabel').text('Edit Parameter Alat Lab '+result.alat_lab.nm_alat);
                     $('#alatLab').modal('show');
                 }
             })

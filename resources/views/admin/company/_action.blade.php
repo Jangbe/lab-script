@@ -1,6 +1,9 @@
+@can('edit_perusahaan')
 <a href="{{ route('perusahaan.edit', $company->id) }}">
     <i class="fas fa-edit mx-1 mb-1"></i>{{__('Edit')}}
 </a>
+@endcan
+@can('delete_perusahaan')
 <form action="{{ route('perusahaan.destroy', $company->id) }}" method="post">
     @csrf
     @method('delete')
@@ -8,3 +11,4 @@
         <i class="fas fa-trash"></i>{{__('Hapus')}}
     </button>
 </form>
+@endcan

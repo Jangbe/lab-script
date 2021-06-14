@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
+@section('text_right')
+    @can('create_setting_hasil_alat_lab')
+    <button id="create" class="btn btn-sm btn-neutral">{{__('Create')}}</button>
+    @endcan
+@endsection
+
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Hasil Lab Tipe','index'],
-        'text_right'=>'<button id="create" class="btn btn-sm btn-neutral">'.__('Create').'</button>'
+        'breadcrumbs'=>['Hasil Lab Tipe','index']
     ])
 
     <!-- Page content -->
@@ -38,7 +43,9 @@
         @include('layouts.footers.auth')
     </div>
 
+    @can('create_setting_hasil_alat_lab')
     @include('admin.hasil_lab_alat._modal')
+    @endcan
 @endsection
 @push('js')
     <script src="{{asset('admin/js/hasil_lab_alat.js')}}"></script>
@@ -51,7 +58,7 @@
             $('#jumlah_koma').val('');
             $('input[name=_method]').val('post');
             $('#form').attr('action', "{{route('hasil_lab_alat.store')}}");
-            $('#alatLabLabel').text('Buat Parameter Alat Lab Baru');
+            $('#alatLabLabel').text('Buat Setting Hasil Lab Baru');
             $('#alatLab').modal('show');
         });
 
@@ -67,7 +74,7 @@
                     $('#jumlah_koma').val(result.jumlah_koma);
                     $('input[name=_method]').val('patch');
                     $('#form').attr('action', "hasil_lab_alat/"+id_alat);
-                    $('#alatLabLabel').text('Setting Hasil Alat Lab '+result.nm_alat);
+                    $('#alatLabLabel').text(`Setting Hasil Alat Lab ${result.alat_lab_rinci.parameter} (${result.alat_lab_rinci.alat_lab.nm_alat})`);
                     $('#alatLab').modal('show');
                 }
             })

@@ -1,19 +1,24 @@
 @extends('layouts.app')
 
+@section('text_right')
+    @can('create_hasil_lab_tipe')
+        <button id="create" class="btn btn-sm btn-neutral">{{__('Create')}}</button>
+    @endcan
+    <div class="dropdown">
+        <button class="btn btn-sm btn-neutral dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{__('Filter')}}
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item filter_status" value="2" type="button">{{__('Semua')}}</button>
+            <button class="dropdown-item filter_status" value="1" type="button">{{__('Number')}}</button>
+            <button class="dropdown-item filter_status" value="0" type="button">{{__('Teks')}}</button>
+        </div>
+    </div>
+@endsection
+
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Hasil Lab Tipe','index'],
-        'text_right'=>'<button id="create" class="btn btn-sm btn-neutral">'.__('Create').'</button>
-            <div class="dropdown">
-                <button class="btn btn-sm btn-neutral dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  '.__('Filter').'
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item filter_status" value="2" type="button">'.__('Semua').'</button>
-                  <button class="dropdown-item filter_status" value="1" type="button">'.__('Number').'</button>
-                  <button class="dropdown-item filter_status" value="0" type="button">'.__('Teks').'</button>
-                </div>
-            </div>'
+        'breadcrumbs'=>['Hasil Lab Tipe','index']
     ])
 
     <!-- Page content -->
@@ -45,7 +50,9 @@
         @include('layouts.footers.auth')
     </div>
 
+    @can('create_hasil_lab_tipe')
     @include('admin.hasil_lab_tipe.modal')
+    @endcan
 @endsection
 @push('js')
     <script src="{{asset('admin/js/hasil_lab_tipe.js')}}"></script>

@@ -3,7 +3,7 @@
 @section('content')
     @include('admin.layouts.header', [
         'breadcrumbs'=>['Settings','Index'],
-        'text_right'=>'<a href="'.route('patient_test.create').'" class="btn btn-sm btn-neutral">'.__('Create').'</a>'
+        'text_right'=>''
     ])
 
     <div class="container-fluid mt--6">
@@ -85,6 +85,7 @@
                 </div>
             </div>
         </form>
+        @include('layouts.footers.auth')
     </div>
 @endsection
 

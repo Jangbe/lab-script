@@ -9,6 +9,12 @@ use Yajra\DataTables\DataTables;
 
 class ItemTarifController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_tarif_item',   ['only'=>['index','show']]);
+        $this->middleware('can:edit_tarif_item',   ['only'=>['edit','update']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -56,7 +62,7 @@ class ItemTarifController extends Controller
      */
     public function create()
     {
-        return view('admin.item_tarif.create');
+
     }
 
     /**
@@ -76,9 +82,10 @@ class ItemTarifController extends Controller
      * @param  \App\Models\ItemTarif  $itemTarif
      * @return \Illuminate\Http\Response
      */
-    public function show(ItemTarif $itemTarif)
+    public function show(ItemTarif $itemTarif, Request $request)
     {
-        return response()->json($itemTarif);
+        $itemTarif->item;
+        return $request->ajax()?response()->json($itemTarif):abort(404, 'request harus ajax');
     }
 
     /**

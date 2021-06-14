@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
+@section('text_right')
+    @can('create_pasien')
+    <a href="{{route('patient.create')}}" class="btn btn-sm btn-neutral">{{__('Create')}}</a>
+    @endcan
+@endsection
+
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Pasien','Index'],
-        'text_right'=>'<a href="'.route('patient.create').'" class="btn btn-sm btn-neutral">'.__('Create').'</a>'
+        'breadcrumbs'=>['Pasien','Index']
     ])
 
     <!-- Page content -->

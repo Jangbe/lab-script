@@ -7,10 +7,16 @@ use App\Models\AlatLabRinci;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
-use function Symfony\Component\String\b;
-
 class AlatLabRinciController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_parameter_alat_lab',   ['only'=>['index','show']]);
+        $this->middleware('can:create_parameter_alat_lab', ['only'=>['create','store']]);
+        $this->middleware('can:edit_parameter_alat_lab',   ['only'=>['edit','update']]);
+        $this->middleware('can:delete_parameter_alat_lab', ['only'=>['destroy']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -67,6 +73,7 @@ class AlatLabRinciController extends Controller
      */
     public function show(AlatLabRinci $alatLabRinci,Request $request)
     {
+        $alatLabRinci->alatLab;
         return $request->ajax()?response()->json($alatLabRinci):abort(403);
     }
 

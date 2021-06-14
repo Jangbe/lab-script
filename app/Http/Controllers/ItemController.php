@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Clasification;
 use App\Models\Group;
 use App\Models\Item;
+use App\Models\ItemTarif;
 use App\Models\LabGroup;
 use App\Models\LabSample;
 use Illuminate\Http\Request;
@@ -12,6 +13,14 @@ use Yajra\DataTables\DataTables;
 
 class ItemController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_item',   ['only'=>['index','show']]);
+        $this->middleware('can:create_item', ['only'=>['create','store']]);
+        $this->middleware('can:edit_item',   ['only'=>['edit','update']]);
+        $this->middleware('can:delete_item', ['only'=>['destroy']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -71,7 +80,10 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        Item::create($request->except('_token'));
+        $id = Item::create($request->except('_token'));
+        ItemTarif::create([
+            'id_item'=>$id->id,
+        ]);
         session()->flash('success', 'Item berhasil ditambahkan');
         return redirect()->route('item.index');
     }

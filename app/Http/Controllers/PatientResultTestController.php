@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\DB;
 
 class PatientResultTestController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:hasil_pemeriksaan_pemeriksaan_pasien',['only'=>['store']]);
+    }
     /**
      * Display a listing of the resource.
      *

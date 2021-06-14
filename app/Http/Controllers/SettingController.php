@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class SettingController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:superadmin',['only'=>['index','update']]);
+    }
+
     /**
      * Display a listing of the resource.
      *

@@ -83,31 +83,42 @@
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
+                @can('view_pelaksana')
                 <div class="nav-item">
                     <a href="{{ route('executor.index') }}" class="nav-link" id="pelaksana">
                         <i class="fas fa-user-nurse text-info"></i>{{__('Pelaksana')}}
                     </a>
                 </div>
+                @endcan
+                @can('view_perusahaan')
                 <div class="nav-item">
                     <a href="{{ route('perusahaan.index') }}" class="nav-link" id="perusahaan">
                         <i class="far fa-building" style="color: #00fff2"></i>{{__('Perusahaan')}}
                     </a>
                 </div>
+                @endcan
+                @can('view_pasien')
                 <div class="nav-item">
                     <a href="{{ route('patient.index') }}" class="nav-link" id="pasien">
                         <i class="fas fa-user-injured" style="color: #e2de00;"></i>{{__('Pasien')}}
                     </a>
                 </div>
+                @endcan
+                @can('view_pemeriksaan_pasien')
                 <div class="nav-item">
                     <a href="{{ route('patient_test.index') }}" class="nav-link" id="pasien_test">
                         <i class="ni ni-ambulance" style="color: #e200b1;"></i>{{__('Pemeriksaan Pasien')}}
                     </a>
                 </div>
+                @endcan
+                @can('view_item')
                 <div class="nav-item">
                     <a href="{{ route('item.index') }}" class="nav-link" id="items">
                         <i class="ni ni-atom text-warning"></i>{{__('Items')}}
                     </a>
                 </div>
+                @endcan
+                @canany(['view_hasil_lab_tipe','view_hasil_lab_rincian','view_pemeriksaan','view_pengurutan_pemeriksaan'])
                 <li class="nav-item">
                     <a class="nav-link" id="hasil-menu" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
                         <i class="fas fa-vials" style="color: #f4645f;"></i>
@@ -116,34 +127,46 @@
 
                     <div class="collapse" id="navbar-examples">
                         <ul class="nav nav-sm flex-column">
+                            @can('view_hasil_lab_tipe')
                             <li class="nav-item">
                                 <a class="nav-link" id="tipe-hasil-menu" href="{{ route('hasil_lab_tipe.index') }}">
                                     {{ __('Hasil Lab Tipe') }}
                                 </a>
                             </li>
+                            @endcan
+                            @can('view_hasil_lab_rincian')
                             <li class="nav-item">
                                 <a class="nav-link" id="rincian-hasil-menu" href="{{ route('hasil_lab_tiper.index') }}">
                                     {{ __('Hasil Lab Rincian') }}
                                 </a>
                             </li>
+                            @endcan
+                            @can('view_pemeriksaan')
                             <li class="nav-item">
                                 <a class="nav-link" id="pemeriksaan-menu" href="{{ route('hasil_lab.index') }}">
                                     {{ __('Pemeriksaan') }}
                                 </a>
                             </li>
+                            @endcan
+                            @can('view_pengurutan_pemeriksaan')
                             <li class="nav-item">
                                 <a class="nav-link" id="pengurutan-menu" href="{{ route('pengurutan.index') }}">
                                     {{ __('Pengurutan Pemeriksaan') }}
                                 </a>
                             </li>
+                            @endcan
                         </ul>
                     </div>
                 </li>
+                @endcan
+                @can('view_tarif_item')
                 <div class="nav-item">
                     <a href="{{ route('item_tarif.index') }}" class="nav-link" id="item_tarif">
                         <i class="ni ni-money-coins text-success"></i>{{__('Tarif Items')}}
                     </a>
                 </div>
+                @endcan
+                @canany(['view_alat_laboratorium','view_parameter_alat_lab','view_setting_hasil_alat_lab'])
                 <li class="nav-item">
                     <a class="nav-link" id="alat-menu" href="#navbar-alat" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-alat">
                         <i class="ni ni-briefcase-24" style="color: #c210f8;"></i>
@@ -152,35 +175,73 @@
 
                     <div class="collapse" id="navbar-alat">
                         <ul class="nav nav-sm flex-column">
+                            @can('view_alat_laboratorium')
                             <li class="nav-item">
                                 <a class="nav-link" id="alat-lab-menu" href="{{ route('alat_lab.index') }}">
                                     {{ __('Alat Laboratorium') }}
                                 </a>
                             </li>
+                            @endcan
+                            @can('view_parameter_alat_lab')
                             <li class="nav-item">
                                 <a class="nav-link" id="param-alat-menu" href="{{ route('alat_lab_rinci.index') }}">
                                     {{ __('Parameter Alat Lab') }}
                                 </a>
                             </li>
+                            @endcan
+                            @can('view_setting_hasil_alat_lab')
                             <li class="nav-item">
                                 <a class="nav-link" id="setting-hasil-menu" href="{{ route('hasil_lab_alat.index') }}">
                                     {{ __('Setting Hasil Alat Lab') }}
                                 </a>
                             </li>
+                            @endcan
                         </ul>
                     </div>
                 </li>
+                @endcan
 
+                @canany(['view_roles','view_user'])
+                <li class="nav-item">
+                    <a class="nav-link" id="user-role" href="#user-roles" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="user-roles">
+                        <i class="fas fa-users" style="color: #f4645f;"></i>
+                        <span class="nav-link-text">{{ __('User dan Hak Akses') }}</span>
+                    </a>
+
+                    <div class="collapse" id="user-roles">
+                        <ul class="nav nav-sm flex-column">
+                            @can('view_roles')
+                            <li class="nav-item">
+                                <a class="nav-link" id="hak-akses" href="{{ route('hak_akses.index') }}">
+                                    {{ __('Hak Akses') }}
+                                </a>
+                            </li>
+                            @endcan
+                            @can('view_user')
+                            <li class="nav-item">
+                                <a class="nav-link" id="user-menu" href="{{ route('users.index') }}">
+                                    {{ __('User') }}
+                                </a>
+                            </li>
+                            @endcan
+                        </ul>
+                    </div>
+                </li>
+                @endcan
+
+                @can('superadmin')
                 <li class="nav-item">
                     <a class="nav-link" id="settings" href="{{ route('setting.index') }}">
                         <i class="ni ni-settings-gear-65 text-dark"></i> {{ __('Pengaturan') }}
                     </a>
                 </li>
-                <li class="nav-item">
+                @endcan
+
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="{{ route('icons') }}">
                         <i class="ni ni-planet text-blue"></i> {{ __('Icons') }}
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </div>

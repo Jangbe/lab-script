@@ -136,7 +136,8 @@
         </div>
         <div class="form-group">
             <label for="id_perusahaan">Perusahaan</label>
-            <select id="id_perusahaan" value="{{old('id_perusahaan')}}" name="id_perusahaan" class="custom-select"></select>
+            <select id="id_perusahaan" value="{{old('id_perusahaan')}}" name="id_perusahaan" class="custom-select">
+            </select>
         </div>
     </div>
 </div>

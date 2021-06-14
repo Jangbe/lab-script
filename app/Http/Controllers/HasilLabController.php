@@ -12,6 +12,14 @@ use Yajra\DataTables\DataTables;
 
 class HasilLabController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_pemeriksaan',   ['only'=>['index','show']]);
+        $this->middleware('can:create_pemeriksaan', ['only'=>['create','store']]);
+        $this->middleware('can:edit_pemeriksaan',   ['only'=>['edit','update']]);
+        $this->middleware('can:delete_pemeriksaan', ['only'=>['destroy']]);
+    }
+
     /**
      * Display a listing of the resource.
      *

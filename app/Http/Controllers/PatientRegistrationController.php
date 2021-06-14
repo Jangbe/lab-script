@@ -11,6 +11,12 @@ use Illuminate\Support\Facades\DB;
 
 class PatientRegistrationController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:edit_pemeriksaan_pasien',['only'=>['edit','update']]);
+        $this->middleware('can:pembayaran_pemeriksaan_pasien',['only'=>['bayar','bayar_setor']]);
+        $this->middleware('can:delete_pemeriksaan_pasien',['only'=>['destroy']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -74,7 +80,6 @@ class PatientRegistrationController extends Controller
      */
     public function update(Request $request, PatientRegistration $patientRegistration)
     {
-        // dd($request->only('id_penanggung_jawab','id_pengirim'));
         $request->validate([
             'cara_bayar'=>'required',
             'jenis_kelamin'=>'required_if:sts_pengunjung,B',

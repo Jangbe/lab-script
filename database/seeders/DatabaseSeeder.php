@@ -13,7 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([UsersTableSeeder::class]);
         // Item Clasifications
         $path=__DIR__.'/item_clasifications.sql';
         DB::unprepared(file_get_contents($path));
@@ -58,5 +57,10 @@ class DatabaseSeeder extends Seeder
         // Settings
         $path=__DIR__.'/settings.sql';
         DB::unprepared(file_get_contents($path));
+        // Permission Seeder
+        $this->call([
+            PermissionSeeder::class,
+            UsersTableSeeder::class
+        ]);
     }
 }

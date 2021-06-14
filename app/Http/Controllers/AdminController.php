@@ -21,18 +21,6 @@ class AdminController extends Controller
         return view('dashboard', compact('patients','executors','patient_tests','pendapatan'));
     }
 
-    public function setting()
-    {
-        $active = Route::getCurrentRoute()->uri;
-        $menus = DB::table('menus')->get();
-        return view('admin.setting', compact('active', 'menus'));
-    }
-
-    public function pdf()
-    {
-        return generate_pdf('',2);
-    }
-
     public function dashboard_patient(Request $request)
     {
         //index ke      1  ,  2  ,   3  ,   4  ,   5  ,   6  ,   7  ,   8  ,   9  ,  10  ,  11  ,  12

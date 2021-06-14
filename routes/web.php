@@ -86,11 +86,17 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
     // For setting the web
     Route::resource('setting', 'SettingController');
 
-	Route::resource('user', 'UserController', ['except' => ['show']]);
+    // For roles and user
+    Route::resource('hak_akses', 'RoleController');
+    Route::get('get_roles', 'RoleController@ajax');
+
+    // For users data manage
+	Route::resource('users', 'UserController', ['except' => ['show']]);
+    Route::get('get_users', 'UserController@ajax');
+
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-	Route::get('upgrade', function () {return view('pages.upgrade');})->name('upgrade');
-    Route::get('map', function () {return view('pages.maps');})->name('map');
+	Route::get('map', function () {return view('pages.maps');})->name('map');
     Route::get('icons', function () {return view('pages.icons');})->name('icons');
     Route::get('table-list', function () {return view('pages.tables');})->name('table');
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);

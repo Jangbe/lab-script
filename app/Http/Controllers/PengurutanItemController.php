@@ -8,6 +8,12 @@ use Yajra\DataTables\DataTables;
 
 class PengurutanItemController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_pengurutan_pemeriksaan',   ['only'=>['index']]);
+        $this->middleware('can:edit_pengurutan_pemeriksaan',   ['only'=>['show','update']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -60,7 +66,6 @@ class PengurutanItemController extends Controller
      */
     public function show(Item $pengurutan)
     {
-        // dd($pengurutan->labSample->lab_sample_name);
         return view('admin.pengurutan.show',compact('pengurutan'));
     }
 

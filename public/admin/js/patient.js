@@ -49,6 +49,16 @@ $('#tanggal_lahir').change(function(e){
     $('#umur').val(calculate_age(tanggal)+' tahun');
 })
 
+$.ajax({
+    url: "/admin/perusahaan",
+    success: function({data}){
+        $('#id_perusahaan').empty().append('<option></option>');
+        data.forEach(v=>{
+            $('#id_perusahaan').append(`<option value="${v.id}">${v.company_name}</option>`);
+        })
+    }
+})
+
 function calculate_age(dob) {
     var diff_ms = Date.now() - dob.getTime();
     var age_dt = new Date(diff_ms);

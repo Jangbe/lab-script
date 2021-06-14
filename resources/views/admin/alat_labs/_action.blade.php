@@ -9,9 +9,12 @@
             <i class="fas fa-info-circle"></i>
             {{__('Detail')}}
         </button>
+        @can('edit_alat_laboratorium')
         <button data-id="{{$item->id}}" type="button" class="dropdown-item text-info edit_tipe">
             <i class="fas fa-edit"></i>{{__('Edit')}}
         </button>
+        @endcan
+        @can('delete_alat_laboratorium')
         <form action="{{ route('alat_lab.destroy', $item->id) }}" method="post">
             @csrf
             @method('delete')
@@ -19,5 +22,6 @@
                 <i class="fas fa-trash"></i>{{__('Hapus')}}
             </button>
         </form>
+        @endcan
     </div>
 </div>

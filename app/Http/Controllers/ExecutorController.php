@@ -9,6 +9,14 @@ use Yajra\DataTables\DataTables;
 
 class ExecutorController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_pelaksana',    ['only'=>['index','show']]);
+        $this->middleware('can:create_pelaksana',  ['only'=>['create','store']]);
+        $this->middleware('can:edit_pelaksana',    ['only'=>['edit','update']]);
+        $this->middleware('can:delete_pelaksana',  ['only'=>['destroy']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -38,8 +46,8 @@ class ExecutorController extends Controller
      */
     public function store(Request $request)
     {
-        $lastData = Executor::orderBy('kode', 'desc')->first();
-        $code = "000".($lastData->kode + 1);
+        $lastData = Executor::orderBy('kode', 'desc')->first()->kode??0;
+        $code = "000".($lastData + 1);
         $code = substr($code, -4, 4);
         $executor = $request->except('_token');
         $executor["kode"] = $code;

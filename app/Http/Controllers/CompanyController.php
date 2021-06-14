@@ -8,6 +8,14 @@ use Yajra\DataTables\DataTables;
 
 class CompanyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_perusahaan',   ['only'=>['index','show']]);
+        $this->middleware('can:create_perusahaan', ['only'=>['create','store']]);
+        $this->middleware('can:edit_perusahaan',   ['only'=>['edit','update']]);
+        $this->middleware('can:delete_perusahaan', ['only'=>['destroy']]);
+    }
+
     /**
      * Display a listing of the resource.
      *

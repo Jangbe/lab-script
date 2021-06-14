@@ -10,6 +10,14 @@ use Yajra\DataTables\DataTables;
 
 class HasilLabAlatController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_setting_hasil_alat_lab',   ['only'=>['index','show']]);
+        $this->middleware('can:create_setting_hasil_alat_lab', ['only'=>['create','store']]);
+        $this->middleware('can:edit_setting_hasil_alat_lab',   ['only'=>['edit','update']]);
+        $this->middleware('can:delete_setting_hasil_alat_lab', ['only'=>['destroy']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -66,6 +74,7 @@ class HasilLabAlatController extends Controller
      */
     public function show(HasilLabAlat $hasilLabAlat, Request $request)
     {
+        $hasilLabAlat->alatLabRinci->alatLab;
         return $request->ajax()?response()->json($hasilLabAlat):abort(403);
     }
 

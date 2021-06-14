@@ -45,7 +45,9 @@
             </div>
         </div>
         @include('layouts.footers.auth')
+        @can('edit_tarif_item')
         @include('admin.item_tarif._modal');
+        @endcan
     </div>
 @endsection
 
@@ -64,6 +66,7 @@
                 $('#tarif_jaminan').val(result.tarif_jaminan);
                 $('#tanggal_berlaku').val(result.tanggal_berlaku);
                 $('#is_active').attr('checked',(result.is_active==1));
+                $('#itemTarifLabel').text('Tarif Item '+result.item.nm_item);
                 $('#itemTarif').modal('show');
             }
         })

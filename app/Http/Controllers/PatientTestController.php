@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\HasilLab;
-use App\Models\Patient;
 use App\Models\PatientRegistration;
+use App\Models\Patient;
 use App\Models\PatientResultTest;
 use App\Models\PatientTest;
 use Illuminate\Http\Request;
@@ -12,6 +12,14 @@ use Yajra\DataTables\DataTables;
 
 class PatientTestController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_pemeriksaan_pasien',   ['only'=>['index']]);
+        $this->middleware('can:create_pemeriksaan_pasien', ['only'=>['create','store']]);
+        $this->middleware('can:edit_pemeriksaan_pasien',   ['only'=>['edit','update']]);
+        $this->middleware('can:hasil_pemeriksaan_pemeriksaan_pasien',['only'=>['show']]);
+    }
+
     /**
      * Display a listing of the resource.
      *

@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
+@section('text_right')
+    @can('create_pemeriksaan')
+    <a href="{{route('hasil_lab.create')}}" class="btn btn-sm btn-neutral">{{__('Create')}}</a>
+    @endcan
+@endsection
+
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Hasil Lab Rinci','Index'],
-        'text_right'=>'<a href="'.route('hasil_lab.create').'" class="btn btn-sm btn-neutral">'.__('Create').'</a>'
+        'breadcrumbs'=>['Hasil Lab Rinci','Index']
     ])
 
     <!-- Page content -->

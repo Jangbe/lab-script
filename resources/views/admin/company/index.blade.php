@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
+@section('text_right')
+    @can('create_perusahaan')
+        <a href="{{route('perusahaan.create')}}" class="btn btn-sm btn-neutral">{{__('Create')}}</a>
+    @endcan
+@endsection
+
 @section('content')
     @include('admin.layouts.header', [
-        'breadcrumbs'=>['Perusahaan','Index'],
-        'text_right'=>'<a href="'.route('perusahaan.create').'" class="btn btn-sm btn-neutral">'.__('Create').'</a>'
+        'breadcrumbs'=>['Perusahaan','Index']
     ])
 
     <div class="container-fluid mt--6">

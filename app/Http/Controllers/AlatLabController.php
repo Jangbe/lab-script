@@ -8,6 +8,13 @@ use Yajra\DataTables\DataTables;
 
 class AlatLabController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:view_alat_laboratorium',   ['only'=>['index','show']]);
+        $this->middleware('can:create_alat_laboratorium', ['only'=>['create','store']]);
+        $this->middleware('can:edit_alat_laboratorium',   ['only'=>['edit','update']]);
+        $this->middleware('can:delete_alat_laboratorium', ['only'=>['destroy']]);
+    }
     /**
      * Display a listing of the resource.
      *
