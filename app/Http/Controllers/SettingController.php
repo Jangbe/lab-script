@@ -23,6 +23,12 @@ class SettingController extends Controller
         return view('admin.setting.index', compact('settings'));
     }
 
+    public function identitas()
+    {
+        $settings = Setting::all();
+        return view('admin.setting.identitas',compact('settings'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

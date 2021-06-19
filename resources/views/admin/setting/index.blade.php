@@ -8,7 +8,7 @@
 
     <div class="container-fluid mt--6">
         {{-- @foreach ($settings as $index => $setting) --}}
-        <form action="{{route('setting.update',$settings[0]['id'])}}" method="post">
+        {{-- <form action="{{route('setting.update',$settings[0]['id'])}}" method="post">
             @method('put')
             @csrf
             <div class="card mt-2">
@@ -36,7 +36,7 @@
                     <button class="btn btn-success" type="submit">Update</button>
                 </div>
             </div>
-        </form>
+        </form> --}}
         {{-- @endforeach --}}
         <form action="{{route('setting.update',$settings[1]['id'])}}" method="post" enctype="multipart/form-data">
             @method('put')

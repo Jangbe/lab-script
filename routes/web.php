@@ -22,6 +22,8 @@ Route::auth();
 Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('home');
 
 Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\Http\Controllers'], function () {
+    Route::get('identitas', 'SettingController@identitas');
+
     //For executor
     Route::resource('executor', 'ExecutorController');
     Route::get('get_executors', 'ExecutorController@ajax')->name('get_executors');
