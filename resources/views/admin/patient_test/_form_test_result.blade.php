@@ -20,9 +20,12 @@
                     @if ($hasilLab->is_judul!=1)
                     <input type="hidden" name="id_hasil_lab[{{$no_urut}}]" value="{{$hasilLab->id}}" readonly>
                     @endif
+                    {{-- Jika tipe hasil lab nya header --}}
+                    @if($hasilLab->id_tipe==7)
+                        <h3 class="mb-4 py-3">{{$hasilLab->nm_hasil}}</h3>
                     {{-- Jika jenis hasil lab nya judul --}}
-                    @if ($hasilLab->is_judul==1)
-                        <h4 class="mb-4">{{$hasilLab->nm_hasil}}</h4>
+                    @elseif ($hasilLab->is_judul==1)
+                        <h4 class="mb-4 ml-2">{{$hasilLab->nm_hasil}}</h4>
                     {{-- Jika jenis hasil lab nya berupa select options --}}
                     @elseif (!is_null($hasilLab['id_tiper']))
                     <div class="form-group {{$hasilLab->level_hasil==1?'':'ml-3'}}">

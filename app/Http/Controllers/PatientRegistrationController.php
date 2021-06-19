@@ -86,7 +86,7 @@ class PatientRegistrationController extends Controller
             'no_telepon'=>'nullable|required_if:sts_pengunjung,B|min:11|max:14',
             'rt'=>'nullable|min:3|max:3',
             'rw'=>'nullable|min:3|max:3',
-            'kodepos'=>'nullable|min:6|max:6'
+            'kodepos'=>'nullable|min:5|max:5'
         ]);
 
         // Update the patient information

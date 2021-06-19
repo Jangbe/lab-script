@@ -58,7 +58,7 @@
     <hr class="mt-0 mb-4 border-dark">
     @endif
     @if (setting('pdf','show_penanggung_jawab'))
-        <span class="float-right">Penanggung Jawab : dr. Puskesmas</span>
+        <span class="float-right">Penanggung Jawab : {{$patientRegistration['penanggungJawab']['nama']??''}}</span>
         <div class="clearfix"></div>
     @endif
     <h3 class="text-center" style="font-family: sans-serif">HASIL PEMERIKSAAN LABORATORIUM</h3>
@@ -83,7 +83,7 @@
             <th>Tgl Lahir / Umur</th>
             <td>:</td>
             <td>{{tanggal($patientRegistration['patient']['tanggal_lahir']).diff_years($patientRegistration['patient']['tanggal_lahir'])}}</td>
-            
+
         </tr>
         <tr>
             <th>Alamat</th>
