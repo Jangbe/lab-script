@@ -158,7 +158,7 @@ class PatientRegistrationController extends Controller
     {
         $patientRegistration['patient'];
         $patientRegistration['patientTest']=PatientTest::with('item')->where('no_pendaftaran',strval($patientRegistration->no_pendaftaran))->get();
-        // dd($patientRegistration);
+        // dd($patientRegistration->pengirim->fee);
         return view('admin.patient_test.pembayaran',compact('patientRegistration'));
     }
 

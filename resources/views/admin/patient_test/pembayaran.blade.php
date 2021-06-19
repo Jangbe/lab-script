@@ -41,7 +41,7 @@
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$patientTest['item']['nm_item']}}</td>
-                                        <td>{{$patientTest['executors']['nama']}}</td>
+                                        <td>{{$patientTest['executors']['nama']??''}}</td>
                                         <td class="text-right">{{formated_price($patientTest['item']['itemTarif']['tarif_bayar'])}}</td>
                                     </tr>
                                 @endforeach
@@ -75,7 +75,19 @@
                                     </div>
                                     <div class="col-6">
                                         <label for="nilai_cito">Cito</label>
-                                        <input class="number form-control bayar" type="text" id="nilai_cito" name="nilai_cito" {{$patientRegistration['is_cito']==1?'':'disabled'}} value="{{intval($patientRegistration['nilai_cito'])}}">
+                                        <input class="number form-control bayar" type="text" id="nilai_cito" inputmode="numeric" name="nilai_cito" {{$patientRegistration['is_cito']==1?'':'disabled'}} value="{{intval($patientRegistration['nilai_cito'])}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="col-5">
+                                        <label for="fee">Fee (%)</label>
+                                        <input type="text" class="form-control" id="fee" inputmode="numeric" disabled value="{{intval($patientRegistration->pengirim->fee)}}">
+                                    </div>
+                                    <div class="col-7">
+                                        <label for="fee_total">Fee Total</label>
+                                        <input type="text" class="number form-control" id="fee_total" inputmode="numeric" disabled>
                                     </div>
                                 </div>
                             </div>
@@ -83,17 +95,17 @@
                                 <div class="form-row">
                                     <div class="col-5">
                                         <label for="nilai_admin">Admin</label>
-                                        <input class="number form-control bayar" type="text" id="nilai_admin" name="nilai_admin" value="{{intval($patientRegistration['nilai_admin'])}}">
+                                        <input class="number form-control bayar" type="text" id="nilai_admin" inputmode="numeric" name="nilai_admin" value="{{intval($patientRegistration['nilai_admin'])}}">
                                     </div>
                                     <div class="col-7">
                                         <div class="form-row">
                                             <div class="col-7">
                                                 <label for="discount">Discount</label>
-                                                <input class="number form-control bayar" type="text" id="nilai_discount" name="nilai_discount" value="{{intval($patientRegistration['nilai_discount'])}}">
+                                                <input class="number form-control bayar" type="text" id="nilai_discount" inputmode="numeric" name="nilai_discount" value="{{intval($patientRegistration['nilai_discount'])}}">
                                             </div>
                                             <div class="col-5">
                                                 <label for="discount">Persen (%)</label>
-                                                <input class="number form-control bayar"step="any" type="text" id="discount_persen" name="discount_persen" value="">
+                                                <input class="number form-control bayar"step="any" type="text" id="discount_persen" inputmode="numeric" name="discount_persen" value="">
                                             </div>
                                         </div>
                                     </div>
@@ -108,7 +120,7 @@
                                 <div class="form-row">
                                     <div class="col-5">
                                         <label for="nilai_uangmuka">Uang Muka</label>
-                                        <input class="number form-control" type="text" id="nilai_uangmuka" name="nilai_uangmuka" value="{{intval($patientRegistration['nilai_uangmuka'])}}">
+                                        <input class="number form-control" type="text" id="nilai_uangmuka" inputmode="numeric" name="nilai_uangmuka" value="{{intval($patientRegistration['nilai_uangmuka'])}}">
                                     </div>
                                     <div class="col-7">
                                         <label for="pembayar">Pembayar</label>

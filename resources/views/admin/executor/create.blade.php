@@ -30,6 +30,14 @@
 
 @push('js')
     <script>
+        $('#fee').parent().hide();
         $('#pelaksana').addClass('active');
+        $('#pengirim').change(function(e){
+            if(e.target.checked){
+                $('#fee').parent().fadeIn()
+            }else{
+                $('#fee').parent().fadeOut()
+            }
+        })
     </script>
 @endpush

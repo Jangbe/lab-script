@@ -46,6 +46,10 @@ class ExecutorController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'fee'=>'required_if:pengirim,1',
+            'nama'=>'required'
+        ]);
         $lastData = Executor::orderBy('kode', 'desc')->first()->kode??0;
         $code = "000".($lastData + 1);
         $code = substr($code, -4, 4);

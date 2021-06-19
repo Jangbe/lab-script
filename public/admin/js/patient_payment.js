@@ -11,6 +11,7 @@ var subtotal = parseFloat($('#tagihan').val());
 var total = 0;
 var discount = 0;
 var total_keseluruhan = 0;
+var fee_total = $('#fee_total').val(($('#fee').val()/100)*subtotal).val();
 function set_total(id_name=''){
     let nilai_admin=formated_price($('#nilai_admin').val().trim()==''?0:$('#nilai_admin').val(), '');
     let nilai_cito=formated_price($('#nilai_cito').val().trim()==''?0:$('#nilai_cito').val(), '');
@@ -18,7 +19,7 @@ function set_total(id_name=''){
     let discount_persen=$('#discount_persen').val().trim()==''?0:parseFloat($('#discount_persen').val());
 
     // Untuk total
-    total=subtotal+parseFloat(nilai_admin)+parseFloat(nilai_cito);
+    total=subtotal+parseFloat(nilai_admin)+parseFloat(nilai_cito)+parseFloat(fee_total);
 
     // Untuk jumlah diskon
     if(id_name=='nilai_discount'){
@@ -49,7 +50,6 @@ function set_total(id_name=''){
 }
 $('#tanggal_lunas').parent().hide();
 set_total('nilai_discount');
-let angka = "10000";
 // Restricts input for the given textbox to the given inputFilter function.
 function setInputFilter(textbox, inputFilter) {
     ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
