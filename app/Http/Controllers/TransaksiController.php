@@ -82,7 +82,8 @@ class TransaksiController extends Controller
             $pdf = \PDF::loadView('pdf.laporan',compact('results','request'))->setPaper('a4', 'landscape');;
             return $pdf->stream('Laporan Keuangan.pdf');
         }else if($request->aksi=='excel'){
-            return Excel::download(new TransaksiExport($results), 'Laporan Keuangan'.date('d-m-Y').'.xls');
+            $filename = 'Laporan Keuangan '.$request->from.' s.d '.$request->to.'.xlsx';
+            return Excel::download(new TransaksiExport($results), $filename);
         }
     }
 
