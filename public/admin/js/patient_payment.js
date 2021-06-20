@@ -11,15 +11,15 @@ var subtotal = parseFloat($('#tagihan').val());
 var total = 0;
 var discount = 0;
 var total_keseluruhan = 0;
-var fee_total = $('#fee_total').val(($('#fee').val()/100)*subtotal).val();
 function set_total(id_name=''){
     let nilai_admin=formated_price($('#nilai_admin').val().trim()==''?0:$('#nilai_admin').val(), '');
     let nilai_cito=formated_price($('#nilai_cito').val().trim()==''?0:$('#nilai_cito').val(), '');
     let nilai_discount=formated_price($('#nilai_discount').val().trim()==''?0:$('#nilai_discount').val(), '');
+    let fee_total=formated_price($('#fee_total').val().trim()==''?0:$('#fee_total').val(), '');
     let discount_persen=$('#discount_persen').val().trim()==''?0:parseFloat($('#discount_persen').val());
 
     // Untuk total
-    total=subtotal+parseFloat(nilai_admin)+parseFloat(nilai_cito)+parseFloat(fee_total);
+    total=subtotal+parseFloat(nilai_admin)+parseFloat(nilai_cito);
 
     // Untuk jumlah diskon
     if(id_name=='nilai_discount'){
@@ -32,9 +32,13 @@ function set_total(id_name=''){
     }
 
     // Untuk total keseluruhan
-    total_keseluruhan=formated_price(total-discount,'.',false);
+    fee_total = (($('#fee').val()/100))*(total-discount);
+    fee_total = $('#fee_total').val(formated_price(fee_total));
+    fee_total = formated_price(fee_total.val(), '');
+
+    total_keseluruhan=formated_price(total+parseInt(fee_total)-discount,'.',false);
     $('#total_keseluruhan').text('Rp. '+total_keseluruhan);
-    total_keseluruhan=parseFloat(formated_price(total-discount,''));
+    total_keseluruhan=parseFloat(formated_price(total+parseInt(fee_total)-discount,''));
 
     // Untuk sisa pembayaran
     let nilai_uangmuka=formated_price($('#nilai_uangmuka').val(),'');

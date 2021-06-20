@@ -165,6 +165,7 @@ if(!function_exists('generate_pdf')){
         // type 1 => nota
         // type 2 => kwitansi
         // type 3 => test result
+        // type 4 => laporan keuangan
         $patientRegistration['patientTest']=PatientTest::where('no_pendaftaran',strval($patientRegistration->no_pendaftaran))->get();
         if($type==1){
             $name='Nota - '.$patientRegistration['patient']['nama'];
@@ -172,7 +173,7 @@ if(!function_exists('generate_pdf')){
         }else if($type==2){
             $name='Kwitansi - '.$patientRegistration['patient']['nama'];
             $pdf = PDF::loadView('pdf.kwitansi',compact('patientRegistration'));
-        }else{
+        }else if($type==3){
             $settings=['dpi' => 300,'fontHeightRatio'=>1,'defaultFont'=>'sans-serif'];
             $name='Hasil Lab - '.$patientRegistration['patient']['nama'];
             $patientRegistration['patientTestResult']=PatientResultTest::where('no_pendaftaran',strval($patientRegistration['no_pendaftaran']))->get();
@@ -180,6 +181,8 @@ if(!function_exists('generate_pdf')){
             $show_penanggung_jawab=setting('pdf','show_penanggung_jawab')==1?0.8:0.0;
             $margin_top=(3.2+$show_header+$show_penanggung_jawab).'cm';
             $pdf = PDF::setOptions($settings)->loadView('pdf.hasil_lab',compact('patientRegistration','margin_top'))->setPaper('a4', 'portrait')->setWarnings(false);
+        }else{
+            $pdf = PDF::loadView('pdf.laporan',compact('patientRegistration'));
         }
         return $pdf->stream($name.'.pdf');
     }

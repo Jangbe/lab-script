@@ -83,13 +83,13 @@
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
-                @can('superadmin')
+                {{-- @can('superadmin')
                 <li class="nav-item">
                     <a class="nav-link" id="identitas" href="{{ url('admin/identitas') }}">
                         <i class="fas fa-id-badge" style="color: #c210f8"></i> {{ __('Identitas') }}
                     </a>
                 </li>
-                @endcan
+                @endcan --}}
                 @can('view_pelaksana')
                 <div class="nav-item">
                     <a href="{{ route('executor.index') }}" class="nav-link" id="pelaksana">
@@ -235,6 +235,12 @@
                     </div>
                 </li>
                 @endcan
+
+                <li class="nav-item">
+                    <a class="nav-link" id="transaksi" href="{{ route('transaksi.index') }}">
+                        <i class="fas fa-hand-holding-usd" style="color: #3cff00"></i> {{ __('Laporan Keuangan') }}
+                    </a>
+                </li>
 
                 @can('superadmin')
                 <li class="nav-item">

@@ -87,7 +87,7 @@
                                     </div>
                                     <div class="col-7">
                                         <label for="fee_total">Fee Total</label>
-                                        <input type="text" class="number form-control" id="fee_total" inputmode="numeric" disabled>
+                                        <input type="text" class="form-control" id="fee_total" disabled>
                                     </div>
                                 </div>
                             </div>

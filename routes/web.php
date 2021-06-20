@@ -22,7 +22,7 @@ Route::auth();
 Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('home');
 
 Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\Http\Controllers'], function () {
-    Route::get('identitas', 'SettingController@identitas');
+    // Route::get('identitas', 'SettingController@identitas');
 
     //For executor
     Route::resource('executor', 'ExecutorController');
@@ -84,6 +84,10 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
     Route::get('report/{patient_registration}/kwitansi', 'ReportController@kwitansi')->name('pdf.kwitansi');
     Route::get('report/{patient_registration}/hasil_lab', 'ReportController@hasil_lab')->name('pdf.hasil_lab');
     Route::get('generate_pdf','AdminController@pdf');
+
+    // For transaksi
+    Route::resource('transaksi','TransaksiController');
+    Route::post('ajax_transaksi', 'TransaksiController@ajax');
 
     // For setting the web
     Route::resource('setting', 'SettingController');
